@@ -9,7 +9,7 @@ export default function Layout({ children }) {
         <title>InnovTech</title>
       </Head>
         <Navbar />
-        <main className='py-12 mt-12  bg-[#F4F7FC] dark:bg-[#272B34] '><div className='container'>{children}</div></main>
+        <main className='py-12 mt-12 mb-auto  bg-[#F4F7FC] dark:bg-[#272B34] '><div className='container'>{children}</div></main>
         <Footer />
       </div>
     </>
