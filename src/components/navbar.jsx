@@ -32,8 +32,8 @@ export default function Navbar(){
                             </div>
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
-                                <a href={ele.href}>
-                                    <div key={index} className="text-black dark:text-white hover:text-[#1A60A1] hover:duration-700 transition font-semibold">
+                                <a key={index} href={ele.href}>
+                                    <div  className="text-black dark:text-white hover:text-[#1A60A1] hover:duration-700 transition font-semibold">
                                         <span>{ele.title}</span>
                                     </div>
                                 </a>
@@ -65,7 +65,7 @@ export default function Navbar(){
                                 </div>
                                 <div className={`flex flex-col items-center gap-8 pt-8 duration-700 transition ${open==true?" hidden":" block"}`}>
                                     {itemsNav.map((ele,index)=>(
-                                        <a className="text-black hover:bg-[#1A60A1] w-full text-center py-2 rounded hover:text-white dark:text-white hover:text-[#1A60A1]b hover:duration-700  transition   font-semibold" href={ele.href}>
+                                        <a key={index} className="text-black hover:bg-[#1A60A1] w-full text-center py-2 rounded hover:text-white dark:text-white hover:text-[#1A60A1]b hover:duration-700  transition   font-semibold" href={ele.href}>
                                             <button onClick={()=>{setOpen(!open)}} key={index} className=" " >
                                                 <span>{ele.title}</span>
                                             </button>
