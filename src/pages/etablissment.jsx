@@ -8,8 +8,8 @@ export default function Etablissment(){
                 {
                     etablissment.map((ele,index)=>(
                         
-                            <div key={index} className=" lg:w-[75%] flex flex-col-reverse lg:flex-row items-center gap-2 dark:bg-[#1c1f24] rounded-xl shadow-2xl  bg-white ">
-                                <div className="flex flex-col gap-8 lg:w-1/2 p-4 items-center  lg:items-start">
+                            <div key={index} className=" lg:w-[75%] flex flex-col-reverse  lg:flex-row items-center gap-2 dark:bg-[#1c1f24] rounded-xl shadow-2xl  bg-white ">
+                                <div className="flex flex-col gap-8 lg:w-1/2 p-6 items-center  lg:items-start">
                                         <span className=" uppercase font-bold text-lg lg:text-xl lg:text-start text-center">{ele.title}</span>
                                     <div className="flex flex-col gap-6 items-center lg:items-start">
                                         <span className="text-[#9DA4B2] lg:text-base text-sm  font-semibold">Number d&apos;établissements : <span>{ele["Number of etablissements"]}</span></span>
