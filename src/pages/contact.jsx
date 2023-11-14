@@ -89,7 +89,7 @@ export default function Contact() {
                       fullName: e.target.value,
                     }))
                   }
-                  className="  border-2 border-[#1A60A1] py-2 w-1/2 px-4 rounded "
+                  className="  border-2 border-blue-800 py-2 w-1/2 px-4 rounded "
                   type="text"
                   name="fullName"
                   placeholder="Nom et Prénom"
@@ -99,7 +99,7 @@ export default function Contact() {
                   onChange={(e) =>
                     setFormData((data) => ({ ...data, tele: e.target.value }))
                   }
-                  className=" border-2 border-[#1A60A1] py-2 w-1/2 px-4 rounded"
+                  className=" border-2 border-blue-800 py-2 w-1/2 px-4 rounded"
                   type="tele"
                   name="tele"
                   placeholder="Téléphone"
@@ -110,7 +110,7 @@ export default function Contact() {
                 onChange={(e) =>
                   setFormData((data) => ({ ...data, email: e.target.value }))
                 }
-                className="border-2 border-[#1A60A1]  py-2  px-4 w-full  rounded"
+                className="border-2 border-blue-800  py-2  px-4 w-full  rounded"
                 type="text"
                 name="email"
                 id="email"
@@ -121,7 +121,7 @@ export default function Contact() {
                 onChange={(e) =>
                   setFormData((data) => ({ ...data, subject: e.target.value }))
                 }
-                className="border-2 border-[#1A60A1]  py-2  px-4 w-full  rounded"
+                className="border-2 border-blue-800  py-2  px-4 w-full  rounded"
                 type="text"
                 name="subject"
                 id="subject"
@@ -132,7 +132,7 @@ export default function Contact() {
                 onChange={(e) =>
                   setFormData((data) => ({ ...data, message: e.target.value }))
                 }
-                className=" border-2 border-[#1A60A1] px-4 w-full rounded py-2"
+                className=" border-2 border-blue-800 px-4 w-full rounded py-2"
                 name="message"
                 id="message"
                 cols="40"
@@ -140,7 +140,7 @@ export default function Contact() {
                 placeholder="Message"
               ></textarea>
               <button
-                className="   flex py-2 rounded-md px-4  bg-[#1A60A1] text-white "
+                className="   flex py-2 rounded-md px-4  bg-blue-800 dark:border-[#1c1f24] duration-500 border-white dark:hover:border-blue-800 hover:border-blue-800 hover:text-black font-bold border-2 dark:hover:bg-[#1c1f24] dark:hover:text-white  hover:bg-white text-white "
                 type="submit"
               >
                 Envoyer
