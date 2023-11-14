@@ -44,7 +44,7 @@ export default  function  Labortoures  () {
               <div className={` relative rounded-b-lg   bg-[#FFFFFF] dark:bg-[#1c1f24] p-4 shadow-lg  ${openItem === ele.id ? 'block' : 'hidden'}`}>
                 <div>
                     <h2 className="mb-4  font-bold text-gray-900 dark:text-white text-base md:text-lg">Les Laboratoire impliqués : </h2>
-                    <ul  className=" pb-4 ml-8 space-y-6 text-gray-500 list-disc list-inside md:text-base text-xs dark:text-gray-400">
+                    <ul  className=" pb-4 ml-8 space-y-4 text-gray-500 list-disc list-inside md:text-base text-xs dark:text-gray-400">
                     {
                         ele.laboratoire?.map((ele,index)=>(
                                 <li  key={index}>
@@ -58,7 +58,7 @@ export default  function  Labortoures  () {
                 <ol className={`  ${!ele.equipes ?"hidden":"block"} `}>
                     <h2 className={`mb-4 text-lg font-bold text-gray-900 dark:text-white `}>Les équipes impliquées  : </h2>
                     <li>
-                    <ul  className="list-disc list-inside pb-4 ml-8 space-y-6 text-gray-500  md:text-base text-xs dark:text-gray-400">
+                    <ul  className="list-disc list-inside pb-4 ml-8 space-y-4 text-gray-500  md:text-base text-xs dark:text-gray-400">
                     {
                         ele.equipes?.map((ele,index)=>(
                                 <li  key={index}>
