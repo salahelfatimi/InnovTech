@@ -1,0 +1,40 @@
+[{
+    "id":1,
+    "etablissment":"FSTG-MARRAKECH",
+    "laboratoire":[
+        "Laboratoire des Systèmes Electriques, Efficacité Energétique et Télécommunications (LSEEET)",
+        "Laboratoire d’Ingénierie Informatique et Systèmes (L2IS)",
+        "Laboratoire de Mathématiques Appliquées et Informatique (LMAI)",
+        "Laboratoire de Recherche en Développement Durable et Santé (LRDDS)",
+        "Laboratoire des Matériaux Innovants, Energie et Développement Durable (IMED-Lab)",
+        "Laboratoire des Procédés pour l’Energie Durable et l’Environnement (ProcEDE)"
+    ],
+    "equipes":[
+        "Contrôle et Informatique pour les systèmes Intelligents et Energie Verte (CISIEV)",
+        "Géométrie, Topologie et Applications (GTA)"
+    ]
+    
+},
+{
+    "id":2,
+    "etablissment":"ENSA-MARRAKECH",
+    "laboratoire":[
+        "Laboratoire Ingénierie des Systèmes et Applications (LISA)",
+        "Laboratoire de Modélisation des Systèmes Complexes (LMSC)"
+    ],
+    "equipes":[
+        "SMARTE Systèmes et Applications (SSA)",
+        "Géométrie, Topologie et Applications (GTA)"
+    ]
+    
+},
+{
+    "id":3,
+    "etablissment":"ENS-MARRAKECH",
+    "laboratoire":[
+       "Laboratoire Interdisciplinaire de Recherche en Bio-Ressources (LIRBEM)"
+    ]
+    
+    
+}
+]

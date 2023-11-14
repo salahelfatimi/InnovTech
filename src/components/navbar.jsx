@@ -7,7 +7,7 @@ export default function Navbar(){
     const [mounted, setMointed] = useState(false);
     const itemsNav=[
         {title:"Accueil",href:"/"},
-        {title:"Labortoures",href:"/labortoures"},
+        {title:"laboratoire",href:"#"},
         {title:"Etablissment",href:"/etablissment"},
         {title:"Contact",href:"/contact"},
         {title:"Aboute",href:"/aboute"}
@@ -22,7 +22,7 @@ export default function Navbar(){
     
     return(
         <>
-            <div className="">
+            <div className=" z-40">
                 {/* pc Nav bar */}
                 <div className="md:block hidden">
                     <div className="bg-white dark:bg-[#1C1F24] fixed py-4 w-full top-0 left-0">

@@ -1,0 +1,25 @@
+[
+    {
+        "id":1,
+        "etablissment":"ENSA-SAFI",
+        "laboratoire":[
+            "Laboratoire Matériaux, Procédés, Environnement et Qualité (LMPEQ) ",
+            "Laboratoire de Mathématiques Informatique et Systèmes de communication (LMISCOM)"
+        ],
+        "equipes":[
+            "Signaux Aléatoires, Réseaux et Systèmes (SARS)"
+           
+        ]
+        
+    },
+    {
+        "id":2,
+        "etablissment":"ENSA-MARRAKECH",
+        "laboratoire":[
+            "-Laboratoire des Process, Signaux, Systèmes Industriels, Informatique (LAPSSII)"
+            
+        ]
+       
+        
+    }
+]
