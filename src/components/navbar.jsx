@@ -32,8 +32,8 @@ export default function Navbar(){
                             </div>
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
-                                <a className="text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-600 hover:duration-700 transition font-semibold "key={index} href={ele.href}>
-                                    <div  >
+                                <a key={index} href={ele.href}>
+                                    <div  className="text-black dark:text-white hover:text-[#1A60A1] hover:duration-700 transition font-semibold">
                                         <span>{ele.title}</span>
                                     </div>
                                 </a>
