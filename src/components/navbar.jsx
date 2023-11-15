@@ -25,7 +25,7 @@ export default function Navbar(){
             <div className=" z-40">
                 {/* pc Nav bar */}
                 <div className="md:block hidden">
-                    <div className="bg-white dark:bg-[#1C1F24] fixed py-4 w-full top-0 left-0">
+                    <div className="bg-white dark:bg-[#1C1F24] fixed py-4 w-full shadow-2xl  top-0 left-0">
                         <div className="container flex items-center justify-between">
                             <div>
                                 <span>logo</span>
@@ -53,7 +53,7 @@ export default function Navbar(){
                 {/* mobile Nav bar  */}
 
                     <div className="md:hidden  block">
-                        <div className="   bg-white dark:bg-[#1C1F24] rounded-b-2xl shadow-2xl   fixed py-6  w-full top-0 left-0  ">
+                        <div className="   bg-white dark:bg-[#1C1F24] rounded-b-3xl shadow-2xl   fixed py-6  w-full top-0 left-0  ">
                             <div className="container">
                                 <div className="flex px-2  items-center justify-between">
                                     <div>
