@@ -53,7 +53,7 @@ export default function Navbar(){
                 {/* mobile Nav bar  */}
 
                     <div className="md:hidden  block">
-                        <div className="   bg-white dark:bg-[#1C1F24] rounded-b-2xl shadow-2xl   fixed py-4  w-full top-0 left-0  ">
+                        <div className="   bg-white dark:bg-[#1C1F24] rounded-b-2xl shadow-2xl   fixed py-6  w-full top-0 left-0  ">
                             <div className="container">
                                 <div className="flex   items-center justify-between">
                                     <div>
