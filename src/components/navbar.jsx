@@ -55,12 +55,12 @@ export default function Navbar(){
                     <div className="md:hidden  block">
                         <div className="   bg-white dark:bg-[#1C1F24] rounded-b-2xl shadow-2xl   fixed py-6  w-full top-0 left-0  ">
                             <div className="container">
-                                <div className="flex   items-center justify-between">
+                                <div className="flex px-2  items-center justify-between">
                                     <div>
                                         <span>logo</span>
                                     </div>
                                     <button onClick={()=>{setOpen(!open)}} className=" md:hidden block">
-                                        <svg fill={theme === "light" ? "#000" : "#fff"} width="25px" height="25px" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m2.61 0h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 9.39h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 18.781h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/></svg>
+                                        <svg fill={theme === "light" ? "#000" : "#fff"} width="30px" height="30px" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m2.61 0h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 9.39h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 18.781h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/></svg>
                                     </button>
                                 </div>
                                 
@@ -70,7 +70,7 @@ export default function Navbar(){
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                                                 </svg>
                                             </button>
-                                            <div className=" text-black dark:text-[#fff] flex flex-col items-center gap-12 text-3xl font-bold">
+                                            <div className=" text-black dark:text-[#fff] flex flex-col items-center gap-12 text-2xl font-bold">
                                             {itemsNav.map((ele,index)=>(
                                                 <a key={index} className=" hover:text-[#1A60A1] transition hover:dark:text-[#1A60A1] duration-700" href={ele.href}>
                                                     <button onClick={()=>{setOpen(!open)}} key={index} className=" " >
