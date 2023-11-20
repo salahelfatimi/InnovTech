@@ -32,7 +32,7 @@ export default function Home(){
             <div className="mt-3">
                 <div className="relative">
                     <div className="  w-full  flex items-center " >
-                        <img src={`/image/Home/${sliderImage?.src}`} className=" w-full xl:h-[37rem] h-[20rem]   shadow-2xl   brightness-50" alt="" />
+                        <img src={`/image/Home/${sliderImage?.src}`} className=" w-full xl:h-[37rem] h-[20rem] duration-700  transition shadow-2xl   brightness-50" alt="" />
                         <div className=" absolute bottom-0 left-0   text-white p-6 ">
                             <div className="flex flex-col gap-2"> 
                                 <h3 className=" capitalize font-extrabold text-lg md:text-4xl  lg:text-6xl">
@@ -44,7 +44,7 @@ export default function Home(){
                     </div>
                 </div>
                 <div className=" container">
-                    <div className="flex flex-col items-center gap-8 pt-8">
+                    <div className="flex flex-col items-center gap-12 py-12">
                         <span className="lg:text-4xl text-2xl text-[#3A9BE1]  font-bold">Formation Doctorale InnovTech </span>
                         <span className="text-[#848789] font-medium text-center lg:text-lg leading-10">
                         Le projet InnovTech vise à regrouper et collaborer les laboratoires de l&apos;UCA pour répondre à ses orientations stratégiques.
@@ -55,6 +55,10 @@ export default function Home(){
                         Leur complémentarité vise à établir un pôle de référence en innovation technologique, à l&apos;échelle nationale et internationale.
                         </span>
                     </div>
+                    
+                </div>
+                <div className="py-12">
+                        <iframe src="https://my.atlist.com/map/c0b73be8-2015-404a-986d-434abbc7f463?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="600px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen></iframe>
                 </div>
             </div>
         </>
