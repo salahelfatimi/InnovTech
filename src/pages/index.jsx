@@ -29,11 +29,11 @@ export default function Home(){
      
     return(
         <>
-            <div className="">
+            <div className="mt-3">
                 <div className="relative">
                     <div className="  w-full  flex items-center " >
-                        <img src={`/image/Home/${sliderImage?.src}`} className=" w-full xl:h-[37rem] h-[18rem] rounded-lg shadow-2xl   brightness-50" alt="" />
-                        <div className=" absolute bottom-2 md:bottom-16 left-4 md:left-10  text-white p-2">
+                        <img src={`/image/Home/${sliderImage?.src}`} className=" w-full xl:h-[37rem] h-[20rem]   shadow-2xl   brightness-50" alt="" />
+                        <div className=" absolute bottom-0 left-0   text-white p-6 ">
                             <div className="flex flex-col gap-2"> 
                                 <h3 className=" capitalize font-extrabold text-lg md:text-4xl  lg:text-6xl">
                                     {sliderImage?.title}
@@ -43,17 +43,18 @@ export default function Home(){
                         </div>
                     </div>
                 </div>
-                
-                <div className="flex flex-col items-center gap-8 pt-8">
-                    <span className="lg:text-4xl text-2xl text-[#3A9BE1]  font-bold">Formation Doctorale InnovTech </span>
-                    <span className="text-[#848789] font-medium text-center lg:text-lg leading-10">
-                    Le projet InnovTech vise à regrouper et collaborer les laboratoires de l&apos;UCA pour répondre à ses orientations stratégiques.
-                     Cette mutualisation crée une synergie entre chercheurs, indépendamment de leur affiliation.
-                      Cette approche met en avant des axes de recherche grâce à des équipes de taille compétitive nationale et internationale.
-                       InnovTech réunit 14 laboratoires et 5 équipes de recherche de 5 établissements de l&apos;UCA,
-                        répartis dans 3 villes (Marrakech, Safi, Essaouira).
-                     Leur complémentarité vise à établir un pôle de référence en innovation technologique, à l&apos;échelle nationale et internationale.
-                    </span>
+                <div className=" container">
+                    <div className="flex flex-col items-center gap-8 pt-8">
+                        <span className="lg:text-4xl text-2xl text-[#3A9BE1]  font-bold">Formation Doctorale InnovTech </span>
+                        <span className="text-[#848789] font-medium text-center lg:text-lg leading-10">
+                        Le projet InnovTech vise à regrouper et collaborer les laboratoires de l&apos;UCA pour répondre à ses orientations stratégiques.
+                        Cette mutualisation crée une synergie entre chercheurs, indépendamment de leur affiliation.
+                        Cette approche met en avant des axes de recherche grâce à des équipes de taille compétitive nationale et internationale.
+                        InnovTech réunit 14 laboratoires et 5 équipes de recherche de 5 établissements de l&apos;UCA,
+                            répartis dans 3 villes (Marrakech, Safi, Essaouira).
+                        Leur complémentarité vise à établir un pôle de référence en innovation technologique, à l&apos;échelle nationale et internationale.
+                        </span>
+                    </div>
                 </div>
             </div>
         </>

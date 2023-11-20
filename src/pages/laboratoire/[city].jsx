@@ -28,7 +28,7 @@ export default  function  Labortoures  () {
   };
 
   return (
-    <div className=''>
+    <div className='container mt-10 '>
       <div className='flex flex-col gap-8'>
         {laboratoire?.map((ele, index) => (
           <div className='  ' key={index}>

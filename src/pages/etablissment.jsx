@@ -19,7 +19,7 @@ export default function Etablissment(){
     ,[])
     return(
        <>
-        <div className="  ">
+        <div className=" container mt-10  ">
             <div className="flex flex-col gap-8 justify-between items-center  ">
                 {
                     etablissment.map((ele,index)=>(
