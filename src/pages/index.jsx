@@ -32,7 +32,7 @@ export default function Home(){
             <div className="">
                 <div className="relative">
                     <div className="  w-full  flex items-center " >
-                        <img src={`/image/Home/${sliderImage?.src}`} className=" w-full xl:h-[37rem] rounded-lg shadow-2xl   brightness-50" alt="" />
+                        <img src={`/image/Home/${sliderImage?.src}`} className=" w-full xl:h-[37rem] h-[18rem] rounded-lg shadow-2xl   brightness-50" alt="" />
                         <div className=" absolute bottom-2 md:bottom-16 left-4 md:left-10  text-white p-2">
                             <div className="flex flex-col gap-2"> 
                                 <h3 className=" capitalize font-extrabold text-lg md:text-4xl  lg:text-6xl">
