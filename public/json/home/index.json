@@ -2,8 +2,9 @@
     "slider":[
         {
             "id":1,
-            "src":"ENSA-MARRAKECH.png",
-            "title":"ENSA-MARRAKECH"
+            "src":"FST-MARRAKECH.png",
+            "title":"FST-MARRAKECH"
+           
         },
         {
             "id":2,
@@ -12,8 +13,9 @@
         },
         {
             "id":3,
-            "src":"FST-MARRAKECH.png",
-            "title":"FST-MARRAKECH"
+            "src":"ENSA-MARRAKECH.png",
+            "title":"ENSA-MARRAKECH"
+           
         },
         {
             "id":4,

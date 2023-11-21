@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react"
 
+
 export default function Home(){
     const  [data,setData]=useState([])
     const [imageId, setIamgeId] = useState(1);
     const [sliderImage, setSliderImage] = useState({});
-     useEffect(()=>{
+   
+    
+
+    useEffect(()=>{
         const fetchData  = async () => {
             const response= await fetch("/json/home/index.json")
             const dataGet=  await response.json()
@@ -58,7 +62,9 @@ export default function Home(){
                     
                 </div>
                 <div className="py-12">
-                        <iframe src="https://my.atlist.com/map/c0b73be8-2015-404a-986d-434abbc7f463?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="600px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    <iframe  src="https://www.google.com/maps/d/u/0/embed?mid=1EEBYDK-DPQ05E25i4TjANJyBoJ9qd-8&ehbc=2E312F&noprof=1" width="100%" height="600"></iframe>                <div className="py-12 container">
+                </div>
+                    <img src="/image/Home/Belkhayat.png" className=" rounded-full h-72" alt="" />
                 </div>
             </div>
         </>
