@@ -33,21 +33,23 @@ export default function Home(){
      
     return(
         <>
-            <div className="mt-3">
-                <div className="relative">
-                    <div className="  w-full  flex items-center " >
-                        <img src={`/image/Home/${sliderImage?.src}`} className=" w-full xl:h-[37rem] h-[20rem] duration-700  transition shadow-2xl   brightness-50" alt="" />
-                        <div className=" absolute bottom-0 left-0   text-white p-6 ">
-                            <div className="flex flex-col gap-2"> 
-                                <h3 className=" capitalize font-extrabold text-lg md:text-4xl  lg:text-6xl">
-                                    {sliderImage?.title}
-                                </h3>
-                                <a href=""><button className="bg-[#1A60A1] font-semibold border-2 border-[#1A60A1]     text-white rounded-md py-1 lg:py-2 px-4 lg:px-10  capitalize ">voir plus</button></a>
+            <div className=" ">
+                <div className=" container">
+                    <div className="relative ">
+                        <div className="  w-full  flex items-center " >
+                            <img src={`/image/Home/${sliderImage?.src}`} className=" rounded-xl  w-auto  h-auto duration-700  transition shadow-2xl   brightness-100" alt="" />
+                            <div className=" absolute bottom-0 left-0   text-white p-6 ">
+                                <div className="flex flex-col gap-2"> 
+                                    <h3 className=" capitalize font-extrabold text-lg md:text-4xl  lg:text-6xl">
+                                        {sliderImage?.title}
+                                    </h3>
+                                    <a href=""><button className="bg-[#1A60A1] font-semibold border-2 border-[#1A60A1]     text-white rounded-md py-1 lg:py-2 px-4 lg:px-10  capitalize ">voir plus</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className=" container">
+                <div className=" container ">
                     <div className="flex flex-col items-center gap-12 py-12">
                         <span className="lg:text-4xl text-2xl text-[#3A9BE1]  font-bold">Formation Doctorale InnovTech </span>
                         <span className="text-[#848789] font-medium text-center lg:text-lg leading-10">
@@ -62,9 +64,11 @@ export default function Home(){
                     
                 </div>
                 <div className="py-12">
-                    <iframe  src="https://www.google.com/maps/d/u/0/embed?mid=1EEBYDK-DPQ05E25i4TjANJyBoJ9qd-8&ehbc=2E312F&noprof=1" width="100%" height="600"></iframe>                <div className="py-12 container">
+                    <iframe   src="https://www.google.com/maps/d/u/0/embed?mid=1EEBYDK-DPQ05E25i4TjANJyBoJ9qd-8&ehbc=2E312F&noprof=1" width="100%" height="600"></iframe>                <div className="py-12 container">
                 </div>
+                <div>
                     <img src="/image/Home/Belkhayat.png" className=" rounded-full h-72" alt="" />
+                </div>
                 </div>
             </div>
         </>

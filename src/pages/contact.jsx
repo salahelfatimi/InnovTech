@@ -74,7 +74,7 @@ export default function Contact() {
 
 
   return (
-    <div className="container mt-10 ">
+    <div className="container ">
       <div className="dark:bg-[#1c1f24] rounded-lg shadow-2xl  bg-white   ">
         <div className=" flex flex-col lg:flex-row w-full  gap-4 items-center">
           <div className="w-full lg:w-1/2 ">
