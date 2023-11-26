@@ -35,7 +35,7 @@ export default function Carousel(){
                             
                         ))}
                     </div>
-                    <div className=" absolute inset-0 flex items-center justify-between p-4 z-30">
+                    <div className=" absolute inset-0 flex items-center justify-between p-4 ">
                         <button onClick={prev} className=" p-1 bg-white/80 hover:bg-white duration-500 rounded-full shadow  text-gray-800 ">
                             <ChevronLeft size={30}/>
                         </button>
@@ -51,9 +51,11 @@ export default function Carousel(){
                                         <div  className="text-white md:text-4xl font-bold">
                                                 {ele.title}
                                         </div>
-                                        <button className=" md:text-2xl font-medium md:font-semibold text-white bg-[#1A60A1] md:px-4 rounded-lg py-1 px-2 lg:py-2 text-center">
-                                            Voir plus ...
-                                        </button>
+                                        <a href={`/etablissmentInfo/${ele.city}`}>
+                                            <button className=" md:text-xl font-medium md:font-semibold text-white bg-[#1A60A1] md:px-4 rounded-lg py-1 px-2 lg:py-2 text-center">
+                                                Voir plus ...
+                                            </button>
+                                        </a>
                                     </div>
                                 ))
                             }
