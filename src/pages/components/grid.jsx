@@ -19,7 +19,7 @@ export default function Grid(){
                         <div key={index} className="flex flex-col gap-4 bg-white shadow-lg dark:bg-[#1c1f24] dark:text-white text-black p-6 rounded-lg">
                             <span className=" text-4xl md:text-5xl pb-4">{ele.icon}</span>
                             <span className="text-[#3A9BE1] font-bold text-lg md:text-2xl">{ele.title}</span>
-                            <span className="">{ele.description}</span>
+                            <span className=" text-sm font-medium">{ele.description}</span>
                         </div>
                     ))
                 }
