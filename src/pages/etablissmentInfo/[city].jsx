@@ -9,6 +9,7 @@ export default  function  Labortoures  () {
   
   useEffect(  ()  =>{
     const fetchData  = async () => {
+      if(router.query.city){
         try {
             const response = await  fetch(`/json/etablissmentInfo/${router.query.city}.json`)
             const data= await  response.json()
@@ -17,6 +18,7 @@ export default  function  Labortoures  () {
         }catch(err){
             console.log(err)
         }
+      }
   }
   fetchData()
   }
