@@ -6,7 +6,7 @@ export default function Etablissment(){
     useEffect(  ()  =>{
         const fetchData  = async () => {
             try {
-                const response = await  fetch('/json/Etablissment.json')
+                const response = await  fetch('/json/etablissment.json')
                 const data= await  response.json()
                 setEtablissment(data)
             }catch(err){
@@ -31,10 +31,10 @@ export default function Etablissment(){
                                         <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;laboratoire impliqués : <span>{ele["Number of laboratoire impliques "]}</span> </span>
                                         <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;équipes impliquées : <span>{ele["Number of equipes impliquees "]}</span></span>
                                     </div>
-                                    <a href={`/laboratoire/${ele.Url}`}><button className="bg-[#1A60A1] font-semibold border-2 border-[#1A60A1] hover:bg-[#ffffff] hover:text-[#1A60A1] dark:hover:text-[#fff]   dark:hover:bg-[#1c1f24]  text-white rounded-md  py-2 px-12 ">See More ...</button></a>
+                                    <a href={`/laboratoire/${ele.Url}`}><button className="bg-[#1A60A1] font-semibold border-2 border-[#1A60A1] hover:bg-[#ffffff] hover:text-[#1A60A1] dark:hover:text-[#fff]   dark:hover:bg-[#1c1f24]  text-white rounded-md  py-2 px-12 ">Voir plus ...</button></a>
                                 </div>
                                 <div className="lg:w-1/2">
-                                    <img className="object-cover w-full rounded-t-xl lg:rounded-t-none rounded-r-none lg:rounded-tr-xl lg:rounded-br-xl h-full lg:h-[22rem]  " src={ele.image} alt="" />
+                                    <img className="object-cover w-full rounded-t-xl lg:rounded-t-none rounded-r-none lg:rounded-tr-xl lg:rounded-br-xl h-full lg:h-[22rem]  " src={`/image/etablissment/${ele.image}`} alt="" />
                                 </div>
                             </div>
                     ))

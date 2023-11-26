@@ -1,7 +1,7 @@
 [{
     "id":1,
     "Url":"Marrakech",
-    "image":"/image/marrakechImage.png",
+    "image":"marrakechImage.png",
     "title":"les établissements de Marrakech",
     "Number of etablissements" : 3,
     "Number of laboratoire impliques " : 9,
@@ -11,7 +11,7 @@
 {
     "id":2,
     "Url":"Essaouira",
-    "image":"/image/essaouiraImage.png",
+    "image":"essaouiraImage.png",
     "title":"les établissements DE essaouira ",
     "Number of etablissements" : 1,
     "Number of laboratoire impliques " : 3,
@@ -21,7 +21,7 @@
 {
     "id":3,
     "Url":"Safi",
-    "image":"/image/safiImage.png",
+    "image":"safiImage.png",
     "title":"les établissements DE SAFI ",
     "Number of etablissements" : 2,
     "Number of laboratoire impliques " : 3,
