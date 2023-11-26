@@ -6,8 +6,7 @@ export default function Etablissment(){
     useEffect(  ()  =>{
         const fetchData  = async () => {
             try {
-                const response = await  fetch('json/etablissment.json')
-
+                const response = await  fetch('/json/etablissmentAll.json')
                 const data= await  response.json()
                 setEtablissment(data)
             }catch(err){
