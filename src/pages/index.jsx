@@ -44,11 +44,11 @@ export default function Home(){
                                 <div className="flex justify-start gap-2">
                                     {
                                         data.map((ele,index)=>(
-                                            <div key={index} className={` md:space-y-4  ${curr===index?"block":" hidden"}`}>
+                                            <div key={index} className={` space-y-1 md:space-y-4  ${curr===index?"block":" hidden"}`}>
                                                 <div  className="text-white md:text-4xl font-bold">
                                                         {ele.title}
                                                 </div>
-                                                <button className=" md:text-2xl md:font-semibold text-white bg-[#1A60A1] md:px-4 rounded-md py-1 px-2 lg:py-2 text-center">
+                                                <button className=" md:text-2xl font-medium md:font-semibold text-white bg-[#1A60A1] md:px-4 rounded-md py-1 px-2 lg:py-2 text-center">
                                                     See more ..
                                                 </button>
                                             </div>
