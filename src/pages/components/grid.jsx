@@ -10,7 +10,7 @@ export default function Grid(){
         }
         fetchData()
     },[])
-    console.log(data)
+  
     return(
         <>
             <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3  gap-6">
