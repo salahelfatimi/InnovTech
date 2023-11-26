@@ -1,14 +1,14 @@
 export default function InfoBelkhayat(){
     return(
         <>
-            <div className=" container flex flex-col lg:flex-row items-center gap-12 ">
-                <img className=" rounded-md lg:w-[50%]" src="/image/home/Belkhayat.png" alt="" />
+            <div className=" container flex flex-col lg:flex-row items-center justify-center gap-12 ">
+                <img className=" rounded-md md:w-[70%] lg:w-[40%]" src="/image/home/Belkhayat.png" alt="" />
                 <div className="flex flex-col  lg:items-start items-center text-center lg:text-start gap-4">
                     <span className=" text-2xl lg:text-3xl font-bold text-[#1A60A1]">M. Belkhayat Driss</span>
                     <span className=" text-lg lg:text-xl font-medium">Le directeur de la cité de l&apos;innovation de Marrakech</span>
                     <div className="flex gap-4 items-center">
                         <span>
-                            <svg width="50" height="50" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <svg width="40" height="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -18,7 +18,7 @@ export default function InfoBelkhayat(){
                         </span>
 
                         <span>
-                            <svg height="45" width="45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xmlSpace="preserve" fill="#000000">
+                            <svg height="40" width="40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xmlSpace="preserve" fill="#000000">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -30,7 +30,7 @@ export default function InfoBelkhayat(){
                             </svg>
                         </span>
                         <span>
-                            <svg height="45" width="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <svg height="40" width="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                                 <g id="SVGRepo_iconCarrier">
