@@ -43,11 +43,11 @@ export default function Carousel(){
                             <ChevronRight size={30}/>
                         </button>
                     </div>
-                    <div className=" absolute bottom-2 left-0 right-0  justify-center md:p-8 p-2 flex   rounded-tr-lg ">
+                    <div className=" absolute bottom-3 left-0 right-0  justify-center md:p-8 p-2 flex   rounded-tr-lg ">
                         <div className="flex justify-center  items-center gap-2">
                             {
                                 data.map((ele,index)=>(
-                                    <div key={index} className={` space-y-1 backdrop-blur-md p-2 rounded-xl md:space-y-4 flex items-center  flex-col  ${curr===index?"block":" hidden"}`}>
+                                    <div key={index} className={` space-y-1 backdrop-blur-sm p-2 rounded-xl md:space-y-4 flex items-center  flex-col  ${curr===index?"block":" hidden"}`}>
                                         <div  className="text-white md:text-4xl font-bold">
                                                 {ele.title}
                                         </div>
