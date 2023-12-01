@@ -4,13 +4,16 @@ import Grid from "./components/Home/grid";
 import InfoBelkhayat from "./components/Home/infoBelkhayat";
 import Map from "./components/Home/map";
 export default function Home() {
+  
   return (
     <>
-      <div className="flex flex-col gap-20">
+      <div className="flex relative z-10 flex-col gap-20">
+          <div >
             <Carousel />
-        <div className=" container ">
+            </div>
+          <div  className=" container ">
             <DescriptionInnovtech/>
-        </div>
+          </div>
         <div className=" container">
             <Grid />
         </div>
