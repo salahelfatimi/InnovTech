@@ -28,7 +28,7 @@ export default function Carousel(){
             <div className="  flex items-center justify-center container">
             
           
-                <div className=" max-w-[1100px] max-h-[700px] overflow-hidden border-8 border-[#fff] dark:border-[#272b34]  rounded-3xl    saturate-150  relative">
+                <div className=" max-w-[1100px] max-h-[700px] overflow-hidden border-8 border-[#fff] dark:border-[#272b34]  rounded-3xl drop-shadow-2xl     relative">
                     <div style={{ transform:`translateX(-${curr *100}%)` }} className="flex transition-transform ease-out duration-700 ">
                         {data.map((ele,index)=>(
                         
