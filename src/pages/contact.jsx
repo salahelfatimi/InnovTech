@@ -141,7 +141,7 @@ export default function Contact() {
                   placeholder="Message"
                 ></textarea>
                 <button
-                  className="   bg-[#0066ff] font-bold border-2 border-[#0066ff] hover:bg-[#ffffff] hover:text-[#0066ff] dark:hover:text-[#fff]   dark:hover:bg-[#1c1f24]  text-white rounded-md  py-2 px-12 "
+                  className="   bg-[#0066ff] font-bold border-4 border-[#0066ff] hover:bg-[#ffffff] hover:text-[#0066ff] dark:hover:text-[#fff] duration-700   dark:hover:bg-[#1c1f24]  text-white rounded-3xl drop-shadow-2xl  py-2 px-12 "
                 
                 >
                   Envoyer

@@ -32,7 +32,7 @@ export default function Carousel(){
                     <div style={{ transform:`translateX(-${curr *100}%)` }} className="flex transition-transform ease-out duration-700 ">
                         {data.map((ele,index)=>(
                         
-                                <img key={index} className=" "   src={`/image/carousel/${ele.src}`} alt={ele.title} />
+                                <img key={index} className=" brightness-75"   src={`/image/carousel/${ele.src}`} alt={ele.title} />
                             
                         ))}
                     </div>
@@ -48,12 +48,12 @@ export default function Carousel(){
                         <div className="flex justify-center  items-center gap-2">
                             {
                                 data.map((ele,index)=>(
-                                    <div key={index} className={` space-y-1 backdrop-blur-sm p-2 rounded-xl md:space-y-4 flex items-center  flex-col  ${curr===index?"block":" hidden"}`}>
+                                    <div key={index} className={` space-y-1 bg-[] p-2 rounded-xl md:space-y-4 flex items-center  flex-col  ${curr===index?"block":" hidden"}`}>
                                         <div  className="text-white md:text-4xl font-bold">
                                                 {ele.title}
                                         </div>
                                         <a href={`/etablissmentInfo/${ele.city}`}>
-                                            <button className=" md:text-xl font-medium md:font-bold text-white bg-[#0063f7] md:px-4 rounded-3xl py-1 px-2 lg:py-2 text-center">
+                                            <button className="bg-[#0066ff] font-bold border-4 border-[#0066ff] hover:bg-[#ffffff] hover:text-[#0066ff] dark:hover:text-[#fff] duration-700   dark:hover:bg-[#1c1f24]  text-white rounded-3xl drop-shadow-2xl  py-1 lg:py-2 lg:px-8 capitalize px-4 ">
                                                 Voir plus ...
                                             </button>
                                         </a>
