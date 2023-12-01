@@ -1,17 +1,11 @@
 export default function aboute() {
-    const backgroundStyle = {
-        backgroundImage: 'url()', // Replace '...' with your actual image URL
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        // Add other styles as needed
-      };
+    
     
   return (
     <>
-      <div style={backgroundStyle} className="container mx-auto py-8">
+      <div  className="container mx-auto py-8">
         <h1  className="text-2xl  lg:text-4xl text-center font-bold mb-6">
-          À propos d'InnovTech : Ingénierie et Innovation Technologique des
+          À propos d&apos;InnovTech : Ingénierie et Innovation Technologique des
           Systèmes et des Procédés
         </h1>
 
@@ -19,12 +13,12 @@ export default function aboute() {
           <h2 className="text-xl  lg:text-2xl font-semibold mb-4">Bienvenue chez InnovTech</h2>
           <p className="text-gray-700">
             InnovTech est un programme de doctorat de pointe proposé par le
-            Centre d'Études Doctorales en Sciences et Ingénierie (SI) à la
+            Centre d&apos;Études Doctorales en Sciences et Ingénierie (SI) à la
             Faculté des Sciences et Techniques (FST). Ce programme vise à
             favoriser la recherche appliquée, numérique et expérimentale en
-            mettant l'accent sur la résolution des grands défis sociétaux. Des
+            mettant l&apos;accent sur la résolution des grands défis sociétaux. Des
             énergies renouvelables aux nouveaux matériaux, en passant par les
-            structures innovantes, la transformation numérique et l'intelligence
+            structures innovantes, la transformation numérique et l&apos;intelligence
             artificielle, InnovTech rassemble des laboratoires de recherche et
             des équipes pour contribuer au développement scientifique tant dans
             le secteur public que privé.
@@ -40,11 +34,11 @@ export default function aboute() {
               de transmission.
             </li>
             <li>
-              Entrepreneuriat, Gestion et Innovation : Nourrir l'esprit
-              d'entreprise, les compétences en gestion et la pensée innovante.
+              Entrepreneuriat, Gestion et Innovation : Nourrir l&apos;esprit
+              d&apos;entreprise, les compétences en gestion et la pensée innovante.
             </li>
             <li>
-              Excellence scientifique et technique : Assurer l'excellence dans
+              Excellence scientifique et technique : Assurer l&apos;excellence dans
               les aspects scientifiques et techniques de la recherche menée.
             </li>
           </ul>
@@ -67,7 +61,7 @@ export default function aboute() {
                 <li>Compréhension économique</li>
                 <li>Communication et outils de transmission</li>
                 <li>Anglais scientifique et technique</li>
-                <li>Gestion d'équipe</li>
+                <li>Gestion d&apos;équipe</li>
                 <li>Intégration professionnelle</li>
               </ul>
             </li>
@@ -79,13 +73,13 @@ export default function aboute() {
             Environnement de recherche collaboratif
           </h2>
           <p className="text-gray-700 text-center lg:text-start ">
-            En réponse aux orientations stratégiques de l'Université Cadi Ayyad
+            En réponse aux orientations stratégiques de l&apos;Université Cadi Ayyad
             (UCA), InnovTech réunit 14 laboratoires et 5 équipes de recherche de
             5 institutions différentes réparties dans trois villes (Marrakech,
             Safi et Essaouira). Cette collaboration crée non seulement une masse
             critique compétitive au niveau national et international, mais vise
             également à établir un centre de recherche qui serve de référence
-            nationale et internationale en matière d'innovation technologique.
+            nationale et internationale en matière d&apos;innovation technologique.
           </p>
         </section>
 
@@ -95,16 +89,16 @@ export default function aboute() {
             <li>
               <strong>FSTG- MARRAKECH :</strong> Accueillant six laboratoires et
               deux équipes, axés sur des domaines tels que les systèmes
-              électriques, l'efficacité énergétique, les télécommunications,
-              l'ingénierie informatique, le développement durable et les
+              électriques, l&apos;efficacité énergétique, les télécommunications,
+              l&apos;ingénierie informatique, le développement durable et les
               matériaux innovants.
             </li>
             <li>
-              <strong>ENSA- MARRAKECH :</strong> Participant à l'ingénierie des
+              <strong>ENSA- MARRAKECH :</strong> Participant à l&apos;ingénierie des
               systèmes, aux applications et à la modélisation complexe, avec
               deux laboratoires et deux équipes se concentrant sur les systèmes
               et applications, la modélisation des systèmes complexes et les
-              technologies de l'information.
+              technologies de l&apos;information.
             </li>
             <li>
               <strong>ENS- MARRAKECH :</strong> Contribuant grâce au Laboratoire
@@ -113,7 +107,7 @@ export default function aboute() {
             <li>
               <strong>ENSA- SAFI :</strong> Participant avec deux laboratoires
               et une équipe, se concentrant sur les matériaux, les procédés,
-              l'environnement, la qualité, les mathématiques, l'informatique et
+              l&apos;environnement, la qualité, les mathématiques, l&apos;informatique et
               les systèmes de communication.
             </li>
             <li>
@@ -123,30 +117,30 @@ export default function aboute() {
             </li>
             <li>
               <strong>EST- ESSAOUIRA :</strong> Contribuant à travers deux
-              laboratoires, mettant l'accent sur les mathématiques,
-              l'informatique, la modélisation de systèmes complexes et les
-              sciences appliquées à l'environnement et au développement durable.
+              laboratoires, mettant l&apos;accent sur les mathématiques,
+              l&apos;informatique, la modélisation de systèmes complexes et les
+              sciences appliquées à l&apos;environnement et au développement durable.
             </li>
           </ol>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-center lg:text-start  mb-4">
-            Rejoignez-nous pour façonner l'avenir
+            Rejoignez-nous pour façonner l&apos;avenir
           </h2>
           <p className="text-gray-700 text-center lg:text-start ">
             InnovTech ne propose pas seulement une plateforme pour la recherche
-            doctorale, mais contribue également à la création d'un environnement
+            doctorale, mais contribue également à la création d&apos;un environnement
             de recherche dynamique et collaboratif. Ensemble, nous nous
             efforçons de recruter les meilleurs diplômés, de produire des
-            publications percutantes, de sécuriser d'importants contrats de
+            publications percutantes, de sécuriser d&apos;importants contrats de
             recherche, de tisser des liens solides avec les secteurs
             industriels, de soutenir de nombreuses thèses annuelles et de
             participer aux appels à projets internationaux.
           </p>
           <p className="text-gray-700 text-center lg:text-start ">
             Pour des renseignements et des collaborations, contactez-nous à
-            l'adresse{" "}
+            l&apos;adresse{" "}
             <a href="mailto:contact@innovtech.uca.ma" className="text-blue-500 ">
               contact@innovtech.uca.ma
             </a>
@@ -155,7 +149,7 @@ export default function aboute() {
         </section>
 
         <p className="text-gray-700 text-center lg:text-start ">
-          Bienvenue chez InnovTech, là où l'innovation rencontre l'excellence en
+          Bienvenue chez InnovTech, là où l&apos;innovation rencontre l&apos;excellence en
           ingénierie !
         </p>
       </div>
