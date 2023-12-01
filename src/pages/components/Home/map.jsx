@@ -8,7 +8,7 @@ export default function Map(){
                     height="600"
                 ></iframe>
                 <div className=" absolute dark:bg-[#272b34] bg-[#f4f7fc] -top-1 right-0 left-0 z-10  p-8"></div>
-                <span className="lg:text-4xl container text-2xl text-[#3A9BE1]   font-bold absolute -top-10 text-center z-20  right-0 left-0">
+                <span className="lg:text-4xl container text-2xl text-[#0063f7]   font-bold absolute -top-10 text-center z-20  right-0 left-0">
                     Découvrez les 6 Établissements sur la Carte
                 </span>
             </div>

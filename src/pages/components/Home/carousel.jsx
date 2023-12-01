@@ -25,8 +25,9 @@ export default function Carousel(){
     },[curr])
     return(
         <>
-            <div className=" flex items-center justify-center container">
-
+            <div className="  flex items-center justify-center container">
+            
+          
                 <div className=" max-w-[1100px] max-h-[700px] overflow-hidden rounded-2xl shadow-lg  saturate-150  relative">
                     <div style={{ transform:`translateX(-${curr *100}%)` }} className="flex transition-transform ease-out duration-700 ">
                         {data.map((ele,index)=>(
@@ -52,7 +53,7 @@ export default function Carousel(){
                                                 {ele.title}
                                         </div>
                                         <a href={`/etablissmentInfo/${ele.city}`}>
-                                            <button className=" md:text-xl font-medium md:font-semibold text-white bg-[#1A60A1] md:px-4 rounded-lg py-1 px-2 lg:py-2 text-center">
+                                            <button className=" md:text-xl font-medium md:font-semibold text-white bg-[#0063f7] md:px-4 rounded-lg py-1 px-2 lg:py-2 text-center">
                                                 Voir plus ...
                                             </button>
                                         </a>

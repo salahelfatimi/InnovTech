@@ -30,12 +30,12 @@ export default  function  Labortoures  () {
   };
 
   return (
-    <div className='container mt-10 '>
+    <div className='container mt-10 relative z-10 '>
       <div className='flex flex-col gap-8'>
         {laboratoire?.map((ele, index) => (
           <div className='  ' key={index}>
             <div> 
-              <div className={`flex justify-between items-center bg-[#1a60a1] p-4   shadow-2xl ${openItem === ele.id ? 'rounded-t-lg' : 'rounded-lg'}`}>
+              <div className={`flex justify-between items-center bg-[#0063f7] p-4   shadow-2xl ${openItem === ele.id ? 'rounded-t-lg' : 'rounded-lg'}`}>
                 <span className='font-semibold text-lg text-white'>{ele.etablissment}</span>
                 <button onClick={() => toggleOpen(ele.id)} className={`transition duration-700 ${openItem === ele.id ? 'rotate-0' : 'rotate-180'}`}>
                   <svg className='w-6 h-6 text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 16 10'>
