@@ -26,7 +26,7 @@ export default function Etablissment(){
             <div className="flex flex-col -top-[3.6rem] gap-8 justify-between items-center  relative z-20 container">
                 {
                     etablissment.map((ele,index)=>(
-                            <div key={index} className="  lg:w-[75%] w-auto flex  flex-col-reverse  odd:lg:flex-row   even:lg:flex-row-reverse items-center gap-2 dark:bg-[#1c1f24] rounded-2xl shadow-xl  bg-white ">
+                            <div key={index} className="  lg:w-[75%] w-auto flex  flex-col-reverse  odd:lg:flex-row   even:lg:flex-row-reverse items-center gap-2 dark:bg-[#1c1f24] rounded-3xl shadow-xl  bg-white ">
                                 <div className="flex flex-col gap-8 lg:w-1/2 p-6 items-center  lg:items-start">
                                         <span className=" uppercase font-bold text-lg lg:text-xl lg:text-start text-center">{ele.title}</span>
                                     <div className="flex flex-col gap-6 items-center lg:items-start">
@@ -34,10 +34,10 @@ export default function Etablissment(){
                                         <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;laboratoire impliqués : <span>{ele["Number of laboratoire impliques "]}</span> </span>
                                         <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;équipes impliquées : <span>{ele["Number of equipes impliquees "]}</span></span>
                                     </div>
-                                    <a href={`/etablissmentInfo/${ele.Url}`}><button className="bg-[#0063f7] font-semibold border-2 border-[#0063f7] hover:bg-[#ffffff] hover:text-[#0063f7] dark:hover:text-[#fff]   dark:hover:bg-[#1c1f24]  text-white rounded-md  py-2 px-12 ">Voir plus ...</button></a>
+                                    <a href={`/etablissmentInfo/${ele.Url}`}><button className="bg-[#0063f7] font-bold border-2 border-[#0063f7] hover:bg-[#ffffff] hover:text-[#0063f7] dark:hover:text-[#fff]   dark:hover:bg-[#1c1f24]  text-white rounded-3xl  py-2 px-12 ">Voir plus ...</button></a>
                                 </div>
                                 <div className="lg:w-1/2">
-                                    <img className="object-cover w-[30rem] lg:w-auto rounded-t-xl  lg:rounded-2xl  h-full lg:h-[22rem]  " src={`/image/etablissment/${ele.image}`} alt="" />
+                                    <img className="object-cover w-[30rem] lg:w-auto rounded-t-3xl  lg:rounded-3xl  h-full lg:h-[22rem]  " src={`/image/etablissment/${ele.image}`} alt="" />
                                 </div>
                             </div>
                     ))

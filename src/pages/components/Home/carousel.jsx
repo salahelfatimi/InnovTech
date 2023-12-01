@@ -53,7 +53,7 @@ export default function Carousel(){
                                                 {ele.title}
                                         </div>
                                         <a href={`/etablissmentInfo/${ele.city}`}>
-                                            <button className=" md:text-xl font-medium md:font-semibold text-white bg-[#0063f7] md:px-4 rounded-lg py-1 px-2 lg:py-2 text-center">
+                                            <button className=" md:text-xl font-medium md:font-bold text-white bg-[#0063f7] md:px-4 rounded-3xl py-1 px-2 lg:py-2 text-center">
                                                 Voir plus ...
                                             </button>
                                         </a>

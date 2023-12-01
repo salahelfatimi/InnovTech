@@ -17,7 +17,7 @@ export default function Grid() {
         {data.map((ele, index) => (
           <div
             key={index}
-            className="flex flex-col gap-4 bg-white shadow-lg border-4 border-white dark:border-[#1c1f24] hover:border-[#0063f7] dark:hover:border-[#0063f7]  duration-300   dark:bg-[#1c1f24] dark:text-white text-black p-6 rounded-lg"
+            className="flex flex-col gap-4 bg-white drop-shadow-2xl border-4  border-[#0063f7]    dark:bg-[#1c1f24] dark:text-white text-black p-6 rounded-3xl"
           >
             <span className=" text-4xl md:text-5xl pb-4">{ele.icon}</span>
             <span className="text-[#0063f7] font-bold text-lg md:text-2xl">
