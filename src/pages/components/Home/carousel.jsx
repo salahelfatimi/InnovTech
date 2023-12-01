@@ -32,7 +32,7 @@ export default function Carousel(){
                     <div style={{ transform:`translateX(-${curr *100}%)` }} className="flex transition-transform ease-out duration-700 ">
                         {data.map((ele,index)=>(
                         
-                                <img key={index} className=" brightness-75 rounded-2xl"   src={`/image/carousel/${ele.src}`} alt={ele.title} />
+                                <img key={index} className="  rounded-2xl"   src={`/image/carousel/${ele.src}`} alt={ele.title} />
                             
                         ))}
                     </div>
