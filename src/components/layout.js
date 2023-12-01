@@ -8,9 +8,12 @@ export default function Layout({ children }) {
       <div className='bg-[#F4F7FC] dark:bg-[#272B34] flex flex-col h-screen justify-between'>
       <Head>
         <title>InnovTech</title>
-      </Head>
+      </Head >
+        <div>
+          
+        </div>
         <Navbar />
-        <main  className='py-20 mt-10 mb-auto bg-[#F4F7FC] dark:bg-[#272B34]   '>
+        <main  className='py-14 mb-auto bg-[#F4F7FC] dark:bg-[#272B34]   '>
          
 
           {children}</main>

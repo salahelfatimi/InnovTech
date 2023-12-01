@@ -3,7 +3,7 @@ export default function aboute() {
     
   return (
     <>
-      <div  className="container mx-auto py-8 relative z-10">
+      <div  className="container mx-auto py-8 relative z-10 pt-12">
         <h1  className="text-2xl  lg:text-4xl text-center font-bold mb-6">
           À propos d&apos;InnovTech : Ingénierie et Innovation Technologique des
           Systèmes et des Procédés

@@ -19,11 +19,11 @@ export default function Etablissment(){
     ,[])
     return(
        <>
-        <div className="relative z-10   ">
+        <div className="relative z-10  pt-28">
             <img className=' absolute z-0 -top-[3.6rem] hidden lg:block' src='/icon/waveSaction.svg' alt='' />
             <img className=" absolute z-0 -top-[3.6rem] sm:block lg:hidden" src="/icon/waveSactionTablet.svg" alt="" />
             <img className=" absolute z-0 -top-[3.6rem] block sm:hidden" src="/icon/waveSactionPhone.svg" alt="" />
-            <div className="flex flex-col gap-8 justify-between items-center  relative z-20 container">
+            <div className="flex flex-col -top-[3.6rem] gap-8 justify-between items-center  relative z-20 container">
                 {
                     etablissment.map((ele,index)=>(
                             <div key={index} className="  lg:w-[75%] w-auto flex  flex-col-reverse  odd:lg:flex-row   even:lg:flex-row-reverse items-center gap-2 dark:bg-[#1c1f24] rounded-2xl shadow-xl  bg-white ">

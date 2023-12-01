@@ -27,7 +27,7 @@ export default function Navbar(){
                 <div className="  md:block hidden">
                
                 
-                    <div className="  bg-white dark:bg-[#1C1F24] fixed py-4 w-full shadow-2xl top-0 left-0">
+                    <div className="  bg-white dark:bg-[#1C1F24] rounded-full pt-4 fixed py-4  shadow-2xl top-2 right-4 left-4">
                         <div className="container flex items-center justify-between">
                             <div>
                                 <span>logo</span>
@@ -55,7 +55,7 @@ export default function Navbar(){
                 {/* mobile Nav bar  */}
 
                     <div className="md:hidden  block">
-                        <div className="      bg-white dark:bg-[#1C1F24] shadow-2xl fixed py-5 w-full top-0 left-0 ">
+                        <div className="      bg-white dark:bg-[#1C1F24] rounded-full pt-4 fixed py-4  shadow-2xl top-2 right-2 left-2 ">
                         
                             <div className="container ">
                                 <div className="flex px-2  items-center justify-between">
