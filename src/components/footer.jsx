@@ -2,7 +2,7 @@ import { Facebook, Linkedin, Mail  } from "react-feather"
 export default function Footer(){
     return(
         <>
-            <div className="relative py-16 text-white ">
+            <div className=" relative py-16 text-white ">
                 <img className=" absolute z-0 bottom-0 lg:block hidden" src="/icon/wave-haikei.svg" alt="" />
                 <img className=" absolute z-0 bottom-0 sm:block lg:hidden" src="/icon/wave-haikeiTablet.svg" alt="" />
                 <img className=" absolute z-0 bottom-0 block sm:hidden" src="/icon/wave-haikeiPhone.svg" alt="" />

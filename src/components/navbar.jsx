@@ -24,11 +24,10 @@ export default function Navbar(){
         <>
             <div className=" z-40">
                 {/* pc Nav bar */}
-                <div className=" relative md:block hidden">
-                <img className=" shadow-2xl  z-0 top-0 fixed lg:block hidden" src="/icon/waveNav.svg" alt="" />
-                <img className=" fixed z-0 top-0 sm:block lg:hidden" src="/icon/waveNavTablet.svg" alt="" />
+                <div className="  md:block hidden">
+               
                 
-                    <div className="  z-0 fixed py-4 w-full  top-0 left-0">
+                    <div className="  bg-white dark:bg-[#1C1F24] fixed py-4 w-full shadow-2xl top-0 left-0">
                         <div className="container flex items-center justify-between">
                             <div>
                                 <span>logo</span>
@@ -36,7 +35,7 @@ export default function Navbar(){
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
                                 <a key={index} href={ele.href}>
-                                    <div  className="text-white dark:text-white hover:text-[#1A60A1] hover:duration-700 transition font-semibold">
+                                    <div  className="text-black dark:text-white hover:text-[#1A60A1] hover:duration-700 transition font-semibold">
                                         <span>{ele.title}</span>
                                     </div>
                                 </a>
@@ -56,9 +55,9 @@ export default function Navbar(){
                 {/* mobile Nav bar  */}
 
                     <div className="md:hidden  block">
-                        <div className="        fixed py-5  w-full top-0 left-0  ">
-                        <img className=" fixed z-0 top-0 block sm:hidden" src="/icon/waveNavPhone.svg" alt="" />
-                            <div className="container relative z-10">
+                        <div className="      bg-white dark:bg-[#1C1F24] shadow-2xl fixed py-5 w-full top-0 left-0 ">
+                        
+                            <div className="container ">
                                 <div className="flex px-2  items-center justify-between">
                                     <div>
                                         <span>logo</span>
