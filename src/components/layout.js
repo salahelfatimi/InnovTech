@@ -10,7 +10,7 @@ export default function Layout({ children }) {
         <title>InnovTech</title>
       </Head>
         <Navbar />
-        <main  className='py-16 mt-10 mb-auto bg-[#F4F7FC] dark:bg-[#272B34] '>{children}</main>
+        <main  className='py-20 mt-10 mb-auto bg-[#F4F7FC] dark:bg-[#272B34] '>{children}</main>
         <div  className="bg-[#F4F7FC]  dark:bg-[#272B34]">
           <Footer/>
 
