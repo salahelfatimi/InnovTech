@@ -9,13 +9,13 @@ export default function Layout({ children }) {
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setShow(true);
-    }, 5000);
+    }, 3000);
 
     // Clear the interval after 30 seconds
     setTimeout(() => {
       clearInterval(slideInterval);
       setShow(true);
-    }, 5000);
+    }, 3000);
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(slideInterval);
