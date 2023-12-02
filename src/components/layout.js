@@ -34,7 +34,7 @@ export default function Layout({ children }) {
           </span>
         </div>
         <Head>
-          <title>InnovTech</title>
+          <title>InnovTECH</title>
         </Head>
         <div></div>
         <Navbar />

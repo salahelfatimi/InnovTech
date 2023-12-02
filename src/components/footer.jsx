@@ -14,7 +14,7 @@ export default function Footer(){
 
                     </span>
                     <spna className="flex gap-4">
-                        <Mail/>
+                        <Mail />
                         <Facebook/>
                         <Linkedin/> 
                     </spna>
