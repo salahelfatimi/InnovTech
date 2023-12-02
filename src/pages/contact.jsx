@@ -11,26 +11,9 @@ export default function Contact() {
     message: "",
   });
   const sendEmail = async (e) => {
+
     e.preventDefault();
-
-    if (!formData.fullName) {
-      return toast.error("S'il vous plait entrez votre nom entier");
-    }
-    if (!formData.tele) {
-      return toast.error("Veuillez entrer votre numéro de téléphone");
-    }
-    if (!formData.email) {
-      return toast.error("Veuillez entrer votre email");
-    }
-
-    if (!formData.subject) {
-      return toast.error("Veuillez entrer un sujet");
-    }
-    if (!formData.message) {
-      return toast.error("Veuillez entrer un message");
-    }
-
-   
+    if(conditionValidation){
     const response = await fetch("/api/send", {
       method: "POST",
       headers: {
@@ -60,9 +43,12 @@ export default function Contact() {
         {
           position: "bottom-right",
           duration: 7000,
+         
+
         }
       );
     }
+  }
   };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -71,7 +57,7 @@ export default function Contact() {
       [name]: value,
     });
   };
-
+  const conditionValidation=formData.message && formData.email && formData.fullName && formData.subject && formData.tele
 
   return (
     <div className=" relative z-10 pt-12">
@@ -92,21 +78,23 @@ export default function Contact() {
                 className="flex-col flex gap-6 "
                 onSubmit={sendEmail}
               >
-                <span className="font-bold lg:text-start text-center text-3xl lg:text-4xl text-[#0066ff]">Contact Us</span>
+                <span className={`font-bold lg:text-start text-center text-3xl lg:text-4xl duration-700 ${conditionValidation?" text-[#0066ff]":"text-red-500"} `}>Contact Us</span>
 
                 <div className="flex gap-4 w-full items-start ">
                   <input
                     value={formData.fullName}
+                    
                     onChange={handleInputChange}
-                    className="  border-4 border-[#0066ff] py-2 w-1/2 px-4 rounded-xl placeholder:italic placeholder:font-semibold"
+                    className={`border-4  py-2 w-1/2 px-4 rounded-xl placeholder:italic placeholder:font-semibold   ${formData.fullName?"border-[#0066ff]":"border-red-500 "} `}
                     type="text"
                     name="fullName"
                     placeholder="Nom et Prénom"
                   />
                   <input
                     value={formData.tele}
+                    
                     onChange={handleInputChange}
-                    className=" border-4 border-[#0066ff] py-2 w-1/2 px-4 rounded-xl placeholder:italic placeholder:font-semibold"
+                    className={`border-4  py-2 w-1/2 px-4 rounded-xl placeholder:italic placeholder:font-semibold  ${formData.tele?"border-[#0066ff]":"border-red-500 "}`}
                     type="tele"
                     name="tele"
                     placeholder="Téléphone"
@@ -114,17 +102,20 @@ export default function Contact() {
                 </div>
                 <input
                   value={formData.email}
+                  
                   onChange={handleInputChange}
-                  className="border-4 border-[#0066ff] py-2  px-4 rounded-xl w-full  placeholder:italic placeholder:font-semibold"
+                  className={`border-4 ${formData.email?"border-[#0066ff]":"border-red-500 "} py-2  px-4 rounded-xl w-full  placeholder:italic placeholder:font-semibold`}
                   type="text"
                   name="email"
                   id="email"
                   placeholder="Email"
                 />
+                
                 <input
                   value={formData.subject}
+                  
                   onChange={handleInputChange}
-                  className="border-4 border-[#0066ff] py-2  px-4 rounded-xl w-full placeholder:italic placeholder:font-semibold"
+                  className={`border-4 ${formData.subject?"border-[#0066ff]":"border-red-500 "} py-2  px-4 rounded-xl w-full  placeholder:italic placeholder:font-semibold`}
                   type="text"
                   name="subject"
                   id="subject"
@@ -132,8 +123,10 @@ export default function Contact() {
                 />
                 <textarea
                   value={formData.message}
+                  
+                  
                   onChange={handleInputChange}
-                  className=" border-4 border-[#0066ff] px-4 w-full rounded-xl py-2 placeholder:italic placeholder:font-semibold"
+                  className={`border-4 ${formData.message?"border-[#0066ff]":"border-red-500   "} py-2  px-4 rounded-xl w-full  placeholder:italic placeholder:font-semibold`}
                   name="message"
                   id="message"
                   cols="40"
@@ -141,9 +134,9 @@ export default function Contact() {
                   placeholder="Message"
                 ></textarea>
                 <button
-                  className="   bg-[#0066ff] font-bold border-4 border-[#0066ff] hover:bg-[#ffffff] hover:text-[#0066ff] dark:hover:text-[#fff] duration-700   dark:hover:bg-[#1c1f24]  text-white rounded-3xl drop-shadow-2xl  py-2 px-12 "
-                
-                >
+                  disabled={!conditionValidation}
+                  className={`${conditionValidation?"bg-[#0066ff] border-[#0066ff] hover:text-[#0066ff] dark:hover:bg-[#1c1f24] hover:bg-[#ffffff] ":"border-red-500 bg-red-500 "}    font-bold border-4    duration-700     text-white rounded-3xl drop-shadow-2xl  py-2 px-12 `}
+                > 
                   Envoyer
                 </button>
               </form>
@@ -151,7 +144,7 @@ export default function Contact() {
           </div>
           <Toaster
             toastOptions={{
-              className: "dark:bg-[#121212] dark:text-white bg-white text-black ",
+              className: "dark:bg-[#121212] dark:text-white bg-white text-black  ",
             }}
           />
         </div>
