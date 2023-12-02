@@ -2,10 +2,10 @@ export default function DescriptionInnovtech(){
     return(
         <>
         <div className="flex flex-col items-center gap-4  relative z-10   ">
-            <span className="lg:text-4xl text-2xl text-[#0063f7] text-center  font-bold">
+            <span className="lg:text-4xl text-2xl text-[#0063f7] text-center  font-bold relative z-10">
               Formation Doctorale InnovTech{" "}
             </span>
-            <span className="text-[#848789] lg:font-medium  text-center lg:text-lg ">
+            <span className="text-[#001122] dark:text-white font-medium  text-center lg:text-lg relative z-10">
               Le projet InnovTech vise à regrouper et collaborer les
               laboratoires de l&apos;UCA pour répondre à ses orientations
               stratégiques. Cette mutualisation crée une synergie entre

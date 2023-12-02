@@ -13,8 +13,9 @@ export default function Grid() {
 
   return (
     <>
-      <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3  gap-6">
-        {data.map((ele, index) => (
+      <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3  gap-6 relative z-10">
+      
+          {data.map((ele, index) => (
           <div
             key={index}
             className="flex flex-col gap-4 bg-white drop-shadow-2xl border-4  border-[#0063f7]    dark:bg-[#1c1f24] dark:text-white text-black p-6 rounded-3xl"

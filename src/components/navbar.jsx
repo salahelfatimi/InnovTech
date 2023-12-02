@@ -30,7 +30,7 @@ export default function Navbar(){
                     <div className="  bg-white dark:bg-[#1C1F24] rounded-full pt-4 fixed py-4 border-4   border-[#0066ff] shadow-2xl top-2 right-4 left-4">
                         <div className="container flex items-center justify-between">
                             <div>
-                                <span>logo</span>
+                                <span className=" font-bold text-2xl">Innov<span className="text-[#0066ff]">TECH</span></span>
                             </div>
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
@@ -60,7 +60,7 @@ export default function Navbar(){
                             <div className="container ">
                                 <div className="flex px-2  items-center justify-between">
                                     <div>
-                                        <span>logo</span>
+                                    <span className=" font-bold text-xl">Innov<span className="text-[#0066ff]">TECH</span></span>
                                     </div>
                                     <button onClick={()=>{setOpen(!open)}} className=" md:hidden block">
                                         <svg fill={theme === "light" ? "#000" : "#fff"} width="30px" height="30px" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m2.61 0h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 9.39h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 18.781h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/></svg>
