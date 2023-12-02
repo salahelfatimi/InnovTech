@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "FST- MARRAKECH",
+      "description": "Accueillant six laboratoires et deux équipes, axés sur des domaines tels que les systèmes électriques, l'efficacité énergétique, les télécommunications, l'ingénierie informatique, le développement durable et les matériaux innovants."
+    },
+    {
+      "id": 2,
+      "title": "ENSA- MARRAKECH",
+      "description": "Participant à l'ingénierie des systèmes, aux applications et à la modélisation complexe, avec deux laboratoires et deux équipes se concentrant sur les systèmes et applications, la modélisation des systèmes complexes et les technologies de l'information."
+    },
+    {
+      "id": 3,
+      "title": "ENS- MARRAKECH",
+      "description": "Contribuant grâce au Laboratoire Interdisciplinaire de Recherche en Bio-Ressources."
+    },
+    {
+      "id": 4,
+      "title": "ENSA- SAFI",
+      "description": "Participant avec deux laboratoires et une équipe, se concentrant sur les matériaux, les procédés, l'environnement, la qualité, les mathématiques, l'informatique et les systèmes de communication."
+    },
+    {
+      "id": 5,
+      "title": "EST- SAFI",
+      "description": "Participant au programme avec le Laboratoire des Processus, Signaux, Systèmes Industriels et Informatiques."
+    },
+    {
+      "id": 6,
+      "title": "EST- ESSAOUIRA",
+      "description": "Contribuant à travers deux laboratoires, mettant l'accent sur les mathématiques, l'informatique, la modélisation de systèmes complexes et les sciences appliquées à l'environnement et au développement durable."
+    }
+  ]
+  

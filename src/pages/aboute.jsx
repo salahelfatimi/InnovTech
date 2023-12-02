@@ -1,5 +1,15 @@
+import { useEffect, useState } from "react";
+
 export default function aboute() {
-    
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("/json/etablisssmentAboute.json");
+      const dataGet = await response.json();
+      setData(dataGet);
+    };
+    fetchData();
+  }, []);
     
   return (
     <>
@@ -8,14 +18,14 @@ export default function aboute() {
         <img className=" absolute z-0 -top-[3.6rem] sm:block lg:hidden" src="/icon/waveSactionTablet.svg" alt="" />
         <img className=" absolute z-0 -top-[3.6rem] block sm:hidden" src="/icon/waveSactionPhone.svg" alt="" />
         <div className="container z-10 relative">
-        <h1  className="text-2xl  lg:text-4xl text-center font-bold mb-6">
+        <h1  className="text-2xl  lg:text-4xl text-center font-extrabold mb-6 text-white">
           À propos d&apos;InnovTech : Ingénierie et Innovation Technologique des
           Systèmes et des Procédés
         </h1>
 
         <section className="mb-8 text-center lg:text-start">
-          <h2 className="text-xl  lg:text-2xl font-semibold mb-4">Bienvenue chez InnovTech</h2>
-          <p className="text-gray-700">
+          <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold mb-4 text-[#ff6b35]">Bienvenue chez InnovTech</h2>
+          <p className=" font-semibold dark:text-white text-[#0a0908]">
             InnovTech est un programme de doctorat de pointe proposé par le
             Centre d&apos;Études Doctorales en Sciences et Ingénierie (SI) à la
             Faculté des Sciences et Techniques (FST). Ce programme vise à
@@ -30,8 +40,8 @@ export default function aboute() {
         </section>
 
         <section className="mb-8 ">
-          <h2 className="text-2xl font-semibold mb-4">Notre Mission</h2>
-          <ul className="list-disc pl-6 text-gray-700">
+          <h2 className="text-xl  lg:text-3xl font-extrabold mb-4 text-center lg:text-start text-[#ff6b35]">Notre Mission</h2>
+          <ul className="list-disc pl-6  font-semibold dark:text-white text-[#0a0908] ">
             <li>
               Communication efficace : Développer de solides compétences en
               communication en anglais, en français et à travers divers outils
@@ -49,10 +59,10 @@ export default function aboute() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold  text-[#ff6b35] mb-4">
             Approche de formation complète
           </h2>
-          <ul className="list-disc pl-6 text-gray-700">
+          <ul className="list-disc pl-6 font-semibold dark:text-white text-[#0a0908]">
             <li>
               Approfondissement scientifique ou technique : Élargir les
               connaissances en lien avec les disciplines académiques du projet
@@ -73,10 +83,10 @@ export default function aboute() {
         </section>
 
         <section className="mb-8 ">
-          <h2 className="text-2xl text-center lg:text-start  font-semibold mb-4">
+          <h2 className="text-xl  lg:text-3xl font-extrabold text-center lg:text-start mb-4 text-[#ff6b35]">
             Environnement de recherche collaboratif
           </h2>
-          <p className="text-gray-700 text-center lg:text-start ">
+          <p className="font-semibold text-[#0a0908] dark:text-white text-center lg:text-start ">
             En réponse aux orientations stratégiques de l&apos;Université Cadi Ayyad
             (UCA), InnovTech réunit 14 laboratoires et 5 équipes de recherche de
             5 institutions différentes réparties dans trois villes (Marrakech,
@@ -88,51 +98,28 @@ export default function aboute() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Institutions partenaires</h2>
-          <ol className="list-decimal pl-6 text-gray-700 flex flex-col  gap-4">
-            <li>
-              <strong>FSTG- MARRAKECH :</strong> Accueillant six laboratoires et
-              deux équipes, axés sur des domaines tels que les systèmes
-              électriques, l&apos;efficacité énergétique, les télécommunications,
-              l&apos;ingénierie informatique, le développement durable et les
-              matériaux innovants.
-            </li>
-            <li>
-              <strong>ENSA- MARRAKECH :</strong> Participant à l&apos;ingénierie des
-              systèmes, aux applications et à la modélisation complexe, avec
-              deux laboratoires et deux équipes se concentrant sur les systèmes
-              et applications, la modélisation des systèmes complexes et les
-              technologies de l&apos;information.
-            </li>
-            <li>
-              <strong>ENS- MARRAKECH :</strong> Contribuant grâce au Laboratoire
-              Interdisciplinaire de Recherche en Bio-Ressources.
-            </li>
-            <li>
-              <strong>ENSA- SAFI :</strong> Participant avec deux laboratoires
-              et une équipe, se concentrant sur les matériaux, les procédés,
-              l&apos;environnement, la qualité, les mathématiques, l&apos;informatique et
-              les systèmes de communication.
-            </li>
-            <li>
-              <strong>EST- SAFI :</strong> Participant au programme avec le
-              Laboratoire des Processus, Signaux, Systèmes Industriels et
-              Informatiques.
-            </li>
-            <li>
-              <strong>EST- ESSAOUIRA :</strong> Contribuant à travers deux
-              laboratoires, mettant l&apos;accent sur les mathématiques,
-              l&apos;informatique, la modélisation de systèmes complexes et les
-              sciences appliquées à l&apos;environnement et au développement durable.
-            </li>
-          </ol>
+          <h2 className="text-xl  lg:text-3xl font-extrabold mb-4 text-[#ff6b35]">Institutions partenaires</h2>
+            <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3  gap-6 relative z-10">
+        
+              {data.map((ele, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col gap-4 bg-white drop-shadow-2xl border-4  border-[#0063f7]    dark:bg-[#1c1f24] dark:text-white text-black p-6 rounded-3xl"
+                  >
+                    <span className="text-[#0063f7] font-bold text-lg md:text-4xl">
+                      {ele.title}
+                    </span>
+                    <span className=" text-sm font-medium">{ele.description}</span>
+                  </div>
+              ))}
+            </div>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-center lg:text-start  mb-4">
+          <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold mb-4 text-[#ff6b35]">
             Rejoignez-nous pour façonner l&apos;avenir
           </h2>
-          <p className="text-gray-700 text-center lg:text-start ">
+          <p className="font-semibold text-[#0a0908] dark:text-white text-center lg:text-start ">
             InnovTech ne propose pas seulement une plateforme pour la recherche
             doctorale, mais contribue également à la création d&apos;un environnement
             de recherche dynamique et collaboratif. Ensemble, nous nous
@@ -142,17 +129,17 @@ export default function aboute() {
             industriels, de soutenir de nombreuses thèses annuelles et de
             participer aux appels à projets internationaux.
           </p>
-          <p className="text-gray-700 text-center lg:text-start ">
+          <p className="font-semibold text-[#0a0908] dark:text-white text-center lg:text-start ">
             Pour des renseignements et des collaborations, contactez-nous à
             l&apos;adresse{" "}
-            <a href="mailto:contact@innovtech.uca.ma" className="text-blue-500 ">
+            <a href="mailto:contact@innovtech.uca.ma" className="text-[#0066ff] ">
               contact@innovtech.uca.ma
             </a>
             .
           </p>
         </section>
 
-        <p className="text-gray-700 text-center lg:text-start ">
+        <p className="font-semibold text-[#0a0908] dark:text-white text-center lg:text-start ">
           Bienvenue chez InnovTech, là où l&apos;innovation rencontre l&apos;excellence en
           ingénierie !
         </p>
