@@ -1,7 +1,9 @@
 'use client'
 import { useTheme } from "next-themes";
+import { useRouter } from 'next/router'
 import { useEffect, useState } from "react";
 export default function Navbar(){
+    const router = useRouter()
     const { theme, setTheme } = useTheme();
     const[open,setOpen]=useState(true)
     const [mounted, setMointed] = useState(false);
@@ -35,7 +37,7 @@ export default function Navbar(){
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
                                 <a key={index} href={ele.href}>
-                                    <div  className="text-black dark:text-white hover:text-[#0063f7] dark:hover:text-[#0063f7] hover:duration-700 transition font-semibold">
+                                    <div  className={` hover:text-[#0063f7] dark:hover:text-[#0063f7] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#0063f7] text-[#0063f7]":"text-black dark:text-white"} `}>
                                         <span>{ele.title}</span>
                                     </div>
                                 </a>
@@ -68,14 +70,14 @@ export default function Navbar(){
                                 </div>
                                 
                                 <div className={`fixed   inset-0 flex items-center justify-center bg-white dark:bg-[#2d2e32] duration-700 transition  ${open==false?"translate-x-0":"translate-x-full"}`}>
-                                            <button onClick={()=>{setOpen(true)}} className="absolute top-4 right-4 text-red-400 ">
+                                            <button onClick={()=>{setOpen(true)}} className="absolute top-4 right-4 text-red-600 ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                                                 </svg>
                                             </button>
                                             <div className=" text-black dark:text-[#fff] flex flex-col items-center gap-12 text-2xl font-bold">
                                             {itemsNav.map((ele,index)=>(
-                                                <a key={index} className="  transition hover:text-[#0063f7] dark:hover:text-[#0063f7] duration-700" href={ele.href}>
+                                                <a key={index} className={` hover:text-[#0063f7] text-2xl dark:hover:text-[#0063f7] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#0063f7] text-[#0063f7]":"text-black dark:text-white"} `} href={ele.href}>
                                                     <button onClick={()=>{setOpen(!open)}} key={index} className=" " >
                                                         <span>{ele.title}</span>
                                                     </button>
