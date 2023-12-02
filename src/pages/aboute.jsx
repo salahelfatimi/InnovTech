@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function aboute() {
@@ -15,9 +16,9 @@ export default function aboute() {
   return (
     <>
       <div  className=" mx-auto py-8 relative z-10 pt-12">
-        <img className=' absolute z-0 -top-[3.6rem] hidden lg:block' src='/icon/waveSaction.svg' alt='' />
-        <img className=" absolute z-0 -top-[3.6rem] sm:block lg:hidden" src="/icon/waveSactionTablet.svg" alt="" />
-        <img className=" absolute z-0 -top-[3.6rem] block sm:hidden" src="/icon/waveSactionPhone.svg" alt="" />
+        <Image width={1920} height={1080} className=' absolute z-0 -top-[3.6rem] hidden lg:block' src='/icon/waveSaction.svg' alt='' />
+        <Image width={900} height={600}  className=" absolute z-0 -top-[3.6rem] sm:block lg:hidden" src="/icon/waveSactionTablet.svg" alt="" />
+        <Image width={675} height={900} className=" absolute z-0 -top-[3.6rem] block sm:hidden" src="/icon/waveSactionPhone.svg" alt="" />
         <div className="container z-10 relative">
         <h1  className="text-2xl  lg:text-4xl text-center font-extrabold mb-6 text-white">
           À propos d&apos;InnovTech : Ingénierie et Innovation Technologique des
