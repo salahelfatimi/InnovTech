@@ -3,7 +3,11 @@ export default function aboute() {
     
   return (
     <>
-      <div  className="container mx-auto py-8 relative z-10 pt-12">
+      <div  className=" mx-auto py-8 relative z-10 pt-12">
+        <img className=' absolute z-0 -top-[3.6rem] hidden lg:block' src='/icon/waveSaction.svg' alt='' />
+        <img className=" absolute z-0 -top-[3.6rem] sm:block lg:hidden" src="/icon/waveSactionTablet.svg" alt="" />
+        <img className=" absolute z-0 -top-[3.6rem] block sm:hidden" src="/icon/waveSactionPhone.svg" alt="" />
+        <div className="container z-10 relative">
         <h1  className="text-2xl  lg:text-4xl text-center font-bold mb-6">
           À propos d&apos;InnovTech : Ingénierie et Innovation Technologique des
           Systèmes et des Procédés
@@ -152,6 +156,7 @@ export default function aboute() {
           Bienvenue chez InnovTech, là où l&apos;innovation rencontre l&apos;excellence en
           ingénierie !
         </p>
+        </div>
       </div>
     </>
   );

@@ -75,7 +75,7 @@ export default function Navbar(){
                                             </button>
                                             <div className=" text-black dark:text-[#fff] flex flex-col items-center gap-12 text-2xl font-bold">
                                             {itemsNav.map((ele,index)=>(
-                                                <a key={index} className=" hover:text-[#1A60A1] transition hover:dark:text-[#1A60A1] duration-700" href={ele.href}>
+                                                <a key={index} className="  transition hover:text-[#0063f7] dark:hover:text-[#0063f7] duration-700" href={ele.href}>
                                                     <button onClick={()=>{setOpen(!open)}} key={index} className=" " >
                                                         <span>{ele.title}</span>
                                                     </button>
