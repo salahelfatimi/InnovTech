@@ -28,7 +28,7 @@ export default function Carousel(){
             <div className="  flex items-center justify-center container">
             
           
-                <div className=" max-w-[1100px] max-h-[700px] overflow-hidden border-8 border-[#fff] dark:border-[#272b34]  rounded-3xl drop-shadow-2xl     relative">
+                <div className=" max-w-[1100px] max-h-[700px] overflow-hidden border-8 border-white dark:border-[#272b34]   rounded-3xl drop-shadow-2xl     relative">
                     <div style={{ transform:`translateX(-${curr *100}%)` }} className="flex transition-transform ease-out duration-700 ">
                         {data.map((ele,index)=>(
                         
@@ -53,7 +53,7 @@ export default function Carousel(){
                                                 {ele.title}
                                         </div>
                                         <a href={`/etablissmentInfo/${ele.city}`}>
-                                            <button className="bg-[#0066ff] font-bold border-4 border-[#0066ff] hover:bg-[#ffffff] hover:text-[#0066ff] dark:hover:text-[#fff] duration-700   dark:hover:bg-[#1c1f24]  text-white rounded-3xl drop-shadow-2xl  py-1 lg:py-2 lg:px-8 capitalize px-4 ">
+                                            <button className="bg-[#ff9825] font-bold border-4 border-[#ff9825] hover:bg-[#ffffff] hover:text-[#ff9825] dark:hover:text-[#fff] duration-700   dark:hover:bg-[#1c1f24]  text-white rounded-3xl drop-shadow-2xl  py-1 lg:py-2 lg:px-8 capitalize px-4 ">
                                                 Voir plus ...
                                             </button>
                                         </a>

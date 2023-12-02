@@ -16,18 +16,18 @@ export default function Aboute() {
   return (
     <>
       <div  className=" mx-auto py-8 relative z-10 pt-12">
-        <Image width={1920} height={1080} className=' absolute z-0 -top-[3.6rem] hidden lg:block' src='/icon/waveSaction.svg' alt='' />
-        <Image width={900} height={600}  className=" absolute z-0 -top-[3.6rem] sm:block lg:hidden" src="/icon/waveSactionTablet.svg" alt="" />
-        <Image width={675} height={900} className=" absolute z-0 -top-[3.6rem] block sm:hidden" src="/icon/waveSactionPhone.svg" alt="" />
+          {/* <img className=' absolute z-0 -top-[3.6rem] hidden lg:block' src='/icon/waveSaction.svg' alt='' />
+          <img className=" absolute z-0 -top-[3.6rem] sm:block lg:hidden" src="/icon/waveSactionTablet.svg" alt="" />
+          <img className=" absolute z-0 -top-[3.6rem] block sm:hidden" src="/icon/waveSactionPhone.svg" alt="" /> */}
         <div className="container z-10 relative">
-        <h1  className="text-2xl  lg:text-4xl text-center font-extrabold mb-6 text-white">
+        <h1  className="text-2xl  lg:text-4xl text-center font-extrabold mb-6 text-[#385ea5]">
           À propos d&apos;InnovTech : Ingénierie et Innovation Technologique des
           Systèmes et des Procédés
         </h1>
 
         <section className="mb-8 text-center lg:text-start">
-          <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold mb-4 text-[#ff6b35]">Bienvenue chez InnovTech</h2>
-          <p className=" font-semibold dark:text-white text-[#0a0908]">
+          <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold mb-4 text-[#ff9825]">Bienvenue chez InnovTech</h2>
+          <p className=" font-bold  text-[#385ea5] dark:text-white">
             InnovTech est un programme de doctorat de pointe proposé par le
             Centre d&apos;Études Doctorales en Sciences et Ingénierie (SI) à la
             Faculté des Sciences et Techniques (FST). Ce programme vise à
@@ -42,8 +42,8 @@ export default function Aboute() {
         </section>
 
         <section className="mb-8 ">
-          <h2 className="text-xl  lg:text-3xl font-extrabold mb-4 text-center lg:text-start text-[#ff6b35]">Notre Mission</h2>
-          <ul className="list-disc pl-6  font-semibold dark:text-white text-[#0a0908] ">
+          <h2 className="text-xl  lg:text-3xl font-extrabold mb-4 text-center lg:text-start text-[#ff9825]">Notre Mission</h2>
+          <ul className="list-disc pl-6  font-bold  text-[#385ea5] dark:text-white ">
             <li>
               Communication efficace : Développer de solides compétences en
               communication en anglais, en français et à travers divers outils
@@ -61,10 +61,10 @@ export default function Aboute() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold  text-[#ff6b35] mb-4">
+          <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold  text-[#ff9825] mb-4">
             Approche de formation complète
           </h2>
-          <ul className="list-disc pl-6 font-semibold dark:text-white text-[#0a0908]">
+          <ul className="list-disc pl-6 font-bold text-[#385ea5] dark:text-white ">
             <li>
               Approfondissement scientifique ou technique : Élargir les
               connaissances en lien avec les disciplines académiques du projet
@@ -85,10 +85,10 @@ export default function Aboute() {
         </section>
 
         <section className="mb-8 ">
-          <h2 className="text-xl  lg:text-3xl font-extrabold text-center lg:text-start mb-4 text-[#ff6b35]">
+          <h2 className="text-xl  lg:text-3xl font-extrabold text-center lg:text-start mb-4 text-[#ff9825]">
             Environnement de recherche collaboratif
           </h2>
-          <p className="font-semibold text-[#0a0908] dark:text-white text-center lg:text-start ">
+          <p className="font-bold text-[#385ea5] dark:text-white text-center lg:text-start ">
             En réponse aux orientations stratégiques de l&apos;Université Cadi Ayyad
             (UCA), InnovTech réunit 14 laboratoires et 5 équipes de recherche de
             5 institutions différentes réparties dans trois villes (Marrakech,
@@ -100,15 +100,15 @@ export default function Aboute() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-xl  lg:text-3xl font-extrabold mb-4 text-[#ff6b35]">Institutions partenaires</h2>
+          <h2 className="text-xl  lg:text-3xl font-extrabold mb-4 text-[#ff9825]">Institutions partenaires</h2>
             <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3  gap-6 relative z-10">
         
               {data.map((ele, index) => (
                   <div
                     key={index}
-                    className="flex flex-col gap-4 bg-white shadow-lg shadow-[#0063f7] border-4  border-[#0063f7]    dark:bg-[#1c1f24] dark:text-white text-black p-6 rounded-3xl"
+                    className="flex flex-col gap-4 bg-white shadow-lg border-4  border-[#385ea5]     dark:bg-[#1c1f24] dark:text-white text-black p-6 rounded-3xl"
                   >
-                    <span className="text-[#0063f7] font-bold text-lg md:text-4xl">
+                    <span className="text-[#385ea5]  font-bold text-lg md:text-4xl">
                       {ele.title}
                     </span>
                     <span className=" text-sm font-medium">{ele.description}</span>
@@ -118,10 +118,10 @@ export default function Aboute() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold mb-4 text-[#ff6b35]">
+          <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold mb-4 text-[#ff9825]">
             Rejoignez-nous pour façonner l&apos;avenir
           </h2>
-          <p className="font-semibold text-[#0a0908] dark:text-white text-center lg:text-start ">
+          <p className="font-bold text-[#385ea5] dark:text-white  text-center lg:text-start ">
             InnovTech ne propose pas seulement une plateforme pour la recherche
             doctorale, mais contribue également à la création d&apos;un environnement
             de recherche dynamique et collaboratif. Ensemble, nous nous
@@ -131,17 +131,17 @@ export default function Aboute() {
             industriels, de soutenir de nombreuses thèses annuelles et de
             participer aux appels à projets internationaux.
           </p>
-          <p className="font-semibold text-[#0a0908] dark:text-white text-center lg:text-start ">
+          <p className="font-bold text-[#385ea5] dark:text-white text-center lg:text-start ">
             Pour des renseignements et des collaborations, contactez-nous à
             l&apos;adresse{" "}
-            <a href="mailto:contact@innovtech.uca.ma" className="text-[#0066ff] ">
+            <a href="mailto:contact@innovtech.uca.ma" className="text-[#ff9825] ">
               contact@innovtech.uca.ma
             </a>
             .
           </p>
         </section>
 
-        <p className="font-semibold text-[#0a0908] dark:text-white text-center lg:text-start ">
+        <p className="font-bold text-[#385ea5] dark:text-white  text-center lg:text-start ">
           Bienvenue chez InnovTech, là où l&apos;innovation rencontre l&apos;excellence en
           ingénierie !
         </p>

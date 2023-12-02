@@ -30,7 +30,7 @@ export default function Layout({ children }) {
           } `}
         >
           <span className={`font-extrabold text-4xl `}>
-            Innov<span className="text-[#0066ff]">TECH</span>
+            Innov<span className="text-[#ff9825]">TECH</span>
           </span>
         </div>
         <Head>

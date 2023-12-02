@@ -29,15 +29,15 @@ export default function Navbar(){
                 <div className="  md:block hidden">
                
                 
-                    <div className="  bg-white dark:bg-[#1C1F24] rounded-full pt-4 fixed py-4 border-4   border-[#0066ff] shadow-2xl top-2 right-4 left-4">
+                    <div className="  bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4 border-b-4   border-[#ff9825] shadow-2xl top-0 right-0 left-0">
                         <div className="container flex items-center justify-between">
                             <div>
-                                <span className=" font-bold text-2xl">Innov<span className="text-[#0066ff]">TECH</span></span>
+                                <span className=" font-bold text-2xl">Innov<span className="text-[#ff9825]">TECH</span></span>
                             </div>
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
                                 <a key={index} href={ele.href}>
-                                    <div  className={` hover:text-[#0063f7] dark:hover:text-[#0063f7] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#0063f7] text-[#0063f7]":"text-black dark:text-white"} `}>
+                                    <div  className={` hover:text-[#ff9825] dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `}>
                                         <span>{ele.title}</span>
                                     </div>
                                 </a>
@@ -57,12 +57,12 @@ export default function Navbar(){
                 {/* mobile Nav bar  */}
 
                     <div className="md:hidden  block">
-                        <div className="      bg-white dark:bg-[#1C1F24] rounded-full pt-4 fixed py-4 border-4 border-collapse border-[#0066ff]  shadow-3xl top-2 right-2 left-2 ">
+                        <div className="      bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4 border-b-4   border-[#ff9825] shadow-2xl  top-0 right-0 left-0 ">
                         
                             <div className="container ">
                                 <div className="flex px-2  items-center justify-between">
                                     <div>
-                                    <span className=" font-bold text-xl">Innov<span className="text-[#0066ff]">TECH</span></span>
+                                    <span className=" font-bold text-xl">Innov<span className="text-[#ff9825]">TECH</span></span>
                                     </div>
                                     <button onClick={()=>{setOpen(!open)}} className=" md:hidden block">
                                         <svg fill={theme === "light" ? "#000" : "#fff"} width="30px" height="30px" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m2.61 0h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 9.39h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 18.781h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/></svg>
@@ -77,7 +77,7 @@ export default function Navbar(){
                                             </button>
                                             <div className=" text-black dark:text-[#fff] flex flex-col items-center gap-12 text-2xl font-bold">
                                             {itemsNav.map((ele,index)=>(
-                                                <a key={index} className={` hover:text-[#0063f7] text-2xl dark:hover:text-[#0063f7] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#0063f7] text-[#0063f7]":"text-black dark:text-white"} `} href={ele.href}>
+                                                <a key={index} className={` hover:text-[#ff9825] text-2xl dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `} href={ele.href}>
                                                     <button onClick={()=>{setOpen(!open)}} key={index} className=" " >
                                                         <span>{ele.title}</span>
                                                     </button>

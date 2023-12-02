@@ -35,7 +35,7 @@ export default  function  Labortoures  () {
         {laboratoire?.map((ele, index) => (
           <div className='  ' key={index}>
             <div> 
-              <div className={`flex justify-between items-center bg-[#0063f7] p-4   drop-shadow-2xl ${openItem === ele.id ? 'rounded-t-3xl' : 'rounded-3xl'}`}>
+              <div className={`flex justify-between items-center bg-[#ff9825] p-4   drop-shadow-2xl ${openItem === ele.id ? 'rounded-t-3xl' : 'rounded-3xl'}`}>
                 <span className='font-semibold text-lg text-white'>{ele.etablissment}</span>
                 <button onClick={() => toggleOpen(ele.id)} className={`transition duration-700 ${openItem === ele.id ? 'rotate-0' : 'rotate-180'}`}>
                   <svg className='w-6 h-6 text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 16 10'>
@@ -43,7 +43,7 @@ export default  function  Labortoures  () {
                   </svg>
                 </button>
               </div>
-              <div className={` relative rounded-b-3xl   bg-[#FFFFFF] border-b-4 border-x-4 border-[#0063f7] dark:bg-[#1c1f24] p-4 drop-shadow-2xl  ${openItem === ele.id ? 'block' : 'hidden'}`}>
+              <div className={` relative rounded-b-3xl   bg-[#FFFFFF] border-b-4 border-x-4 border-[#ff9825] dark:bg-[#1c1f24] p-4 drop-shadow-2xl  ${openItem === ele.id ? 'block' : 'hidden'}`}>
                 <div>
                     <h2 className="mb-4  font-bold text-gray-900 dark:text-white text-base md:text-lg">Les Laboratoire impliqués : </h2>
                     <ul  className=" pb-4 ml-8 space-y-4 text-gray-500 list-disc list-inside md:text-base text-xs dark:text-gray-400">
