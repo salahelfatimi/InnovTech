@@ -30,9 +30,9 @@ export default function Etablissment(){
                                 <div className="flex flex-col gap-8 lg:w-1/2 p-6 items-center  lg:items-start">
                                         <span className=" uppercase font-bold text-lg lg:text-xl lg:text-start text-center">{ele.title}</span>
                                     <div className="flex flex-col gap-6 items-center lg:items-start">
-                                        <span className="text-[#9DA4B2] lg:text-base text-sm  font-semibold">Number d&apos;établissements : <span>{ele["Number of etablissements"]}</span></span>
-                                        <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;laboratoire impliqués : <span>{ele["Number of laboratoire impliques "]}</span> </span>
-                                        <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;équipes impliquées : <span>{ele["Number of equipes impliquees "]}</span></span>
+                                        <span className="text-[#9DA4B2] lg:text-base text-sm   font-semibold">Number d&apos;établissements : <span className="text-[#0063f7] font-bold">{ele["Number of etablissements"]}</span></span>
+                                        <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;laboratoire impliqués : <span className="text-[#0063f7] font-bold">{ele["Number of laboratoire impliques "]}</span> </span>
+                                        <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;équipes impliquées : <span className="text-[#0063f7] font-bold">{ele["Number of equipes impliquees "]}</span></span>
                                     </div>
                                     <a href={`/etablissmentInfo/${ele.Url}`}><button className="bg-[#0063f7] font-bold border-4 border-[#0063f7] hover:bg-[#ffffff] duration-700 hover:text-[#0063f7] dark:hover:text-[#fff]   dark:hover:bg-[#1c1f24]  text-white rounded-3xl  py-2 px-12 ">Voir plus ...</button></a>
                                 </div>
