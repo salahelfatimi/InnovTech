@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function aboute() {
+export default function Aboute() {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
