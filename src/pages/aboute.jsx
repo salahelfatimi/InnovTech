@@ -111,7 +111,7 @@ export default function Aboute() {
                     <span className="text-[#385ea5]  font-bold text-lg md:text-4xl">
                       {ele.title}
                     </span>
-                    <span className=" text-sm font-medium">{ele.description}</span>
+                    <span className="  font-medium lg:font-bold">{ele.description}</span>
                   </div>
               ))}
             </div>

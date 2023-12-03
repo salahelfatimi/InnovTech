@@ -26,7 +26,7 @@ export default function Etablissment(){
                     etablissment.map((ele,index)=>(
                             <div key={index} className="  lg:w-[75%] w-auto flex  flex-col-reverse  odd:lg:flex-row   even:lg:flex-row-reverse items-center gap-2 dark:bg-[#1c1f24] rounded-3xl border-8 border-white dark:border-[#1c1f24] drop-shadow-2xl  bg-white ">
                                 <div className="flex flex-col gap-8 lg:w-1/2 p-6 items-center  lg:items-start">
-                                        <span className=" uppercase font-bold text-lg lg:text-xl lg:text-start text-center text-[#ff9825]">{ele.title}</span>
+                                        <span className=" uppercase font-bold text-lg lg:text-xl lg:text-start text-center dark:text-[#fff] text-black">{ele.title}</span>
                                     <div className="flex flex-col gap-6 items-center lg:items-start">
                                         <span className="text-[#9DA4B2] lg:text-base text-sm   font-semibold">Number d&apos;établissements : <span className="text-[#ff9825] font-bold">{ele["Number of etablissements"]}</span></span>
                                         <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;laboratoire impliqués : <span className="text-[#ff9825] font-bold">{ele["Number of laboratoire impliques "]}</span> </span>
