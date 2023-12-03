@@ -43,7 +43,7 @@ export default  function  Labortoures  () {
                   </svg>
                 </button>
               </div>
-              <div className={` relative rounded-b-3xl   bg-[#FFFFFF]  dark:bg-[#1c1f24] p-4 drop-shadow-2xl  ${openItem === ele.id ? 'block' : 'hidden'}`}>
+              <div className={` relative rounded-b-3xl   bg-[#FFFFFF] border-b-2 border-x-2 border-[#ff9825] dark:bg-[#1c1f24] p-4 drop-shadow-2xl  ${openItem === ele.id ? 'block' : 'hidden'}`}>
                 <div>
                     <h2 className="mb-4  font-bold text-gray-900 dark:text-white text-base md:text-lg">Les Laboratoire impliqués : </h2>
                     <ul  className=" pb-4 ml-8 space-y-4 text-gray-500 list-disc list-inside md:text-base text-xs dark:text-gray-400">
