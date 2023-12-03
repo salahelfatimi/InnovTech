@@ -24,7 +24,7 @@ export default function Grid() {
             <span className="text-[#ff9825]  font-bold text-lg md:text-2xl">
               {ele.title}
             </span>
-            <span className=" text-sm font-bold">{ele.description}</span>
+            <span className=" text-sm font-semibold">{ele.description}</span>
           </div>
         ))}
       </div>
