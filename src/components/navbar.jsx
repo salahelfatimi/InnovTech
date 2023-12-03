@@ -24,12 +24,12 @@ export default function Navbar(){
     
     return(
         <>
-            <div className=" z-40">
+            <div className="z-20 ">
                 {/* pc Nav bar */}
                 <div className="  md:block hidden">
                
                 
-                    <div className="  bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4 border-b-4   border-[#ff9825] shadow-2xl top-0 right-0 left-0">
+                    <div className="  bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4     shadow-2xl top-0 right-0 left-0">
                         <div className="container flex items-center justify-between">
                             <div>
                                 <span className=" font-bold text-2xl">Innov<span className="text-[#ff9825]">TECH</span></span>
@@ -57,7 +57,7 @@ export default function Navbar(){
                 {/* mobile Nav bar  */}
 
                     <div className="md:hidden  block">
-                        <div className="      bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4 border-b-4   border-[#ff9825] shadow-2xl  top-0 right-0 left-0 ">
+                        <div className="      bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4  shadow-2xl  top-0 right-0 left-0 ">
                         
                             <div className="container ">
                                 <div className="flex px-2  items-center justify-between">

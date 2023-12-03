@@ -20,7 +20,7 @@ export default function Aboute() {
           <img className=" absolute z-0 -top-[3.6rem] sm:block lg:hidden" src="/icon/waveSactionTablet.svg" alt="" />
           <img className=" absolute z-0 -top-[3.6rem] block sm:hidden" src="/icon/waveSactionPhone.svg" alt="" /> */}
         <div className="container z-10 relative">
-        <h1  className="text-2xl  lg:text-4xl text-center font-extrabold mb-6 text-[#385ea5]">
+        <h1  className="text-2xl  lg:text-4xl text-center font-extrabold mb-6 text-[#148bfbff]">
           À propos d&apos;InnovTech : Ingénierie et Innovation Technologique des
           Systèmes et des Procédés
         </h1>

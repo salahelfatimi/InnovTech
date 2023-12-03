@@ -43,6 +43,9 @@ export default function Contact() {
         {
           position: "bottom-right",
           duration: 7000,
+          style: {
+            zIndex: 30,
+          },
          
 
         }
@@ -83,7 +86,7 @@ export default function Contact() {
                     value={formData.fullName}
                     
                     onChange={handleInputChange}
-                    className={`border-4  py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold   ${formData.fullName?"border-[#ff9825]":"border-red-500 "} `}
+                    className={`border-4  py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold   ${formData.fullName?"":" "} `}
                     type="text"
                     name="fullName"
                     placeholder="Nom et Prénom"
@@ -92,7 +95,7 @@ export default function Contact() {
                     value={formData.tele}
                     
                     onChange={handleInputChange}
-                    className={`border-4  py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold  ${formData.tele?"border-[#ff9825]":"border-red-500 "}`}
+                    className={`border-4  py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold  ${formData.tele?"":" "}`}
                     type="tele"
                     name="tele"
                     placeholder="Téléphone"
@@ -102,7 +105,7 @@ export default function Contact() {
                   value={formData.email}
                   
                   onChange={handleInputChange}
-                  className={`border-4 ${formData.email?"border-[#ff9825]":"border-red-500 "} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-4 ${formData.email?"":" "} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   type="text"
                   name="email"
                   id="email"
@@ -113,7 +116,7 @@ export default function Contact() {
                   value={formData.subject}
                   
                   onChange={handleInputChange}
-                  className={`border-4 ${formData.subject?"border-[#ff9825]":"border-red-500 "} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-4 ${formData.subject?"":" "} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   type="text"
                   name="subject"
                   id="subject"
@@ -124,7 +127,7 @@ export default function Contact() {
                   
                   
                   onChange={handleInputChange}
-                  className={`border-4 ${formData.message?"border-[#ff9825]":"border-red-500   "} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-4 ${formData.message?"":"   "} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   name="message"
                   id="message"
                   cols="40"
@@ -133,7 +136,7 @@ export default function Contact() {
                 ></textarea>
                 <button
                   disabled={!conditionValidation}
-                  className={`${conditionValidation?"bg-[#ff9825] border-[#ff9825] hover:text-[#ff9825] dark:hover:bg-[#1c1f24] hover:bg-[#ffffff] ":"border-red-500 bg-red-500 "}    font-bold border-4    duration-700     text-white rounded-3xl drop-shadow-2xl  py-2 px-12 `}
+                  className={`${conditionValidation?"bg-[#ff9825]  ho825] dark:hover:bg-[#1c1f24] hover:bg-[#ffffff] ":"border-red-500 bg-red-500 "}    font-bold border-4    duration-700     text-white rounded-3xl drop-shadow-2xl  py-2 px-12 `}
                 > 
                   Envoyer
                 </button>
@@ -142,7 +145,7 @@ export default function Contact() {
           </div>
           <Toaster
             toastOptions={{
-              className: "dark:bg-[#121212] dark:text-white bg-white text-black  ",
+              className: "dark:bg-[#121212] relative z-20 dark:text-white bg-white text-black  ",
             }}
           />
         </div>

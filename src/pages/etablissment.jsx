@@ -32,10 +32,10 @@ export default function Etablissment(){
                                         <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;laboratoire impliqués : <span className="text-[#ff9825] font-bold">{ele["Number of laboratoire impliques "]}</span> </span>
                                         <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">Number d&apos;équipes impliquées : <span className="text-[#ff9825] font-bold">{ele["Number of equipes impliquees "]}</span></span>
                                     </div>
-                                    <a href={`/etablissmentInfo/${ele.Url}`}><button className="bg-[#ff9825] font-bold border-4 border-[#ff9825] hover:bg-[#ffffff] duration-700 hover:text-[#ff9825] dark:hover:text-[#fff]   dark:hover:bg-[#1c1f24]  text-white rounded-3xl  py-2 px-12 ">Voir plus ...</button></a>
+                                    <a href={`/etablissmentInfo/${ele.Url}`}><button className="bg-[#ff9825]  font-bold border-4 border-[#ff9825] hover:bg-[#ffffff] duration-700 hover:text-[#ff9825] dark:hover:text-[#fff]   dark:hover:bg-[#1c1f24]  text-white rounded-3xl  py-2 px-12 ">Voir plus ...</button></a>
                                 </div>
                                 <div className="lg:w-1/2">
-                                    <img className="object-cover w-[30rem] lg:w-auto rounded-t-2xl  lg:rounded-2xl  h-full lg:h-[22rem]  " src={`/image/etablissment/${ele.image}`} alt="" />
+                                    <img className="object-cover  w-[30rem] lg:w-auto rounded-t-2xl  lg:rounded-2xl  h-full lg:h-[22rem]  " src={`/image/etablissment/${ele.image}`} alt="" />
                                 </div>
                             </div>
                     ))
