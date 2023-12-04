@@ -43,11 +43,11 @@ export default  function  Labortoures  () {
               </div>
               <div className={` relative rounded-b-3xl   bg-[#FFFFFF] border-b-2 border-x-2 border-[#ff9825] dark:bg-[#1c1f24] p-4 drop-shadow-2xl  ${openItem === ele.id ? 'block' : 'hidden'}`}>
                 <div>
-                    <h2 className="mb-4   text-gray-900 dark:text-white font-bold text-base md:text-lg">Les Laboratoire impliqués : </h2>
+                    <h2 className="mb-4   text-[#2A5DA5] font-bold text-base md:text-lg">Les Laboratoire impliqués : </h2>
                     <div  className=" pb-4 ml-8 space-y-4 text-gray-500   dark:text-gray-400">
                       {
                           ele.laboratoire?.map((ele,index)=>(
-                                <a key={index} href={`/laboratoireInfo/${ele.url}`} className='hover:text-[#ff9825] flex gap-2 duration-700 '>
+                                <a key={index} href={`/laboratoireInfo/${ele.url}`} className='hover:text-[#ff9825] flex gap-2 duration-700 dark:hover:text-[#ff9825] dark:text-[#DFE0DF]'>
                                       
                                       - {ele.title}
                                       <Link size={20} className='lg:block hidden'/>
@@ -58,12 +58,12 @@ export default  function  Labortoures  () {
                 </div>
                
                 <ol className={`  ${!ele.equipes ?"hidden":"block"} `}>
-                    <h2 className={`mb-4 text-lg font-bold text-gray-900 dark:text-white `}>Les équipes impliquées  : </h2>
+                    <h2 className={`mb-4 text-lg font-bold text-[#2A5DA5] `}>Les équipes impliquées  : </h2>
                     <li>
                     <div  className=" pb-4 ml-8 space-y-4 text-gray-500   dark:text-gray-400">
                       {
                           ele.laboratoire?.map((ele,index)=>(
-                                <a key={index} href={`/laboratoireInfo/${ele.url}`} className='hover:text-[#ff9825] flex gap-2  duration-700 '>    
+                                <a key={index} href={`/laboratoireInfo/${ele.url}`} className='hover:text-[#ff9825] flex gap-2  duration-700 dark:hover:text-[#ff9825] dark:text-[#DFE0DF]'>    
                                       - {ele.title}
                                       <Link size={20} className='lg:block hidden'/>
                                       

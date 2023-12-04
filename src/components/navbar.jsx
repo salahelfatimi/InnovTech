@@ -30,7 +30,7 @@ export default function Navbar(){
                 <div className="  md:block hidden">
                
                 
-                    <div className="  bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4     shadow-2xl top-0 right-0 left-0">
+                    <div className="  bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4    shadow-2xl top-0 right-0 left-0">
                         <div className="container flex items-center justify-between">
                             <div>
                                 <span className=" font-bold text-2xl">Innov<span className="text-[#ff9825]">TECH</span></span>
@@ -38,7 +38,7 @@ export default function Navbar(){
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
                                 <a key={index} href={ele.href}>
-                                    <div  className={` hover:text-[#ff9825] dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `}>
+                                    <div  className={` hover:text-[#ff9825]  dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `}>
                                         <span>{ele.title}</span>
                                     </div>
                                 </a>

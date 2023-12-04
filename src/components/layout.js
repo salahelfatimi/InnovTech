@@ -1,6 +1,7 @@
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Head from "next/head";
+import { Loader } from "react-feather";
 import { useEffect, useState } from "react";
 
 export default function Layout({ children }) {
@@ -9,13 +10,13 @@ export default function Layout({ children }) {
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setShow(true);
-    }, 1000);
+    }, 2000);
 
     // Clear the interval after 30 seconds
     setTimeout(() => {
       clearInterval(slideInterval);
       setShow(true);
-    }, 1000);
+    }, 2000);
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(slideInterval);
@@ -29,8 +30,9 @@ export default function Layout({ children }) {
             show == false ? "translate-x-0" : "-translate-y-full"
           } `}
         >
-          <span className={`font-extrabold text-4xl `}>
+          <span className={`font-extrabold text-4xl animate-bounce `}>
             Innov<span className="text-[#ff9825]">TECH</span>
+           
           </span>
         </div>
         <Head>

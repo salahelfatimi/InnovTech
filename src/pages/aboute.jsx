@@ -26,7 +26,7 @@ export default function Aboute() {
 
         <section className="mb-8 text-center lg:text-start">
           <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold mb-4 text-[#ff9825]">Bienvenue chez InnovTech</h2>
-          <p className=" font-bold  ">
+          <p className=" font-bold  dark:text-[#DFE0DF]">
             InnovTech est un programme de doctorat de pointe proposé par le
             Centre d&apos;Études Doctorales en Sciences et Ingénierie (SI) à la
             Faculté des Sciences et Techniques (FST). Ce programme vise à
@@ -42,7 +42,7 @@ export default function Aboute() {
 
         <section className="mb-8 ">
           <h2 className="text-xl  lg:text-3xl font-extrabold mb-4 text-center lg:text-start text-[#ff9825]">Notre Mission</h2>
-          <ul className="list-disc pl-6  font-bold   ">
+          <ul className="list-disc pl-6  font-bold   dark:text-[#DFE0DF]">
             <li>
               Communication efficace : Développer de solides compétences en
               communication en anglais, en français et à travers divers outils
@@ -63,7 +63,7 @@ export default function Aboute() {
           <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold  text-[#ff9825] mb-4">
             Approche de formation complète
           </h2>
-          <ul className="list-disc pl-6 font-bold  ">
+          <ul className="list-disc pl-6 font-bold  dark:text-[#DFE0DF]">
             <li>
               Approfondissement scientifique ou technique : Élargir les
               connaissances en lien avec les disciplines académiques du projet
@@ -87,7 +87,7 @@ export default function Aboute() {
           <h2 className="text-xl  lg:text-3xl font-extrabold text-center lg:text-start mb-4 text-[#ff9825]">
             Environnement de recherche collaboratif
           </h2>
-          <p className="font-bold  text-center lg:text-start ">
+          <p className="font-bold  text-center lg:text-start dark:text-[#DFE0DF]">
             En réponse aux orientations stratégiques de l&apos;Université Cadi Ayyad
             (UCA), InnovTech réunit 14 laboratoires et 5 équipes de recherche de
             5 institutions différentes réparties dans trois villes (Marrakech,
@@ -105,22 +105,22 @@ export default function Aboute() {
               {data.map((ele, index) => (
                   <div
                     key={index}
-                    className="flex flex-col gap-4 bg-white shadow-lg border-4  border-[#ff9825]     dark:bg-[#1c1f24] text-black p-6 rounded-3xl"
+                    className="flex flex-col gap-4 bg-[#F3DFCB] shadow-lg      dark:bg-[#1c1f24]  p-6 rounded-3xl"
                   >
                     <span className="text-[#ff9825]  font-bold text-lg md:text-4xl">
                       {ele.title}
                     </span>
-                    <span className="  font-medium lg:font-semibold dark:text-white text-black">{ele.description}</span>
+                    <span className="  font-medium lg:font-semibold  dark:text-[#DFE0DF]">{ele.description}</span>
                   </div>
               ))}
             </div>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8 ">
           <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold mb-4 text-[#ff9825]">
             Rejoignez-nous pour façonner l&apos;avenir
           </h2>
-          <p className="font-bold   text-center lg:text-start ">
+          <p className="font-bold   text-center lg:text-start dark:text-[#DFE0DF] ">
             InnovTech ne propose pas seulement une plateforme pour la recherche
             doctorale, mais contribue également à la création d&apos;un environnement
             de recherche dynamique et collaboratif. Ensemble, nous nous
@@ -131,16 +131,15 @@ export default function Aboute() {
             participer aux appels à projets internationaux.
           </p>
           <p className="font-bold  text-center lg:text-start ">
-            Pour des renseignements et des collaborations, contactez-nous à
-            l&apos;adresse{" "}
-            <a href="mailto:contact@innovtech.uca.ma" className="text-[#ff9825] ">
-              contact@innovtech.uca.ma
+            Pour des renseignements et des collaborations, contactez-nous à{" "}
+            <a href="/contact" className="text-[#0099ff]">
+             Cliquez ici 
             </a>
-            .
+            
           </p>
         </section>
 
-        <p className="font-bold   text-center lg:text-start ">
+        <p className="font-bold   text-center lg:text-start dark:text-[#DFE0DF]">
           Bienvenue chez InnovTech, là où l&apos;innovation rencontre l&apos;excellence en
           ingénierie !
         </p>
