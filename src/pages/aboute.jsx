@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Aboute() {
@@ -132,9 +133,9 @@ export default function Aboute() {
           </p>
           <p className="font-bold  text-center lg:text-start ">
             Pour des renseignements et des collaborations, contactez-nous à{" "}
-            <a href="/contact" className="text-[#0099ff]">
+            <Link  href="/contact" className="text-[#0099ff]">
              Cliquez ici 
-            </a>
+            </Link>
             
           </p>
         </section>
