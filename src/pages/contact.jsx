@@ -1,8 +1,7 @@
-
-
 import { useState } from "react";
-import { Send , XOctagon} from "react-feather";
+import { Send, XOctagon } from "react-feather";
 import toast, { Toaster } from "react-hot-toast";
+import Loading from "./components/loading";
 export default function Contact() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -12,47 +11,44 @@ export default function Contact() {
     message: "",
   });
   const sendEmail = async (e) => {
-
     e.preventDefault();
-    if(conditionValidation){
-    const response = await fetch("/api/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json", 
-      },
-      body: JSON.stringify(formData),
-    });
-   
-    if (response.status === 200) {
-      setFormData({
-        fullName: "",
-        tele: "",
-        email: "",
-        subject: "",
-        message: "",
+    if (conditionValidation) {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-      toast.success(
-        `Hey ${formData.fullName}, your message was sent successfully! I Will Contact you soon! 👋`,
-        {
-          position: "bottom-right",
-          duration: 7000,
-        }
-      );
-    } else {
-      toast.error(
-        `Hello ${formData.fullName}, it appears that your previous message was not sent successfully. Please try sending it again later. `,
-        {
-          position: "bottom-right",
-          duration: 7000,
-          style: {
-      zIndex: 30,
-    },
-         
 
-        }
-      );
+      if (response.status === 200) {
+        setFormData({
+          fullName: "",
+          tele: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+        toast.success(
+          `Hey ${formData.fullName}, your message was sent successfully! I Will Contact you soon! 👋`,
+          {
+            position: "bottom-right",
+            duration: 7000,
+          }
+        );
+      } else {
+        toast.error(
+          `Hello ${formData.fullName}, it appears that your previous message was not sent successfully. Please try sending it again later. `,
+          {
+            position: "bottom-right",
+            duration: 7000,
+            style: {
+              zIndex: 30,
+            },
+          }
+        );
+      }
     }
-  }
   };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -61,11 +57,16 @@ export default function Contact() {
       [name]: value,
     });
   };
-  const conditionValidation=formData.message && formData.email && formData.fullName && formData.subject && formData.tele
+  const conditionValidation =
+    formData.message &&
+    formData.email &&
+    formData.fullName &&
+    formData.subject &&
+    formData.tele;
 
   return (
     <div className=" relative z-10 pt-12">
-          
+      <Loading />
       <div className="container">
         <div className="dark:bg-[#1c1f24] rounded-2xl  lg:rounded-3xl shadow-2xl relative z-10 border-8  border-white  dark:border-[#1c1f24]  bg-white   ">
           <div className=" flex flex-col lg:flex-row w-full  gap-4 items-center">
@@ -76,27 +77,34 @@ export default function Contact() {
               ></iframe>
             </div>
             <div className="lg:w-1/2 w-full p-8">
-              <form
-                className="flex-col flex gap-6 "
-                onSubmit={sendEmail}
-              >
-                <span className={`font-bold lg:text-start text-center text-3xl lg:text-4xl duration-700  text-[#ff9825] `}>Contact Us</span>
+              <form className="flex-col flex gap-6 " onSubmit={sendEmail}>
+                <span
+                  className={`font-bold lg:text-start text-center text-3xl lg:text-4xl duration-700  text-[#ff9825] `}
+                >
+                  Contact Us
+                </span>
 
                 <div className="flex gap-4 w-full items-start ">
                   <input
                     value={formData.fullName}
-                    
                     onChange={handleInputChange}
-                    className={`border-2 dark:border-[#23272f] py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold   ${formData.fullName?"":"border-red-500 dark:border-red-500 placeholder:text-red-500"} `}
+                    className={`border-2 dark:border-[#23272f] py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold   ${
+                      formData.fullName
+                        ? ""
+                        : "border-red-500 dark:border-red-500 placeholder:text-red-500"
+                    } `}
                     type="text"
                     name="fullName"
                     placeholder="Nom et Prénom"
                   />
                   <input
                     value={formData.tele}
-                    
                     onChange={handleInputChange}
-                    className={`border-2 dark:border-[#23272f] py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold  ${formData.tele?"":"border-red-500 dark:border-red-500 placeholder:text-red-500"}`}
+                    className={`border-2 dark:border-[#23272f] py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold  ${
+                      formData.tele
+                        ? ""
+                        : "border-red-500 dark:border-red-500 placeholder:text-red-500"
+                    }`}
                     type="tele"
                     name="tele"
                     placeholder="Téléphone"
@@ -104,20 +112,26 @@ export default function Contact() {
                 </div>
                 <input
                   value={formData.email}
-                  
                   onChange={handleInputChange}
-                  className={`border-2 dark:border-[#23272f] ${formData.email?"":"border-red-500 dark:border-red-500 placeholder:text-red-500"} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-2 dark:border-[#23272f] ${
+                    formData.email
+                      ? ""
+                      : "border-red-500 dark:border-red-500 placeholder:text-red-500"
+                  } py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   type="text"
                   name="email"
                   id="email"
                   placeholder="Email"
                 />
-                
+
                 <input
                   value={formData.subject}
-                  
                   onChange={handleInputChange}
-                  className={`border-2 dark:border-[#23272f] ${formData.subject?"":"border-red-500 dark:border-red-500 placeholder:text-red-500"} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-2 dark:border-[#23272f] ${
+                    formData.subject
+                      ? ""
+                      : "border-red-500 dark:border-red-500 placeholder:text-red-500"
+                  } py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   type="text"
                   name="subject"
                   id="subject"
@@ -125,10 +139,12 @@ export default function Contact() {
                 />
                 <textarea
                   value={formData.message}
-                  
-                  
                   onChange={handleInputChange}
-                  className={`border-2 dark:border-[#23272f] ${formData.message?"":"border-red-500  dark:border-red-500 placeholder:text-red-500"} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-2 dark:border-[#23272f] ${
+                    formData.message
+                      ? ""
+                      : "border-red-500  dark:border-red-500 placeholder:text-red-500"
+                  } py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   name="message"
                   id="message"
                   cols="40"
@@ -137,27 +153,40 @@ export default function Contact() {
                 ></textarea>
                 <button
                   disabled={!conditionValidation}
-                  className={`${conditionValidation?"bg-[#ff9825]  border-[#ff9825] hover:text-[#ff9825] dark:hover:bg-[#1c1f24] hover:bg-[#ffffff] ":"border-red-500 bg-red-500 "}    font-bold border-4    duration-700     text-white rounded-3xl drop-shadow-2xl  items-center justify-center flex gap-2 py-2 px-12 `}
-                > 
-                  
+                  className={`${
+                    conditionValidation
+                      ? "bg-[#ff9825]  border-[#ff9825] hover:text-[#ff9825] dark:hover:bg-[#1c1f24] hover:bg-[#ffffff] "
+                      : "border-red-500 bg-red-500 "
+                  }    font-bold border-4    duration-700     text-white rounded-3xl drop-shadow-2xl  items-center justify-center flex gap-2 py-2 px-12 `}
+                >
                   <span>Envoyer</span>
                   <div className="relative overflow-hidden ">
-                     
-                        <Send size={20} className={`flex transition-transform ease-out duration-1000 ${conditionValidation ? "" : "transform -translate-x-full h-0 w-0"}`}/>
-                       
-                        <XOctagon size={20} className={`flex transition-transform ease-out duration-1000 ${conditionValidation ? "transform -translate-x-full h-0 w-0" : " "}`}/>
-                      
-                    
+                    <Send
+                      size={20}
+                      className={`flex transition-transform ease-out duration-1000 ${
+                        conditionValidation
+                          ? ""
+                          : "transform -translate-x-full h-0 w-0"
+                      }`}
+                    />
+
+                    <XOctagon
+                      size={20}
+                      className={`flex transition-transform ease-out duration-1000 ${
+                        conditionValidation
+                          ? "transform -translate-x-full h-0 w-0"
+                          : " "
+                      }`}
+                    />
                   </div>
-                  
-                  
                 </button>
               </form>
             </div>
           </div>
           <Toaster
             toastOptions={{
-              className: "dark:bg-[#121212] relative z-20 dark:text-white bg-white text-black  ",
+              className:
+                "dark:bg-[#121212] relative z-20 dark:text-white bg-white text-black  ",
             }}
           />
         </div>

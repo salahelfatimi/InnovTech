@@ -3,6 +3,8 @@ import { useTheme } from "next-themes";
 import { useRouter } from 'next/router'
 import { Menu , X, x} from "react-feather";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import Loading from "@/pages/components/loading";
 export default function Navbar(){
     const router = useRouter()
     const { theme, setTheme } = useTheme();
@@ -26,10 +28,11 @@ export default function Navbar(){
     return(
         <>
             <div className="z-20 ">
+                
                 {/* pc Nav bar */}
                 <div className="  md:block hidden">
                
-                
+                    
                     <div className="  bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4    shadow-2xl top-0 right-0 left-0">
                         <div className="container flex items-center justify-between">
                             <div>
@@ -37,11 +40,11 @@ export default function Navbar(){
                             </div>
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
-                                <a key={index} href={ele.href}>
+                                <Link key={index} href={ele.href}>
                                     <div  className={` hover:text-[#ff9825]  dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `}>
                                         <span>{ele.title}</span>
                                     </div>
-                                </a>
+                                </Link>
                                 ))}
                                 <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="focus:outline-none">
                                 <svg className={`transition duration-700 ${theme === "dark" ? "rotate-180" : "rotate-0"}`} width="30px" height="30px" viewBox="0 0 24 24" fill={theme === "light" ? "#000" : "#fff"} xmlns="http://www.w3.org/2000/svg">
@@ -77,11 +80,11 @@ export default function Navbar(){
                                             </button>
                                             <div className=" text-black dark:text-[#fff] flex flex-col items-center gap-12 text-2xl font-bold">
                                             {itemsNav.map((ele,index)=>(
-                                                <a key={index} className={` hover:text-[#ff9825] text-2xl dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `} href={ele.href}>
+                                                <Link key={index} className={` hover:text-[#ff9825] text-2xl dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `} href={ele.href}>
                                                     <button onClick={()=>{setOpen(!open)}} key={index} className=" " >
                                                         <span>{ele.title}</span>
                                                     </button>
-                                                </a>
+                                                </Link>
                                             ))}
                                             <button onClick={()=>{ setTheme(theme === "dark" ? "light" : "dark"),setOpen(!open)}}>
                                                 <svg  className={`transition duration-700  ${theme==="dark"?"rotate-180":"rotate-0"}`}  width="50px" height="50px" viewBox="0 0 24 24" fill={theme === "light" ? "#000" : "#fff"} xmlns="http://www.w3.org/2000/svg">
