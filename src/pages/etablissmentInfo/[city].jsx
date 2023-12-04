@@ -1,6 +1,7 @@
 "use client"
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import { ChevronDown ,Link, ArrowUpRight } from 'react-feather';
 
 export default  function  Labortoures  () {
   const [openItem, setOpenItem] = useState(null);
@@ -37,38 +38,40 @@ export default  function  Labortoures  () {
             <div> 
               <div className={`flex justify-between items-center bg-[#ff9825] p-4   drop-shadow-2xl ${openItem === ele.id ? 'rounded-t-3xl' : 'rounded-3xl'}`}>
                 <span className='font-bold text-lg text-white'>{ele.etablissment}</span>
-                <button onClick={() => toggleOpen(ele.id)} className={`transition duration-700 ${openItem === ele.id ? 'rotate-0' : 'rotate-180'}`}>
-                  <svg className='w-6 h-6 text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 16 10'>
-                    <path d='M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z' />
-                  </svg>
+                <button onClick={() => toggleOpen(ele.id)} className={`transition duration-700 text-white ${openItem === ele.id ? 'rotate-0' : 'rotate-180'}`}>
+                  <ChevronDown size={30} className=' stroke-2'/>  
                 </button>
               </div>
               <div className={` relative rounded-b-3xl   bg-[#FFFFFF] border-b-2 border-x-2 border-[#ff9825] dark:bg-[#1c1f24] p-4 drop-shadow-2xl  ${openItem === ele.id ? 'block' : 'hidden'}`}>
                 <div>
-                    <h2 className="mb-4  font-bold text-gray-900 dark:text-white text-base md:text-lg">Les Laboratoire impliqués : </h2>
-                    <ul  className=" pb-4 ml-8 space-y-4 text-gray-500 list-disc list-inside md:text-base text-xs dark:text-gray-400">
-                    {
-                        ele.laboratoire?.map((ele,index)=>(
-                                <li  key={index}>
-                                    {ele}
-                                </li>   
-                        ))
-                    }
-                    </ul>
+                    <h2 className="mb-4   text-gray-900 dark:text-white font-bold text-base md:text-lg">Les Laboratoire impliqués : </h2>
+                    <div  className=" pb-4 ml-8 space-y-4 text-gray-500   dark:text-gray-400">
+                      {
+                          ele.laboratoire?.map((ele,index)=>(
+                                <a key={index} href={`/laboratoireInfo/${ele.url}`} className='hover:text-[#ff9825] flex gap-2 duration-700 '>
+                                      
+                                      {ele.title}
+                                      <Link size={20} className='lg:block hidden'/>
+                                </a>  
+                          ))
+                      }
+                    </div>
                 </div>
                
                 <ol className={`  ${!ele.equipes ?"hidden":"block"} `}>
                     <h2 className={`mb-4 text-lg font-bold text-gray-900 dark:text-white `}>Les équipes impliquées  : </h2>
                     <li>
-                    <ul  className="list-disc list-inside pb-4 ml-8 space-y-4 text-gray-500  md:text-base text-xs dark:text-gray-400">
-                    {
-                        ele.equipes?.map((ele,index)=>(
-                                <li  key={index}>
-                                    {ele}
-                                </li>   
-                        ))
-                    }
-                    </ul>
+                    <div  className=" pb-4 ml-8 space-y-4 text-gray-500   dark:text-gray-400">
+                      {
+                          ele.laboratoire?.map((ele,index)=>(
+                                <a key={index} href={`/laboratoireInfo/${ele.url}`} className='hover:text-[#ff9825] flex gap-2  duration-700 '>    
+                                      {ele.title}
+                                      <Link size={20} className='lg:block hidden'/>
+                                      
+                                </a>  
+                          ))
+                      }
+                    </div>
                     </li>
                 </ol>
                 </div>

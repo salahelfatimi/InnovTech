@@ -4,6 +4,7 @@ import Grid from "./components/Home/grid";
 import InfoBelkhayat from "./components/Home/infoBelkhayat";
 import Map from "./components/Home/map";
 export default function Home() {
+  
   return (
     <>
       <div className="flex relative z-10 flex-col gap-24 pt-12 ">

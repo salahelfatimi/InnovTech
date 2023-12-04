@@ -1,40 +1,91 @@
-[{
-    "id":1,
-    "etablissment":"FST-MARRAKECH",
-    "laboratoire":[
-        "Laboratoire des Systèmes Electriques, Efficacité Energétique et Télécommunications (LSEEET)",
-        "Laboratoire d’Ingénierie Informatique et Systèmes (L2IS)",
-        "Laboratoire de Mathématiques Appliquées et Informatique (LMAI)",
-        "Laboratoire de Recherche en Développement Durable et Santé (LRDDS)",
-        "Laboratoire des Matériaux Innovants, Energie et Développement Durable (IMED-Lab)",
-        "Laboratoire des Procédés pour l’Energie Durable et l’Environnement (ProcEDE)"
-    ],
-    "equipes":[
-        "Contrôle et Informatique pour les systèmes Intelligents et Energie Verte (CISIEV)",
-        "Géométrie, Topologie et Applications (GTA)"
-    ]
-    
-},
-{
-    "id":2,
-    "etablissment":"ENSA-MARRAKECH",
-    "laboratoire":[
-        "Laboratoire Ingénierie des Systèmes et Applications (LISA)",
-        "Laboratoire de Modélisation des Systèmes Complexes (LMSC)"
-    ],
-    "equipes":[
-        "SMARTE Systèmes et Applications (SSA)",
-        "Géométrie, Topologie et Applications (GTA)"
-    ]
-    
-},
-{
-    "id":3,
-    "etablissment":"ENS-MARRAKECH",
-    "laboratoire":[
-       "Laboratoire Interdisciplinaire de Recherche en Bio-Ressources (LIRBEM)"
-    ]
-    
-    
-}
-]
+[
+    {
+      "id": 1,
+      "etablissment": "FST-MARRAKECH",
+      "laboratoire": [
+        {
+          "id": 1,
+          "title": "Laboratoire des Systèmes Electriques, Efficacité Energétique et Télécommunications (LSEEET)",
+          "url": "LSEEET"
+        },
+        {
+          "id": 2,
+          "title": "Laboratoire d’Ingénierie Informatique et Systèmes (L2IS)",
+          "url": "L2IS"
+        },
+        {
+          "id": 3,
+          "title": "Laboratoire de Mathématiques Appliquées et Informatique (LMAI)",
+          "url": "LMAI"
+        },
+        {
+          "id": 4,
+          "title": "Laboratoire de Recherche en Développement Durable et Santé (LRDDS)",
+          "url": "LRDDS"
+        },
+        {
+          "id": 5,
+          "title": "Laboratoire des Matériaux Innovants, Energie et Développement Durable (IMED-Lab)",
+          "url": "IMED-LAB"
+        },
+        {
+          "id": 6,
+          "title": "Laboratoire des Procédés pour l’Energie Durable et l’Environnement (ProcEDE)",
+          "url": "PROCEDE"
+        }
+      ],
+      "equipes": [
+        {
+          "id": 1,
+          "title": "Contrôle et Informatique pour les systèmes Intelligents et Energie Verte (CISIEV)",
+          "url": "CISIEV"
+        },
+        {
+          "id": 2,
+          "title": "Géométrie, Topologie et Applications (GTA)",
+          "url": "GTA"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "etablissment": "ENSA-MARRAKECH",
+      "laboratoire": [
+        {
+          "id": 1,
+          "title": "Laboratoire Ingénierie des Systèmes et Applications (LISA)",
+          "url": "LISA"
+        },
+        {
+          "id": 2,
+          "title": "Laboratoire de Modélisation des Systèmes Complexes (LMSC)",
+          "url": "LMSC"
+        }
+      ],
+      "equipes": [
+        {
+          "id": 1,
+          "title": "SMARTE Systèmes et Applications (SSA)",
+          "url": "SSA"
+        },
+        {
+          "id": 2,
+          "title": "Géométrie, Topologie et Applications (GTA)",
+          "url": "GTA"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "etablissment": "ENS-MARRAKECH",
+      "laboratoire": [
+        {
+          "id": 1,
+          "title": "Laboratoire Interdisciplinaire de Recherche en Bio-Ressources (LIRBEM)",
+          "url": "LIRBEM"
+        }
+      ],
+      "equipes": []
+    }
+  ]
+  

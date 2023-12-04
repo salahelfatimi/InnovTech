@@ -1,13 +1,25 @@
 [
     {
-        "id":1,
-        "etablissment":"EST-ESSAOUIRA",
-        "laboratoire":[
-            "Laboratoire de Mathématiques, Informatique et Modélisation des systèmes complexes (LMIMSC)",
-            "Laboratoire de recherche des Sciences Appliquées à l'Environnement et au Développement Durable-(SAEDD)",
-            "Laboratoire des Sciences Appliquées à l'Environnement et au Développement Durable (LSAEDD)"
-        ]
-       
-        
+      "id": 1,
+      "etablissment": "EST-ESSAOUIRA",
+      "laboratoire": [
+        {
+          "id": 1,
+          "title": "Laboratoire de Mathématiques, Informatique et Modélisation des systèmes complexes (LMIMSC)",
+          "url": "LMIMSC"
+        },
+        {
+          "id": 2,
+          "title": "Laboratoire de recherche des Sciences Appliquées à l'Environnement et au Développement Durable-(SAEDD)",
+          "url": "SAEDD"
+        },
+        {
+          "id": 3,
+          "title": "Laboratoire des Sciences Appliquées à l'Environnement et au Développement Durable (LSAEDD)",
+          "url": "LSAEDD"
+        }
+      ],
+      "equipes": []
     }
-]
+  ]
+  

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Send , XOctagon} from "react-feather";
 import toast, { Toaster } from "react-hot-toast";
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -66,11 +67,11 @@ export default function Contact() {
     <div className=" relative z-10 pt-12">
           
       <div className="container">
-        <div className="dark:bg-[#1c1f24]  rounded-xl shadow-2xl relative z-10  bg-[white]   ">
+        <div className="dark:bg-[#1c1f24] rounded-2xl  lg:rounded-3xl shadow-2xl relative z-10 border-8  border-white  dark:border-[#1c1f24]  bg-white   ">
           <div className=" flex flex-col lg:flex-row w-full  gap-4 items-center">
             <div className="w-full lg:w-1/2 ">
               <iframe
-                className=" rounded-t-xl lg:rounded-t-none rounded-l-none lg:rounded-l-xl  w-full h-[20rem] lg:h-[40rem] "
+                className=" rounded-t-lg lg:rounded-2xl l  w-full h-[20rem] lg:h-[40rem] "
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d568.7895780896672!2d-8.019320767251982!3d31.642312460088707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafeff360f00771%3A0x7163612040e32812!2sLa%20cit%C3%A9%20d&#39;innovation!5e1!3m2!1sen!2sma!4v1699610451787!5m2!1sen!2sma"
               ></iframe>
             </div>
@@ -86,7 +87,7 @@ export default function Contact() {
                     value={formData.fullName}
                     
                     onChange={handleInputChange}
-                    className={`border-2  py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold   ${formData.fullName?"":"border-red-500 "} `}
+                    className={`border-2 dark:border-[#23272f] py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold   ${formData.fullName?"":"border-red-500 dark:border-red-500 placeholder:text-red-500"} `}
                     type="text"
                     name="fullName"
                     placeholder="Nom et Prénom"
@@ -95,7 +96,7 @@ export default function Contact() {
                     value={formData.tele}
                     
                     onChange={handleInputChange}
-                    className={`border-2  py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold  ${formData.tele?"":"border-red-500 "}`}
+                    className={`border-2 dark:border-[#23272f] py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold  ${formData.tele?"":"border-red-500 dark:border-red-500 placeholder:text-red-500"}`}
                     type="tele"
                     name="tele"
                     placeholder="Téléphone"
@@ -105,7 +106,7 @@ export default function Contact() {
                   value={formData.email}
                   
                   onChange={handleInputChange}
-                  className={`border-2 ${formData.email?"":"border-red-500 "} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-2 dark:border-[#23272f] ${formData.email?"":"border-red-500 dark:border-red-500 placeholder:text-red-500"} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   type="text"
                   name="email"
                   id="email"
@@ -116,7 +117,7 @@ export default function Contact() {
                   value={formData.subject}
                   
                   onChange={handleInputChange}
-                  className={`border-2 ${formData.subject?"":"border-red-500 "} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-2 dark:border-[#23272f] ${formData.subject?"":"border-red-500 dark:border-red-500 placeholder:text-red-500"} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   type="text"
                   name="subject"
                   id="subject"
@@ -127,7 +128,7 @@ export default function Contact() {
                   
                   
                   onChange={handleInputChange}
-                  className={`border-2 ${formData.message?"":"border-red-500   "} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-2 dark:border-[#23272f] ${formData.message?"":"border-red-500  dark:border-red-500 placeholder:text-red-500"} py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   name="message"
                   id="message"
                   cols="40"
@@ -136,9 +137,20 @@ export default function Contact() {
                 ></textarea>
                 <button
                   disabled={!conditionValidation}
-                  className={`${conditionValidation?"bg-[#ff9825] border-[#ff9825] hover:text-[#ff9825] dark:hover:bg-[#1c1f24] hover:bg-[#ffffff] ":"border-red-500 bg-red-500 "}    font-bold border-4    duration-700     text-white rounded-3xl drop-shadow-2xl  py-2 px-12 `}
+                  className={`${conditionValidation?"bg-[#ff9825]  border-[#ff9825] hover:text-[#ff9825] dark:hover:bg-[#1c1f24] hover:bg-[#ffffff] ":"border-red-500 bg-red-500 "}    font-bold border-4    duration-700     text-white rounded-3xl drop-shadow-2xl  items-center justify-center flex gap-2 py-2 px-12 `}
                 > 
-                  Envoyer
+                  
+                  <span>Envoyer</span>
+                  <div className="relative overflow-hidden ">
+                     
+                        <Send size={20} className={`flex transition-transform ease-out duration-1000 ${conditionValidation ? "" : "transform -translate-x-full h-0 w-0"}`}/>
+                       
+                        <XOctagon size={20} className={`flex transition-transform ease-out duration-1000 ${conditionValidation ? "transform -translate-x-full h-0 w-0" : " "}`}/>
+                      
+                    
+                  </div>
+                  
+                  
                 </button>
               </form>
             </div>

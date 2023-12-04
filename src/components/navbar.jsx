@@ -1,6 +1,7 @@
 'use client'
 import { useTheme } from "next-themes";
 import { useRouter } from 'next/router'
+import { Menu , X, x} from "react-feather";
 import { useEffect, useState } from "react";
 export default function Navbar(){
     const router = useRouter()
@@ -65,15 +66,14 @@ export default function Navbar(){
                                     <span className=" font-bold text-xl">Innov<span className="text-[#ff9825]">TECH</span></span>
                                     </div>
                                     <button onClick={()=>{setOpen(!open)}} className=" md:hidden block">
-                                        <svg fill={theme === "light" ? "#000" : "#fff"} width="30px" height="30px" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m2.61 0h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 9.39h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 18.781h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/></svg>
+                                            <Menu size={30} className=" stroke-2"/>
                                     </button>
                                 </div>
                                 
                                 <div className={`fixed   inset-0 flex items-center justify-center bg-white dark:bg-[#2d2e32] duration-700 transition  ${open==false?"translate-x-0":"translate-x-full"}`}>
                                             <button onClick={()=>{setOpen(true)}} className="absolute top-4 right-4 text-red-600 ">
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                                                </svg>
+                                                <X size={40}/>
+                                                
                                             </button>
                                             <div className=" text-black dark:text-[#fff] flex flex-col items-center gap-12 text-2xl font-bold">
                                             {itemsNav.map((ele,index)=>(
