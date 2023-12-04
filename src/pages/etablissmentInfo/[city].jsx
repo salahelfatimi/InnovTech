@@ -49,7 +49,7 @@ export default  function  Labortoures  () {
                           ele.laboratoire?.map((ele,index)=>(
                                 <a key={index} href={`/laboratoireInfo/${ele.url}`} className='hover:text-[#ff9825] flex gap-2 duration-700 '>
                                       
-                                      {ele.title}
+                                      - {ele.title}
                                       <Link size={20} className='lg:block hidden'/>
                                 </a>  
                           ))
@@ -64,7 +64,7 @@ export default  function  Labortoures  () {
                       {
                           ele.laboratoire?.map((ele,index)=>(
                                 <a key={index} href={`/laboratoireInfo/${ele.url}`} className='hover:text-[#ff9825] flex gap-2  duration-700 '>    
-                                      {ele.title}
+                                      - {ele.title}
                                       <Link size={20} className='lg:block hidden'/>
                                       
                                 </a>  
