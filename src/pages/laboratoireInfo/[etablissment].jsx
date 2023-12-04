@@ -1,6 +1,6 @@
-"use client"
+
 import { useRouter } from 'next/router';
-export default function laboratoireInfo(){
+export default function LaboratoireInfo(){
     const router = useRouter();
     const etablissment=router.query.etablissment
     return(

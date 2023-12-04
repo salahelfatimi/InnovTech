@@ -1,4 +1,4 @@
-'use client'
+
 import { useTheme } from "next-themes";
 import { useRouter } from 'next/router'
 import { Menu , X, x} from "react-feather";

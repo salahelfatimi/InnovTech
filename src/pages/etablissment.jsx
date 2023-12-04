@@ -1,4 +1,4 @@
-'use client'
+
 import { useEffect, useState } from "react"
 import { Link2 } from "react-feather";
 export default function Etablissment(){
