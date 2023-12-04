@@ -6,12 +6,12 @@ export default  function  Labortoures  () {
   const [openItem, setOpenItem] = useState(null);
   const router = useRouter();
   const [laboratoire,setLaboratoire]=useState([])
-  
+  const { city } = router.query;
   useEffect(  ()  =>{
     const fetchData  = async () => {
-      if(router.query.city){
+      if(city){
         try {
-            const response = await  fetch(`/json/etablissmentInfo/${router.query.city}.json`)
+            const response = await  fetch(`/json/etablissmentInfo/${city}.json`)
             const data= await  response.json()
             setLaboratoire(data)
             
@@ -23,7 +23,7 @@ export default  function  Labortoures  () {
   fetchData()
   }
 
-  ,[router.query.city])
+  ,[city])
 
   const  toggleOpen = (id) => {
     setOpenItem((prevOpenItem) => (prevOpenItem === id ? null : id));

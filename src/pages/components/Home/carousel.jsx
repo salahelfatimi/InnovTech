@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { useEffect, useState } from "react"
 import {ChevronLeft, ChevronRight} from "react-feather"
 export default function Carousel(){
@@ -52,11 +53,11 @@ export default function Carousel(){
                                         <div  className="text-white md:text-4xl font-bold">
                                                 {ele.title}
                                         </div>
-                                        <a href={`/etablissmentInfo/${ele.city}`}>
+                                        <Link  href={`/etablissmentInfo/[city]/[establishment]`} as={`/etablissmentInfo/${ele.city}/${ele.title}`}>
                                             <button className="bg-[#ff9825] font-bold border-4 border-[#ff9825] hover:bg-[#ffffff] hover:text-[#ff9825] dark:hover:text-[#fff] duration-700   dark:hover:bg-[#1c1f24]  text-white rounded-3xl drop-shadow-2xl  py-1 lg:py-2 lg:px-8 capitalize px-4 ">
                                                 Voir plus ...
                                             </button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 ))
                             }
