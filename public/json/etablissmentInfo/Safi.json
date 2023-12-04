@@ -7,7 +7,7 @@
             {"id":2,"title":"Laboratoire de Mathématiques Informatique et Systèmes de communication (LMISCOM)","url":"LMISCOM"}
         ],
         "equipes":[
-            "Signaux Aléatoires, Réseaux et Systèmes (SARS)"
+            {"id":1,"title":"Signaux Aléatoires, Réseaux et Systèmes (SARS)","url":"SARS"}
            
         ]
         
@@ -18,7 +18,8 @@
         "laboratoire":[
             {"id":1,"title":"Laboratoire des Process, Signaux, Systèmes Industriels, Informatique (LAPSSII)","url":"LAPSSII"}
             
-        ]
+        ],
+        "equipes":[]
        
         
     }

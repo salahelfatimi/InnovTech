@@ -87,9 +87,9 @@ export default function Labortoures() {
                 </div>
 
                 <ol
-                  className={`  ${
-                    ele.equipes.length === 0 ? "hidden" : "block"
-                  } `}
+                 className={`  ${
+                  ele.equipes.length === 0 ? "hidden" : "block"
+                } `}
                 >
                   <h2 className={`mb-4 text-lg font-bold text-[#ff9825] `}>
                     Les équipes impliquées :{" "}
