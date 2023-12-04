@@ -1,7 +1,7 @@
 "use client"
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { ChevronDown ,Link, ArrowUpRight } from 'react-feather';
+import { ChevronDown ,Link } from 'react-feather';
 
 export default  function  Labortoures  () {
   const [openItem, setOpenItem] = useState(null);
