@@ -77,7 +77,7 @@ export default function Labortoures() {
                       <LinkA
                         key={index}
                         href={`/laboratoireInfo/${ele.url}`}
-                        className="hover:text-[#ff9825] flex gap-2 duration-700 dark:hover:text-[#ff9825] dark:text-[#DFE0DF]"
+                        className="hover:text-[#4FAAFF] flex gap-2  duration-700 font-semibold dark:hover:text-[#4FAAFF] dark:text-[#DFE0DF]"
                       >
                         - {ele.title}
                         <Link size={20} className="lg:block hidden" />
@@ -100,7 +100,7 @@ export default function Labortoures() {
                         <LinkA
                           key={index}
                           href={`/laboratoireInfo/${ele.url}`}
-                          className="hover:text-[#ff9825] flex gap-2  duration-700 dark:hover:text-[#ff9825] dark:text-[#DFE0DF]"
+                          className="hover:text-[#4FAAFF] flex gap-2  duration-700 font-semibold dark:hover:text-[#4FAAFF] dark:text-[#DFE0DF]"
                         >
                           - {ele.title}
                           <Link size={20} className="lg:block hidden" />

@@ -58,7 +58,7 @@ export default function Labortoures() {
                 }`}
               >
                 <div>
-                  <h2 className="mb-4   text-[#2A5DA5] font-bold text-base md:text-lg">
+                  <h2 className="mb-4   text-[#ff9825] font-bold text-base md:text-lg">
                     Les Laboratoire impliqués :{" "}
                   </h2>
                   <div className=" pb-4 ml-8 space-y-4 text-gray-500   dark:text-gray-400">
@@ -66,7 +66,7 @@ export default function Labortoures() {
                       <LinkA
                         key={index}
                         href={`/laboratoireInfo/${ele.url}`}
-                        className="hover:text-[#ff9825] flex items-center gap-2 duration-700 dark:hover:text-[#ff9825] dark:text-[#DFE0DF]"
+                        className="hover:text-[#4FAAFF] flex gap-2  duration-700 font-semibold dark:hover:text-[#4FAAFF] dark:text-[#DFE0DF]"
                       >
                         - {ele.title}
                         <Link size={20} className="lg:block hidden" />
@@ -80,7 +80,7 @@ export default function Labortoures() {
                     ele.equipes.length === 0 ? "hidden" : "block"
                   } `}
                 >
-                  <h2 className={`mb-4 text-lg font-bold text-[#2A5DA5] `}>
+                  <h2 className={`mb-4 text-lg font-bold text-[#ff9825] `}>
                     Les équipes impliquées :{" "}
                   </h2>
                   <li>
@@ -89,7 +89,7 @@ export default function Labortoures() {
                         <LinkA
                           key={index}
                           href={`/laboratoireInfo/${ele.url}`}
-                          className="hover:text-[#ff9825] flex gap-2 items-center  duration-700 dark:hover:text-[#ff9825] dark:text-[#DFE0DF]"
+                          className="hover:text-[#4FAAFF] flex gap-2  duration-700 font-semibold dark:hover:text-[#4FAAFF] dark:text-[#DFE0DF]"
                         >
                           - {ele.title}
                           <Link size={20} className="lg:block hidden" />
