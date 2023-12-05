@@ -1,10 +1,9 @@
 
 import { useTheme } from "next-themes";
 import { useRouter } from 'next/router'
-import { Codesandbox, Menu , X, x} from "react-feather";
+import { Codesandbox, Menu , X} from "react-feather";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Loading from "@/pages/components/loading";
 export default function Navbar(){
     const router = useRouter()
     const { theme, setTheme } = useTheme();
