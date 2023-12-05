@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Loading from "../components/loading";
 import { useEffect, useState } from "react";
-import { Mail, User } from "react-feather";
+import { Mail, User, XOctagon } from "react-feather";
 export default function LaboratoireInfo() {
   const router = useRouter();
   const [etablissmentInfo, setEtablissmentInfo] = useState([
@@ -43,20 +43,25 @@ export default function LaboratoireInfo() {
         {condition? (
           <div className="flex lg:flex-row flex-col  gap-4 items-center justify-center">
             <span className="text-2xl font-semibold flex lg:flex-row flex-col items-center gap-4">
-              <span className="text-[#ff9825] uppercase flex items-center gap-2">
+              <span className="text-[#ff9825] capitalize flex items-center gap-2">
                 le directeur <User />:{" "}
               </span>
               {etablissmentInfo[0]?.responsables[0]?.directeur}
             </span>
+
             <span className="text-2xl font-semibold flex lg:flex-row flex-col items-center gap-4">
-              <span className="text-[#ff9825] uppercase flex items-center gap-2">
-                email <Mail size={30} /> :{" "}
-              </span>
-              {etablissmentInfo[0]?.responsables[0]?.email}
+              
+                <span className="text-[#ff9825]  capitalize flex items-center gap-2">
+                  email <Mail size={30} /> :{" "}
+                </span>
+                <a className="hover:text-[#4FAAFF] duration-500" href={`mailto:${etablissmentInfo[0]?.responsables[0]?.email}`}>
+                {etablissmentInfo[0]?.responsables[0]?.email}
+                </a>
             </span>
+            
           </div>
         ) : (
-          <div className=" text-center text-[#ff9825] uppercase text-2xl font-semibold">Aucune donnée de ce laboratoire</div>
+          <div className=" flex flex-col lg:flex-row items-center justify-center text-center  gap-2 text-red-500 uppercase text-2xl font-bold"><XOctagon size={50}/> Aucune donnée de ce laboratoire</div>
         )}
       </div>
     </>
