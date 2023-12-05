@@ -14,10 +14,12 @@ export default function Footer(){
                         Copyright &copy;  {new Date().getFullYear()} . All rights are reserved by InnovTech
 
                     </span>
-                    <spna className="flex gap-4 ">
+                   
+                    <spna className="flex gap-6 items-center ">
                         <Mail />
                         <Facebook/>
                         <Linkedin/> 
+                        
                     </spna>
 
                 </div>

@@ -1,7 +1,7 @@
 
 import { useTheme } from "next-themes";
 import { useRouter } from 'next/router'
-import { Menu , X, x} from "react-feather";
+import { Codesandbox, Menu , X, x} from "react-feather";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Loading from "@/pages/components/loading";
@@ -35,8 +35,10 @@ export default function Navbar(){
                     
                     <div className="  bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4    shadow-2xl top-0 right-0 left-0">
                         <div className="container flex items-center justify-between">
-                            <div>
-                                <span className=" font-bold text-2xl">Innov<span className="text-[#ff9825]">TECH</span></span>
+                            <div className="flex gap-4 items-center ">
+                          
+                                <span className=" flex items-center font-bold text-2xl "><Codesandbox size={40} className="text-[#ff9825]"/>Innov<span className="text-[#ff9825]">TECH</span></span>
+                                {/* <img src="/image/logo.png" alt="logo" className=" w-10" /> */}
                             </div>
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
@@ -65,9 +67,11 @@ export default function Navbar(){
                         
                             <div className="container ">
                                 <div className="flex px-2  items-center justify-between">
-                                    <div>
-                                    <span className=" font-bold text-xl">Innov<span className="text-[#ff9825]">TECH</span></span>
-                                    </div>
+                                <div className="flex gap-4 items-center ">
+                          
+                                    <span className=" flex items-center font-bold text-2xl "><Codesandbox size={35} className="text-[#ff9825]"/>Innov<span className="text-[#ff9825]">TECH</span></span>
+                                    {/* <img src="/image/logo.png" alt="logo" className=" w-10" /> */}
+                                </div>
                                     <button onClick={()=>{setOpen(!open)}} className=" md:hidden block">
                                             <Menu size={30} className=" stroke-2"/>
                                     </button>
