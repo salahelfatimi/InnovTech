@@ -8,7 +8,11 @@ export default function NotFound() {
         <AlertOctagon size={90} className="text-red-500" />
         <h2 className="text-red-500 font-bold text-5xl">Not Found</h2>
         <p className=" font-bold text-2xl flex items-center gap-2 flex-col text-center justify-center text-white">
-          Could not find the requested resource in  <span className=" flex items-center  "><Codesandbox size={35} className="text-[#ff9825]"/>Innov<span className="text-[#ff9825]">TECH</span></span>
+          Could not find the requested resource in{" "}
+          <span className=" flex items-center  ">
+            <Codesandbox size={35} className="text-[#ff9825]" />
+            Innov<span className="text-[#ff9825]">TECH</span>
+          </span>
         </p>
         <Link
           className=" font-bold text-xl text-blue-600 flex hover:text-[#ff9825] duration-700 items-center gap-2"
