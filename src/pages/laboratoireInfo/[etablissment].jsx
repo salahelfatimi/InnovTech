@@ -43,16 +43,16 @@ export default function LaboratoireInfo() {
         {condition? (
           <div className="flex lg:flex-row flex-col  gap-4 items-center justify-center">
             <span className="text-2xl font-semibold flex lg:flex-row flex-col items-center gap-4">
-              <span className="text-[#ff9825] capitalize flex items-center gap-2">
-                le directeur <User />:{" "}
+              <span className="text-[#ff9825]  font-bold capitalize flex items-center gap-2">
+              <User /> le directeur :{" "}
               </span>
               {etablissmentInfo[0]?.responsables[0]?.directeur}
             </span>
 
             <span className="text-2xl font-semibold flex lg:flex-row flex-col items-center gap-4">
               
-                <span className="text-[#ff9825]  capitalize flex items-center gap-2">
-                  email <Mail size={30} /> :{" "}
+                <span className="text-[#ff9825] font-bold  capitalize flex items-center gap-2">
+                <Mail size={30} />  email :{" "}
                 </span>
                 <a className="hover:text-[#4FAAFF] duration-500" href={`mailto:${etablissmentInfo[0]?.responsables[0]?.email}`}>
                 {etablissmentInfo[0]?.responsables[0]?.email}
