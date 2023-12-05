@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Loading from "./components/loading";
+import ButtonUp from "./components/buttonUp";
 
 export default function Aboute() {
   const [data, setData] = useState([]);
@@ -17,9 +18,9 @@ export default function Aboute() {
     <>
       <div className=" mx-auto py-8 relative z-10 pt-12">
         <Loading />
-
+        <ButtonUp/>
         <div className="container z-10 relative">
-          <h1 className="text-2xl  lg:text-4xl text-center font-extrabold mb-6 text-[#ff9825]">
+          <h1 className="text-2xl  lg:text-4xl text-center font-extrabold mb-6 text-[#ff9825] shadow-3xl">
             À propos d&apos;InnovTech : Ingénierie et Innovation Technologique
             des Systèmes et des Procédés
           </h1>

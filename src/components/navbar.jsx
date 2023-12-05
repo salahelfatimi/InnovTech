@@ -27,7 +27,7 @@ export default function Navbar(){
     
     return(
         <>
-            <div className="z-20  ">
+            <div id="top"  className="z-20  ">
                 
                 {/* pc Nav bar */}
                 <div className="  md:block hidden">

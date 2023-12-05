@@ -32,7 +32,10 @@ export default function LaboratoireInfo() {
       <div className="container mt-10 py-12 relative z-10 ">
         <Loading />
         <div className="flex flex-col ">
-            <span className="lg:text-4xl text-2xl  font-bold bg-[#ff9825] text-white text-center  p-4 rounded-2xl capitalize">les responsables de laboratoire {etablissmentInfo[0].name}</span>
+            <span className="lg:text-4xl text-xl  font-bold bg-[#ff9825] text-white text-center  p-4 rounded-2xl capitalize">les responsables de laboratoire {etablissmentInfo[0].name}</span>
+        </div>
+        <div>
+            {/* {etablissmentInfo[0].responsables} */}
         </div>
 
       </div>
