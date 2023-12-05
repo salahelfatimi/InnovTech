@@ -1,0 +1,248 @@
+[
+  {
+    "name": "LSEEET",
+    "responsables": [
+      {
+        "id": 1,
+        "directeur": "Mr.Driss BELKHAYAT",
+        "email": "driss.belkhayat@uca.ma"
+      }
+    ],
+    "doctorants": []
+  },
+  {
+    "name": "L2IS",
+    "responsables": [
+      {
+        "id": 1,
+        "directeur": "Said Rakrak",
+        "email": "s.rakrak@uca.ma"
+      }
+    ],
+    "doctorants": []
+  },
+  {
+    "name": "LMAI",
+    "responsables": [
+      {
+        "id": 1,
+        "directeur": "Mr.Abdelilah Hakim",
+        "email": "a.hakim@uca.ma"
+      }
+    ],
+    "doctorants": []
+  },
+  {
+    "name": "LRDDS",
+    "responsables": [
+      {
+        "id": 1,
+        "directeur": "Mr.Moha Taourirte",
+        "email": "m.taourirte@uca.ma"
+      }
+    ],
+    "doctorants": []
+  },
+  {
+    "name": "IMED-LAB",
+    "responsables": [],
+    "doctorants": []
+  },
+  {
+    "name": "Procede",
+    "responsables": [
+      {
+        "id": 1,
+        "directeur": "Mr.Hassan Chehouani",
+        "email": "h.chehouani@uca.ma"
+      }
+    ],
+    "doctorants": []
+  },
+  {
+    "name": "CISIEV",
+    "responsables": [],
+    "doctorants": []
+  },
+  {
+    "name": "LISA",
+    "responsables": [],
+    "doctorants": []
+  },
+  {
+    "name": "LMSC",
+    "responsables": [
+      {
+        "id": 1,
+        "directeur": "Mr.Walid BOUARIFI",
+        "email": "w.bouarifi@uca.ma"
+      }
+    ],
+    "doctorants": []
+  },
+  {
+    "name": "SSA",
+    "responsables": [],
+    "doctorants": []
+  },
+  {
+    "name": "GTA",
+    "responsables": [],
+    "doctorants": []
+  },
+  {
+    "name": "LIRBEM",
+    "responsables": [],
+    "doctorants": []
+  },
+  {
+    "name": "LMIMSC",
+    "responsables": [
+      {
+        "id": 1,
+        "directeur": "Mr.Driss Meskine",
+        "email": "dr.meskine@uca.ac.ma"
+      },
+      {
+        "id": 2,
+        "lastname": "KARAMI",
+        "firstname": "Fahd",
+        "category": "PES",
+        "subject": "Mathématiques"
+      },
+      {
+        "id": 3,
+        "lastname": "El MOURABIT",
+        "firstname": "IDRISS",
+        "category": "PA",
+        "subject": "Mathématiques"
+      },
+      {
+        "id": 4,
+        "lastname": "CHOUHAD",
+        "firstname": "Nadia",
+        "category": "PA",
+        "subject": "Mathématiques"
+      },
+      {
+        "id": 5,
+        "lastname": "JOHRI",
+        "firstname": "Mustapha",
+        "category": "PA",
+        "subject": "Informatique & Mathématiques"
+      },
+      {
+        "id": 6,
+        "lastname": "SADIK",
+        "firstname": "Khadija",
+        "category": "PA",
+        "subject": "Mathématiques"
+      },
+      {
+        "id": 7,
+        "lastname": "ZIAD",
+        "firstname": "Lamia",
+        "category": "PA",
+        "subject": "Informatique & Mathématiques"
+      },
+      {
+        "id": 8,
+        "lastname": "ERRAJI",
+        "firstname": "ElMahdi",
+        "category": "PA",
+        "subject": "Informatique & Mathématiques"
+      },
+      {
+        "id": 9,
+        "lastname": "GOUNANE",
+        "firstname": "Said",
+        "category": "PA",
+        "subject": "Informatique"
+      },
+      {
+        "id": 10,
+        "lastname": "GUEZZAZ",
+        "firstname": "Azidine",
+        "category": "PA",
+        "subject": "Informatique"
+      },
+      {
+        "id": 11,
+        "lastname": "BARKOUCH",
+        "firstname": "Yassir",
+        "category": "PH",
+        "subject": "Modélisation en environnement"
+      },
+      {
+        "id": 12,
+        "lastname": "AMATOUL",
+        "firstname": "Fatima Ezzahra",
+        "category": "PA",
+        "subject": "Physique"
+      },
+      {
+        "id": 13,
+        "lastname": "BENKIRANE",
+        "firstname": "Said",
+        "category": "PH",
+        "subject": "Informatique & Physique"
+      },
+      {
+        "id": 14,
+        "lastname": "ASEBRIY",
+        "firstname": "Zahra",
+        "category": "PA",
+        "subject": "Informatique & Physique"
+      }
+    ],
+    "doctorants": []
+  },
+  {
+    "name": "SAEDD",
+    "responsables": [],
+    "doctorants": []
+  },
+  {
+    "name": "LSAEDD",
+    "responsables": [],
+    "doctorants": []
+  },
+  {
+    "name": "LMPEQ",
+    "responsables": [
+      {
+        "id": 1,
+        "directeur": "Mr.Abdelkrim ABOURRICHE",
+        "email": "a.abourriche@uca.ma"
+      }
+    ],
+    "doctorants": []
+  },
+  {
+    "name": "LMISCOM",
+    "responsables": [],
+    "doctorants": []
+  },
+  {
+    "name": "SARS",
+    "responsables": [
+      {
+        "id": 1,
+        "directeur": "Mr.Abdellah ZYANE",
+        "email": "a.zyane@uca.ma"
+      }
+    ],
+    "doctorants": []
+  },
+  {
+    "name": "LAPSSII",
+    "responsables": [
+      {
+        "id": 1,
+        "directeur": "Mr.MOHSINE HACHKAR",
+        "email": "m.hachkar@uca.ma"
+      }
+    ],
+    "doctorants": []
+  }
+]
