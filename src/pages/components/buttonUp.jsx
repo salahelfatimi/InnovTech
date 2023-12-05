@@ -36,14 +36,14 @@ export default function ButtonUp() {
 
   return (
     <>
-      {isVisible && (
+      
         <button
           onClick={scrollToSection}
-          className=" fixed z-20 bottom-8 right-12 bg-[#FFECCC] p-2 rounded-full  animate-bounce"
+          className={`fixed z-20  bg-[#FFECCC] p-2 rounded-full  animate-bounce duration-1000 transition ${isVisible?"bottom-8 right-12" : "bottom-8 right-12 bg-[#FFECCC]/0"}`}
         >
-          <ArrowUp size={30} className=" text-[#ff9825]" />
+          <ArrowUp size={30} className={` duration-1000 transition ${isVisible?"text-[#ff9825]":"text-[#ff9825]/0"}`} />
         </button>
-      )}
+     
     </>
   );
 }
