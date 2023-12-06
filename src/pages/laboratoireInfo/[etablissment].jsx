@@ -80,7 +80,7 @@ export default function LaboratoireInfo() {
           </>
         ) : (
           <div className=" flex flex-col lg:flex-row items-center justify-center text-center  gap-2  uppercase text-2xl font-bold">
-            <AlertTriangle className="text-red-500 animate-pulse" size={50} /> Nous ne disposons actuellement pas du <span className="text-red-500">'LABORATOIRE {etablissment}' </span>chez InnovTech.
+            <AlertTriangle className="text-red-500 animate-pulse" size={50} /> Nous ne disposons actuellement pas du <span className="text-red-500">&apos;LABORATOIRE {etablissment}&apos; </span>chez InnovTech.
           </div>
         )}
       </div>
