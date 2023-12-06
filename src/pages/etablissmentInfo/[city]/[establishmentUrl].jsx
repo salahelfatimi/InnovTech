@@ -1,21 +1,23 @@
 import Loading from "@/pages/components/loading";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { ChevronDown, Link } from "react-feather";
+import { AlertTriangle, ChevronDown, Link } from "react-feather";
 import LinkA    from "next/link" ;
 export default function Labortoures() {
-  const [openItem, setOpenItem] = useState(null);
   const router = useRouter();
-  const [laboratoire, setLaboratoire] = useState([]);
-  const { city, establishment } = router.query;
+  const [openItem, setOpenItem] = useState(null);
+  const [establishment, setEstablishment] = useState([]);
+  const { city, establishmentUrl } = router.query;
   const [establishmentName, setestablishmentName] = useState("");
+
+   // Define an asynchronous function to fetch data
   useEffect(() => {
     const fetchData = async () => {
       if (city) {
         try {
           const response = await fetch(`/json/etablissmentInfo/${city}.json`);
           const data = await response.json();
-          setLaboratoire(data);
+          setEstablishment(data);
         } catch (err) {
           console.log(err);
         }
@@ -23,9 +25,11 @@ export default function Labortoures() {
     };
     fetchData();
   }, [city]);
+  
+  // useEffect hook that sets 'establishmentName' when 'establishmentUrl' changes
   useEffect(() => {
-    setestablishmentName(establishment);
-  }, [establishment]);
+    setestablishmentName(establishmentUrl);
+  }, [establishmentUrl]);
   const toggleOpen = (id) => {
     setOpenItem((prevOpenItem) => (prevOpenItem === id ? null : id));
   };
@@ -33,8 +37,9 @@ export default function Labortoures() {
   return (
     <div className="container mt-10 py-12 relative z-10 ">
       <Loading />
+      {establishment.length>0?(
       <div className="flex flex-col gap-8">
-        {laboratoire?.map((ele, index) => (
+        {establishment?.map((ele, index) => (
           <div className="  " key={index}>
             <div>
               <div
@@ -114,6 +119,14 @@ export default function Labortoures() {
           </div>
         ))}
       </div>
+      ):(
+          <>
+            <div className=" flex flex-col lg:flex-row items-center justify-center text-center  gap-2  uppercase text-2xl font-bold">
+              <AlertTriangle className="text-red-500 animate-pulse" size={50} /> Nous ne disposons actuellement pas du <span className="text-red-500">'establishment {city}' </span>chez InnovTech.
+            </div>
+          </>
+      )
+      }
     </div>
   );
 }

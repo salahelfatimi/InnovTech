@@ -2,20 +2,22 @@ import Loading from "@/pages/components/loading";
 import { useRouter } from "next/router";
 import LinkA    from "next/link" ;
 import { useEffect, useState } from "react";
-import { ChevronDown, Link } from "react-feather";
+import { AlertTriangle, ChevronDown, Link } from "react-feather";
 
 export default function Labortoures() {
   const [openItem, setOpenItem] = useState(null);
   const router = useRouter();
-  const [laboratoire, setLaboratoire] = useState([]);
+  const [establishment, setEstablishment] = useState([]);
   const { city } = router.query;
+  
+   // Define an asynchronous function to fetch data
   useEffect(() => {
     const fetchData = async () => {
       if (city) {
         try {
           const response = await fetch(`/json/etablissmentInfo/${city}.json`);
           const data = await response.json();
-          setLaboratoire(data);
+          setEstablishment(data);
         } catch (err) {
           console.log(err);
         }
@@ -27,12 +29,13 @@ export default function Labortoures() {
   const toggleOpen = (id) => {
     setOpenItem((prevOpenItem) => (prevOpenItem === id ? null : id));
   };
-
+  console.log(establishment)
   return (
     <div className="container mt-10 py-12 relative z-10 ">
       <Loading />
+      {establishment.length>0?(
       <div className="flex flex-col gap-8">
-        {laboratoire?.map((ele, index) => (
+        {establishment?.map((ele, index) => (
           <div className="  " key={index}>
             <div>
               <div
@@ -59,10 +62,10 @@ export default function Labortoures() {
               >
                 <div>
                   <h2 className="mb-4   text-[#ff9825] font-bold text-base md:text-lg">
-                    Les Laboratoire impliqués :{" "}
+                    Les establishment impliqués :{" "}
                   </h2>
                   <div className=" pb-4 ml-8 space-y-4 text-gray-500   dark:text-gray-400">
-                    {ele.laboratoire?.map((ele, index) => (
+                    {ele.establishment?.map((ele, index) => (
                       <LinkA
                         key={index}
                         href={`/laboratoireInfo/${ele.url}`}
@@ -103,6 +106,14 @@ export default function Labortoures() {
           </div>
         ))}
       </div>
+      ):(
+        <>
+          <div className=" flex flex-col lg:flex-row items-center justify-center text-center  gap-2  uppercase text-2xl font-bold">
+            <AlertTriangle className="text-red-500 animate-pulse" size={50} /> Nous ne disposons actuellement pas du <span className="text-red-500">'establishment {city}' </span>chez InnovTech.
+          </div>
+        </>
+      )}
     </div>
+  
   );
 }

@@ -4,8 +4,9 @@ import { AlertOctagon, Codesandbox, Home } from "react-feather";
 export default function NotFound() {
   return (
     <>
+      
       <div className="flex flex-col gap-4 items-center justify-center h-screen bg-[#2d2e32]">
-        <AlertOctagon size={90} className="text-red-500" />
+        <AlertOctagon size={90} className="text-red-500 animate-pulse" />
         <h2 className="text-red-500 font-bold text-5xl">Not Found</h2>
         <p className=" font-bold text-2xl flex items-center gap-2 flex-col text-center justify-center text-white">
           Could not find the requested resource in{" "}
