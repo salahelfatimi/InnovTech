@@ -62,10 +62,10 @@ export default function Labortoures() {
               >
                 <div>
                   <h2 className="mb-4   text-[#ff9825] font-bold text-base md:text-lg">
-                    Les establishment impliqués :{" "}
+                    Les laboratoire impliqués :{" "}
                   </h2>
                   <div className=" pb-4 ml-8 space-y-4 text-gray-500   dark:text-gray-400">
-                    {ele.establishment?.map((ele, index) => (
+                    {ele.laboratoire?.map((ele, index) => (
                       <LinkA
                         key={index}
                         href={`/laboratoireInfo/${ele.url}`}
