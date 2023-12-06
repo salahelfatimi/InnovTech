@@ -121,9 +121,9 @@ export default function Labortoures() {
       </div>
       ):(
           <>
-            <div className=" flex flex-col lg:flex-row items-center justify-center text-center  gap-2  uppercase text-2xl font-bold">
-              <AlertTriangle className="text-red-500 animate-pulse" size={50} /> Nous ne disposons actuellement pas du <span className="text-red-500">&apos;establishment {city}&apos; </span>chez InnovTech.
-            </div>
+           <div className=" flex flex-col lg:flex-row items-center justify-center text-center  gap-2   capitalize text-2xl font-bold">
+            <AlertTriangle className="text-red-500 animate-pulse" size={50} /> Nous ne disposons actuellement pas du <span className="text-red-500 uppercase">&apos;establishment {city}&apos; </span>chez <span className=" capitalize">Innov<span className="text-[#ff9825]">TECH</span></span>.
+          </div>
           </>
       )
       }
