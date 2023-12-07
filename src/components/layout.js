@@ -16,7 +16,7 @@ export default function Layout({ children }) {
         </Head>
         <div></div>
         <Navbar />
-        <main className="py-14 mb-auto bg-[#F4F7FC] dark:bg-[#272B34]   ">
+        <main className="pt-20 mb-auto bg-[#F4F7FC] dark:bg-[#272B34]">
           {children}
         </main>
         <div className=" bg-[#F4F7FC]  dark:bg-[#272B34]">

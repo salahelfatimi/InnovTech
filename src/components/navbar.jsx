@@ -27,22 +27,18 @@ export default function Navbar(){
     return(
         <>
             <div id="top"  className="z-20  ">
-                
                 {/* pc Nav bar */}
                 <div className="  md:block hidden">
-               
-                    
-                    <div className="  bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4   border-b-2 border-white dark:border-[#1C1F24] top-0 right-0 left-0">
+                    <div className="  bg-white dark:bg-[#1C1F24] fixed py-6  border-b-2 border-white dark:border-[#1C1F24] top-0 right-0 left-0">
                         <div className="container flex items-center justify-between">
                             <div className="flex gap-4 items-center ">
-                          
                                 <span className=" flex items-center font-bold text-2xl "><Codesandbox size={40} className="text-[#ff9825]"/>Innov<span className="text-[#ff9825]">TECH</span></span>
                                 {/* <img src="/image/logo.png" alt="logo" className=" w-10" /> */}
                             </div>
-                            <div className="flex flex-row items-center gap-4">
+                            <div className="flex flex-row items-center gap-10">
                                 {itemsNav.map((ele, index) => (
                                 <Link key={index} href={ele.href}>
-                                    <div  className={` hover:text-[#ff9825]  dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `}>
+                                    <div  className={` hover:text-[#ff9825]  dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-2 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} capitalize`}>
                                         <span>{ele.title}</span>
                                     </div>
                                 </Link>
