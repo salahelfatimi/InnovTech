@@ -24,7 +24,7 @@ export default function Etablissment() {
           {etablissment.map((ele, index) => (
             <div
               key={index}
-              className="  lg:w-[75%] w-auto flex  flex-col-reverse  odd:lg:flex-row   even:lg:flex-row-reverse items-center gap-2 dark:bg-[#1c1f24] rounded-3xl border-8 border-white dark:border-[#1c1f24] drop-shadow-2xl  bg-white "
+              className="  lg:w-[75%] w-auto flex  flex-col-reverse  odd:lg:flex-row   even:lg:flex-row-reverse items-center gap-2 dark:bg-[#1c1f24] rounded-xl border-8 border-white dark:border-[#1c1f24] drop-shadow-2xl  bg-white "
             >
               <div className="flex flex-col gap-8 lg:w-1/2 p-6 items-center  lg:items-start">
                 <span className=" uppercase font-bold text-lg lg:text-xl lg:text-start text-center dark:text-[#fff] text-black">
@@ -59,7 +59,7 @@ export default function Etablissment() {
               </div>
               <div className="lg:w-1/2">
                 <img
-                  className="object-cover  w-[30rem] lg:w-auto rounded-t-2xl  lg:rounded-2xl  h-full lg:h-[22rem]  "
+                  className="object-cover  w-[30rem] lg:w-auto rounded-t-xl  lg:rounded-xl  h-full lg:h-[22rem]  "
                   src={`/image/etablissment/${ele.image}`}
                   alt=""
                 />

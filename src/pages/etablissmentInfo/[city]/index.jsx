@@ -40,7 +40,7 @@ export default function Labortoures() {
             <div>
               <div
                 className={`flex justify-between items-center bg-[#ff9825] p-4   drop-shadow-2xl ${
-                  openItem === ele.id ? "rounded-t-3xl" : "rounded-3xl"
+                  openItem === ele.id ? "rounded-t-xl" : "rounded-xl"
                 }`}
               >
                 <span className="font-bold text-lg text-white">
@@ -56,7 +56,7 @@ export default function Labortoures() {
                 </button>
               </div>
               <div
-                className={` relative rounded-b-3xl   bg-[#FFFFFF] border-b-2 border-x-2 border-[#ff9825] dark:bg-[#1c1f24] p-4 drop-shadow-2xl  ${
+                className={` relative rounded-b-xl   bg-[#FFFFFF] border-b-2 border-x-2 border-[#ff9825] dark:bg-[#1c1f24] p-4 drop-shadow-2xl  ${
                   openItem === ele.id ? "block" : "hidden"
                 }`}
               >
