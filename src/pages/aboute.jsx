@@ -16,7 +16,7 @@ export default function Aboute() {
 
   return (
     <>
-      <div className=" mx-auto py-8 relative z-10 pt-12">
+      <div className=" mx-auto py-24 relative z-10 pt-12">
         <Loading />
         <ButtonUp/>
         <div className="container z-10 relative">
@@ -66,29 +66,7 @@ export default function Aboute() {
             </ul>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-xl  lg:text-3xl text-center lg:text-start font-extrabold  text-[#ff9825] mb-4">
-              Approche de formation complète
-            </h2>
-            <ul className="list-disc pl-6 font-bold  dark:text-[#DFE0DF]">
-              <li>
-                Approfondissement scientifique ou technique : Élargir les
-                connaissances en lien avec les disciplines académiques du projet
-                de recherche.
-              </li>
-              <li>
-                Formation transversale : Améliorer le développement
-                professionnel avec des cours tels que :
-                <ul className="list-disc pl-6">
-                  <li>Compréhension économique</li>
-                  <li>Communication et outils de transmission</li>
-                  <li>Anglais scientifique et technique</li>
-                  <li>Gestion d&apos;équipe</li>
-                  <li>Intégration professionnelle</li>
-                </ul>
-              </li>
-            </ul>
-          </section>
+          
 
           <section className="mb-8 ">
             <h2 className="text-xl  lg:text-3xl font-extrabold text-center lg:text-start mb-4 text-[#ff9825]">
@@ -114,7 +92,7 @@ export default function Aboute() {
               {data.map((ele, index) => (
                 <div
                   key={index}
-                  className="flex flex-col gap-4 bg-[#F3DFCB] shadow-lg      dark:bg-[#1c1f24]  p-6 rounded-3xl"
+                  className="flex flex-col gap-4 bg-white shadow-lg      dark:bg-[#1c1f24]  p-6 rounded-3xl"
                 >
                   <span className="text-[#ff9825]  font-bold text-lg md:text-4xl">
                     {ele.title}
