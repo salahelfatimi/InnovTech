@@ -10,14 +10,14 @@ export default function InfoBelkhayat(){
                     <span className=" text-lg lg:text-xl font-medium dark:text-[#DFE0DF]">Le directeur de la cité de l&apos;innovation de Marrakech</span>
                     <div className="flex gap-4 items-center">
                         <span>
-                            <Linkedin size={35} className="bg-[#0a66c2]  shadow-md rounded stroke-slate-50 p-1"/>
+                            <Linkedin size={35} className="bg-[#0a66c2]   rounded stroke-slate-50 p-1"/>
                         </span>
 
                         <span>
-                            <Facebook size={35} className="bg-[#0866ff] fill-white shadow-md rounded-full stroke-1 stroke-slate-50 p-1"/>
+                            <Facebook size={35} className="bg-[#0866ff] fill-white  rounded-full stroke-1 stroke-slate-50 p-1"/>
                         </span>
                         <span>
-                            <Mail size={35} className=" shadow-md rounded fill-white-600 stroke-2 stroke-red-500 p-1"/>
+                            <Mail size={35} className="  rounded fill-white-600 stroke-2 stroke-red-500 p-1"/>
                         </span>
                     </div>
 
