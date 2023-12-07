@@ -92,7 +92,7 @@ export default function Aboute() {
               {data.map((ele, index) => (
                 <div
                   key={index}
-                  className="flex flex-col gap-4 bg-white shadow-lg      dark:bg-[#1c1f24]  p-6 rounded-3xl"
+                  className="flex flex-col gap-4 bg-white       dark:bg-[#1c1f24]  p-6 rounded-md"
                 >
                   <span className="text-[#ff9825]  font-bold text-lg md:text-4xl">
                     {ele.title}

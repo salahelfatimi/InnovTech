@@ -6,13 +6,13 @@ export default function Loading() {
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setShow(true);
-    }, 2000);
+    }, 1000);
 
     // Clear the interval after 30 seconds
     setTimeout(() => {
       clearInterval(slideInterval);
       setShow(true);
-    }, 2000);
+    }, 1000);
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(slideInterval);
@@ -20,7 +20,7 @@ export default function Loading() {
   return (
     <>
       <div
-        className={`fixed  inset-0 flex items-center justify-center bg-white dark:bg-[#2d2e32] duration-1000 transition z-50  ${
+        className={`fixed  inset-0 flex items-center justify-center bg-[#f4f7fc] dark:bg-[#2d2e32] duration-1000 transition z-50  ${
           show == false ? "translate-x-0" : "-translate-y-full"
         } `}
       >
