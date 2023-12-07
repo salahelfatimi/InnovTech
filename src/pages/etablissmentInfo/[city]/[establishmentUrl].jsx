@@ -43,7 +43,7 @@ export default function Labortoures() {
           <div className="  " key={index}>
             <div>
               <div
-                className={`flex justify-between items-center bg-[#ff9825] p-4   drop-shadow-2xl ${
+                className={`flex justify-between items-center bg-[#ff9825] p-4    ${
                   openItem === ele.id || ele.etablissment === establishmentName
                     ? "rounded-t-xl"
                     : "rounded-xl"
@@ -67,7 +67,7 @@ export default function Labortoures() {
                 </button>
               </div>
               <div
-                className={` relative rounded-b-xl   bg-[#FFFFFF] border-b-2 border-x-2 border-[#ff9825] dark:bg-[#1c1f24] p-4 drop-shadow-2xl  ${
+                className={` relative rounded-b-xl   bg-[#FFFFFF] border-b-2 border-x-2 border-[#ff9825] dark:bg-[#1c1f24] p-4   ${
                   openItem === ele.id || ele.etablissment === establishmentName
                     ? "block"
                     : "hidden"
