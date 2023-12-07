@@ -88,11 +88,7 @@ export default function Contact() {
                   <input
                     value={formData.fullName}
                     onChange={handleInputChange}
-                    className={`border-2 dark:border-[#23272f] py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold   ${
-                      formData.fullName
-                        ? ""
-                        : "border-red-500 dark:border-red-500 placeholder:text-red-500"
-                    } `}
+                    className={`border-2 dark:border-[#23272f] py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold   `}
                     type="text"
                     name="fullName"
                     placeholder="Nom et Prénom"
@@ -100,11 +96,7 @@ export default function Contact() {
                   <input
                     value={formData.tele}
                     onChange={handleInputChange}
-                    className={`border-2 dark:border-[#23272f] py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold  ${
-                      formData.tele
-                        ? ""
-                        : "border-red-500 dark:border-red-500 placeholder:text-red-500"
-                    }`}
+                    className={`border-2 dark:border-[#23272f] py-2 w-1/2 px-4 rounded-md placeholder:italic placeholder:font-semibold  `}
                     type="tele"
                     name="tele"
                     placeholder="Téléphone"
@@ -113,11 +105,7 @@ export default function Contact() {
                 <input
                   value={formData.email}
                   onChange={handleInputChange}
-                  className={`border-2 dark:border-[#23272f] ${
-                    formData.email
-                      ? ""
-                      : "border-red-500 dark:border-red-500 placeholder:text-red-500"
-                  } py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-2 dark:border-[#23272f]  py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   type="text"
                   name="email"
                   id="email"
@@ -127,11 +115,7 @@ export default function Contact() {
                 <input
                   value={formData.subject}
                   onChange={handleInputChange}
-                  className={`border-2 dark:border-[#23272f] ${
-                    formData.subject
-                      ? ""
-                      : "border-red-500 dark:border-red-500 placeholder:text-red-500"
-                  } py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-2 dark:border-[#23272f]  py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   type="text"
                   name="subject"
                   id="subject"
@@ -140,11 +124,7 @@ export default function Contact() {
                 <textarea
                   value={formData.message}
                   onChange={handleInputChange}
-                  className={`border-2 dark:border-[#23272f] ${
-                    formData.message
-                      ? ""
-                      : "border-red-500  dark:border-red-500 placeholder:text-red-500"
-                  } py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
+                  className={`border-2 dark:border-[#23272f]  py-2  px-4 rounded-md w-full  placeholder:italic placeholder:font-semibold`}
                   name="message"
                   id="message"
                   cols="40"
