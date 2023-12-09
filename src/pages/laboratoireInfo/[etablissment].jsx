@@ -38,7 +38,7 @@ export default function LaboratoireInfo() {
     etablissmentInfo[0].responsables[0]?.directeur;
   return (
     <>
-      <div className="container flex flex-col gap-8 mt-10 py-12 relative z-10 ">
+      <div className="container flex flex-col gap-8 mt-10 py-4 relative z-10 ">
         <Loading />
         {condition ? (
           <>
