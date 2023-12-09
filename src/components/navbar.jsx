@@ -36,7 +36,7 @@ export default function Navbar(){
                         <div className="container flex items-center justify-between">
                             <div className="flex gap-4 items-center ">
                           
-                                <span className=" flex items-center font-bold text-2xl "><Codesandbox size={40} className="text-[#ff9825]"/>Innov<span className="text-[#ff9825]">TECH</span></span>
+                                <span className=" flex items-center font-bold text-2xl ">Innov<span className="text-[#ff9825]">TECH</span></span>
                                 {/* <img src="/image/logo.png" alt="logo" className=" w-10" /> */}
                             </div>
                             <div className="flex flex-row items-center gap-4">
@@ -68,7 +68,7 @@ export default function Navbar(){
                                 <div className="flex px-2  items-center justify-between">
                                 <div className="flex gap-4 items-center ">
                           
-                                    <span className=" flex items-center font-bold text-2xl "><Codesandbox size={35} className="text-[#ff9825]"/>Innov<span className="text-[#ff9825]">TECH</span></span>
+                                    <span className=" flex items-center font-bold text-2xl ">Innov<span className="text-[#ff9825]">TECH</span></span>
                                     {/* <img src="/image/logo.png" alt="logo" className=" w-10" /> */}
                                 </div>
                                     <button onClick={()=>{setOpen(!open)}} className=" md:hidden block">
