@@ -33,16 +33,16 @@ export default function Carousel(){
                     <div style={{ transform:`translateX(-${curr *100}%)` }} className="flex transition-transform ease-out duration-700 ">
                         {data.map((ele,index)=>(
                         
-                                <img key={index} className=" brightness-75  rounded-md"   src={`/image/carousel/${ele.src}`} alt={ele.title} />
+                                <img key={index} className=" brightness-75  rounded-md w-full"   src={`/image/carousel/${ele.src}`} alt={ele.title} />
                             
                         ))}
                     </div>
                     <div className=" absolute inset-0 flex items-center justify-between p-4 ">
-                        <button onClick={prev} className=" p-1 bg-[#f3dfcb] text-[#ff9825] duration-500 rounded-full shadow   ">
-                            <ChevronLeft size={35}/>
+                        <button onClick={prev} className=" p-1  text-[#ff9825] duration-500 rounded-full    ">
+                            <ChevronLeft size={50}/>
                         </button>
-                        <button onClick={next} className=" p-1 bg-[#f3dfcb] text-[#ff9825] z-30  duration-500 rounded-full shadow   ">
-                            <ChevronRight size={35}/>
+                        <button onClick={next} className=" p-1  text-[#ff9825] z-30  duration-500 rounded-full    ">
+                            <ChevronRight size={50}/>
                         </button>
                     </div>
                     <div className=" absolute bottom-3 left-0 right-0  justify-center md:p-8 p-2 flex   rounded-tr-lg ">
@@ -54,7 +54,7 @@ export default function Carousel(){
                                                 {ele.title}
                                         </div>
                                         <Link  href={`/etablissmentInfo/[city]/[establishment]`} as={`/etablissmentInfo/${ele.city}/${ele.title}`}>
-                                            <button className="bg-[#ff9825] font-bold border-4 border-[#ff9825] hover:bg-[#ffffff] hover:text-[#ff9825] dark:hover:text-[#fff] duration-700   dark:hover:bg-[#1c1f24]  text-white rounded-3xl   py-1 lg:py-2 lg:px-8 capitalize px-4 ">
+                                            <button className="bg-[#ff9825]  font-semibold text-sm lg:text-base border-4 border-[#ff9825] hover:bg-[#ffffff] hover:text-[#ff9825] dark:hover:text-[#fff] duration-700   dark:hover:bg-[#1c1f24]  text-white rounded-3xl   py-1 lg:py-1 lg:px-4 capitalize px-3 ">
                                                 Voir plus ...
                                             </button>
                                         </Link>
@@ -69,7 +69,7 @@ export default function Carousel(){
                         <div className="flex items-center justify-center gap-2">
                             {
                                 data.map((ele,index)=>(
-                                    <div key={index} className={` transition-all w-3 md:w-6 md:h-6 h-3 border-white  border-b-4 ${curr===index?"p-1":" border-opacity-50"}`}>
+                                    <div key={index} className={` transition-all w-2 md:w-3 md:h-3 h-2 bg-white rounded-full   ${curr===index?"p-1":" bg-opacity-50"}`}>
 
                                     </div>
                                 ))
