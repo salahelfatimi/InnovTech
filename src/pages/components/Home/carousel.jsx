@@ -26,14 +26,14 @@ export default function Carousel(){
     },[curr])
     return(
         <>
-            <div className="  flex items-center justify-center container">
+            <div className="  flex items-center justify-center lg:container">
             
           
-                <div className=" max-w-[1100px] max-h-[700px] overflow-hidden  rounded-md         relative">
+                <div className=" max-w-[1100px] max-h-[700px] overflow-hidden  lg:rounded-md        relative">
                     <div style={{ transform:`translateX(-${curr *100}%)` }} className="flex transition-transform ease-out duration-700 ">
                         {data.map((ele,index)=>(
                         
-                                <img key={index} className=" brightness-75  rounded-md w-full"   src={`/image/carousel/${ele.src}`} alt={ele.title} />
+                                <img key={index} className=" brightness-75   w-full lg:rounded-md"   src={`/image/carousel/${ele.src}`} alt={ele.title} />
                             
                         ))}
                     </div>
@@ -54,7 +54,7 @@ export default function Carousel(){
                                                 {ele.title}
                                         </div>
                                         <Link  href={`/etablissmentInfo/[city]/[establishment]`} as={`/etablissmentInfo/${ele.city}/${ele.title}`}>
-                                            <button className="bg-[#ff9825]  font-semibold text-sm lg:text-base border-4 border-[#ff9825] hover:bg-[#ffffff] hover:text-[#ff9825] dark:hover:text-[#fff] duration-700   dark:hover:bg-[#1c1f24]  text-white rounded-3xl   py-1 lg:py-1 lg:px-4 capitalize px-3 ">
+                                            <button className="bg-[#ff9825]  font-semibold text-sm lg:text-base border-2 border-[#ff9825] hover:bg-[#ffffff] hover:text-[#ff9825] dark:hover:text-[#fff] duration-700   dark:hover:bg-[#1c1f24]  text-white rounded-md   py-1  px-3 capitalize  ">
                                                 Voir plus ...
                                             </button>
                                         </Link>

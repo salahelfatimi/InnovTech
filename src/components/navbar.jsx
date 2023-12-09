@@ -42,7 +42,7 @@ export default function Navbar(){
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
                                 <Link key={index} href={ele.href}>
-                                    <div  className={` hover:text-[#ff9825]  dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `}>
+                                    <div  className={` hover:text-[#ff9825]  dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-2 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `}>
                                         <span>{ele.title}</span>
                                     </div>
                                 </Link>
@@ -83,7 +83,7 @@ export default function Navbar(){
                                             </button>
                                             <div className=" text-black dark:text-[#fff] flex flex-col items-center gap-12 text-2xl font-bold">
                                             {itemsNav.map((ele,index)=>(
-                                                <Link key={index} className={` hover:text-[#ff9825] text-2xl dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-4 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `} href={ele.href}>
+                                                <Link key={index} className={` hover:text-[#ff9825] text-2xl dark:hover:text-[#ff9825] hover:duration-700 transition font-bold ${router.pathname==ele.href?"border-b-2 border-[#ff9825] text-[#ff9825]":"text-black dark:text-white"} `} href={ele.href}>
                                                     <button onClick={()=>{setOpen(!open)}} key={index} className=" " >
                                                         <span>{ele.title}</span>
                                                     </button>

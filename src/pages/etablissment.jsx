@@ -51,7 +51,7 @@ export default function Etablissment() {
                   </span>
                 </div>
                 <Link href={`/etablissmentInfo/${ele.Url}`}>
-                  <button className="bg-[#ff9825]  font-bold border-4 border-[#ff9825] hover:bg-[#ffffff] duration-700 hover:text-[#ff9825] dark:hover:text-[#fff]   dark:hover:bg-[#1c1f24]  text-white rounded-3xl  py-2 px-10  capitalize flex gap-2 items-center ">
+                  <button className="bg-[#ff9825]  font-bold border-4 border-[#ff9825] hover:bg-[#ffffff] duration-700 hover:text-[#ff9825] dark:hover:text-[#fff]   dark:hover:bg-[#1c1f24]  text-white rounded-md  py-1 px-4  capitalize flex gap-2 items-center ">
                     {" "}
                     <span>Voir plus</span> <Link2 size={25} />
                   </button>
