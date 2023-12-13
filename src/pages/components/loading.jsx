@@ -25,7 +25,7 @@ export default function Loading() {
           show == false ? "translate-x-0" : "-translate-y-full"
         } `}
       >
-        <span className={`font-extrabold text-4xl animate-bounce flex justify-center items-center `}>
+        <span className={`font-extrabold text-4xl animate-bounce flex justify-center  `}>
         <img src={`/image/logo/${theme=== "dark"?'logoInnovtechDark':'logoInnovtech'}.gif`} alt="logo" className="w-1/3 " />
         </span>
       </div>
