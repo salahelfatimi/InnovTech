@@ -37,7 +37,7 @@ export default function Navbar(){
                             <div className="flex gap-4 items-center ">
                           
                                 
-                                <img src={`/image/logo/${theme=== "dark"?'logoDark':'logo'}.gif`} alt="logo" className="w-44 " />
+                                <img src={`/image/logo/${theme=== "dark"?'logoDark':'logo'}.gif`} alt="logo" className="w-40 " />
                             </div>
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
