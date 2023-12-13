@@ -32,12 +32,12 @@ export default function Navbar(){
                 <div className="  md:block hidden">
                
                     
-                    <div className="  bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4   border-b-2 border-white dark:border-[#1C1F24] top-0 right-0 left-0">
+                    <div className="  bg-white dark:bg-[#1C1F24]   fixed py-1   border-b-2 border-white dark:border-[#1C1F24] top-0 right-0 left-0">
                         <div className="container flex items-center justify-between">
                             <div className="flex gap-4 items-center ">
                           
-                                <span className=" flex items-center font-bold text-2xl ">Innov<span className="text-[#ff9825]">TECH</span></span>
-                                {/* <img src="/image/logo.png" alt="logo" className=" w-10" /> */}
+                                
+                                <img src={`/image/${theme=== "dark"?'logoDark':'logo'}.gif`} alt="logo" className="w-48 " />
                             </div>
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
@@ -62,14 +62,13 @@ export default function Navbar(){
                 {/* mobile Nav bar  */}
 
                     <div className="md:hidden  block">
-                        <div className="      bg-white dark:bg-[#1C1F24]  pt-4 fixed py-4  border-b-2 border-white dark:border-[#1C1F24]  top-0 right-0 left-0 ">
+                        <div className="      bg-white dark:bg-[#1C1F24]   fixed   border-b-2 border-white dark:border-[#1C1F24]  top-0 right-0 left-0 ">
                         
                             <div className="container ">
                                 <div className="flex px-2  items-center justify-between">
                                 <div className="flex gap-4 items-center ">
                           
-                                    <span className=" flex items-center font-bold text-2xl ">Innov<span className="text-[#ff9825]">TECH</span></span>
-                                    {/* <img src="/image/logo.png" alt="logo" className=" w-10" /> */}
+                                <img src={`/image/${theme=== "dark"?'logoDark':'logo'}.gif`} alt="logo" className="w-40 " />
                                 </div>
                                     <button onClick={()=>{setOpen(!open)}} className=" md:hidden block">
                                             <Menu size={30} className=" stroke-2"/>
