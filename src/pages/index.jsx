@@ -9,7 +9,7 @@ import ButtonUp from "./components/buttonUp";
 export default function Home() {
   return (
     <>
-      <div className="flex relative z-10 flex-col gap-8 pt-2 lg:pt-12  ">
+      <div className="flex relative z-10 flex-col gap-8 pt-6 lg:pt-16  ">
         <ButtonUp/>
         <Loading />
         <div>
