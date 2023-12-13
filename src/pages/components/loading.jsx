@@ -1,8 +1,9 @@
+import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export default function Loading() {
   const [show, setShow] = useState(false);
-
+  const { theme, setTheme } = useTheme();
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setShow(true);
@@ -24,8 +25,8 @@ export default function Loading() {
           show == false ? "translate-x-0" : "-translate-y-full"
         } `}
       >
-        <span className={`font-extrabold text-4xl animate-bounce `}>
-          Innov<span className="text-[#ff9825]">TECH</span>
+        <span className={`font-extrabold text-4xl animate-bounce flex justify-center items-center `}>
+        <img src={`/image/logo/${theme=== "dark"?'logoInnovtechDark':'logoInnovtech'}.gif`} alt="logo" className="w-1/3 " />
         </span>
       </div>
     </>
