@@ -18,7 +18,7 @@ export default function Etablissment() {
   }, []);
   return (
     <>
-      <div className="relative z-10  pt-36">
+      <div className="relative z-10  pt-32">
         <Loading />
         <div className="flex flex-col -top-[3.6rem] gap-8 justify-between items-center  relative z-20 container">
           {etablissment.map((ele, index) => (

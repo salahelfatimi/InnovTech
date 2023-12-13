@@ -65,7 +65,7 @@ export default function Contact() {
     formData.tele;
 
   return (
-    <div className=" relative z-10 pt-24">
+    <div className=" relative z-10 pt-20">
       <Loading />
       <div className="container">
         <div className="dark:bg-[#1c1f24] rounded-2xl drop-shadow-2xl  lg:rounded-xl shadow-xl relative z-10 border-8  border-white  dark:border-[#1c1f24]  bg-white   ">

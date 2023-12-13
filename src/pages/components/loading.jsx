@@ -26,7 +26,8 @@ export default function Loading() {
         } `}
       >
         <span className={`font-extrabold text-4xl animate-bounce flex justify-center  `}>
-        <img src={`/image/logo/${theme=== "dark"?'logoInnovtechDark':'logoInnovtech'}.gif`} alt="logo" className="w-1/3 " />
+        <img src="/image/logo/logoInnovtechDark.gif" alt="logo" className="w-1/3 dark:block hidden " />
+        <img src="/image/logo/logoInnovtech.gif" alt="logo" className="w-1/3 block dark:hidden " />
         </span>
       </div>
     </>

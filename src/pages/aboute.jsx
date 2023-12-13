@@ -16,7 +16,7 @@ export default function Aboute() {
 
   return (
     <>
-      <div className=" mx-auto py-8 relative z-10 pt-24">
+      <div className=" mx-auto py-8 relative z-10 pt-20">
         <Loading />
         <ButtonUp/>
         <div className="container z-10 relative">

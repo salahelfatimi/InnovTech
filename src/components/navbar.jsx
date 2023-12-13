@@ -32,12 +32,12 @@ export default function Navbar(){
                 <div className="  md:block hidden">
                
                     
-                    <div className="  bg-white dark:bg-[#1C1F24]   fixed py-1   border-b-2 border-white dark:border-[#1C1F24] top-0 right-0 left-0">
+                    <div className="  bg-white dark:bg-[#1c1f24]   fixed py-1   border-b-4 border-[#ff9825]  top-0 right-0 left-0">
                         <div className="container flex items-center justify-between">
                             <div className="flex gap-4 items-center ">
                           
-                                
-                                <img src={`/image/logo/${theme=== "dark"?'logoDark':'logo'}.gif`} alt="logo" className="w-40 " />
+                            <img src="/image/logo/logoDark.gif" alt="logo" className="w-40 dark:block hidden " />
+                                <img src="/image/logo/logo.gif" alt="logo" className="w-40 block dark:hidden " />
                             </div>
                             <div className="flex flex-row items-center gap-4">
                                 {itemsNav.map((ele, index) => (
@@ -62,13 +62,14 @@ export default function Navbar(){
                 {/* mobile Nav bar  */}
 
                     <div className="md:hidden  block">
-                        <div className="      bg-white dark:bg-[#1C1F24]   fixed   border-b-2 border-white dark:border-[#1C1F24]  top-0 right-0 left-0 ">
+                        <div className="      bg-white dark:bg-[#1C1F24]   fixed   border-b-4 border-[#ff9825]  top-0 right-0 left-0 ">
                         
                             <div className="container ">
                                 <div className="flex px-2  items-center justify-between">
                                 <div className="flex gap-4 items-center ">
                           
-                                <img src={`/image/logo/${theme=== "dark"?'logoDark':'logo'}.gif`} alt="logo" className="w-36 " />
+                                <img src="/image/logo/logoDark.gif" alt="logo" className="w-40 dark:block hidden " />
+                                <img src="/image/logo/logo.gif" alt="logo" className="w-40 block dark:hidden " />
                                 </div>
                                     <button onClick={()=>{setOpen(!open)}} className=" md:hidden block">
                                             <Menu size={30} className=" stroke-2"/>
