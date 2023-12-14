@@ -75,7 +75,7 @@ export default function LaboratoireInfo() {
                 {etablissmentInfo?.doctorants?.map((ele, index) => (
                     <tr key={index} className="bg-white border-t dark:bg-[#1c1f24] dark:border-gray-700 w-full">
                       <td scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{ele.nom}</td>
-                      <td scope="row" className="px-6 py-4    whitespace-normal  ">{ele.titre_these}</td>
+                      <td scope="row" className="px-6 py-4 whitespace-pre			 ">{ele.titre_these}</td>
                       <td scope="row" className="px-6 py-4 text-center  whitespace-nowrap">{ele.axe}</td>
 
                     </tr>
