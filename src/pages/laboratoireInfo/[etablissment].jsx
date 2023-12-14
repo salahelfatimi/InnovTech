@@ -4,86 +4,90 @@ import { useEffect, useState } from "react";
 import { AlertTriangle, Mail, User, XOctagon } from "react-feather";
 export default function LaboratoireInfo() {
   const router = useRouter();
-  const [etablissmentInfo, setEtablissmentInfo] = useState([
-    {
-      name: "",
-      responsables: [],
-      doctorants: [],
-    },
-  ]);
+  const [etablissmentInfo, setEtablissmentInfo] = useState([]);
   const etablissment = router.query.etablissment;
-   // Define an asynchronous function to fetch data
+  // Define an asynchronous function to fetch data
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(`/json/laboratoireInfo/laboratoire.json`);
       const data = await response.json();
       const find = await data.find((ele) => ele.name === etablissment);
-      if (find) {
-        const { doctorants, responsables, name } = find;
-        setEtablissmentInfo([
-          {
-            name: name,
-            responsables: responsables,
-            doctorants: doctorants,
-          },
-        ]);
-      }
+      setEtablissmentInfo(find);
+    
     };
     fetchData();
   }, [etablissment]);
-  const condition =
-    etablissmentInfo[0].name;
-  const condition2 =
-    etablissmentInfo[0].responsables[0]?.email &&
-    etablissmentInfo[0].responsables[0]?.directeur;
+
   return (
     <>
-      <div className="container flex flex-col gap-8 mt-16 py-8 relative z-10 ">
-        <Loading />
-        {condition ? (
-          <>
-            <div className="flex flex-col ">
-              <span className="lg:text-4xl text-xl  font-bold bg-[#ff9825] text-white text-center  p-4 rounded-md capitalize">
-                les responsables de laboratoire {etablissmentInfo[0].name}
+    <div className="container flex flex-col gap-8 mt-16 py-8 relative z-10 ">
+    {
+     
+      
+        <>
+            <div className="flex flex-col  items-center ">
+              <span className="lg:text-4xl text-xl  font-bold  bg-gray-200 dark:bg-gray-700  text-[#ff9825]  text-center  py-4 px-10 rounded-md uppercase">
+                laboratoire {etablissmentInfo?.name}
               </span>
             </div>
-            {condition2 ? (
-              <>
-                <div className="flex lg:flex-row flex-col  gap-4 items-center justify-center">
-                  <span className="text-2xl font-semibold flex lg:flex-row flex-col items-center gap-4">
-                    <span className="text-[#ff9825]  font-bold capitalize flex items-center gap-2">
-                      <User /> le directeur :{" "}
-                    </span>
-                    {etablissmentInfo[0]?.responsables[0]?.directeur}
-                  </span>
+          <Loading />
+          <div className="relative  overflow-x-auto shadow-md sm:rounded-xl">
+          <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
+            <thead className="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400 rounded-xl">
+              <tr>
+                <th scope="col" className="px-6 py-3">
+                  <span className=" flex items-center gap-2"><User size={30} /> les responsables</span>
+                </th>
+                <th scope="col" className="px-6 py-3">
+                  <span className=" flex items-center  gap-2"><Mail size={30} /> email</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {etablissmentInfo?.responsables?.map((ele, index) => (
+                  <tr key={index} className="bg-white border-t dark:bg-[#1c1f24] dark:border-gray-700">
+                    <td scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{ele.name}</td>
+                    <td className="px-6 py-4"><a  className="hover:text-[#ff9825]  duration-500" href={`mailto:${ele.email}`}>{ele.email}</a></td>
+                  </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div >
+          
+           
+            <div className="relative overflow-x-auto shadow-md sm:rounded-xl">
+            <table className="w-full    text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
+              <thead className="text-xs  text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400 rounded-xl">
+                <tr>
+                  <th scope="col" className="px-6 py-3 ">
+                    <span className=" flex   items-center gap-2"><User size={30} /> le doctorant</span>
+                  </th>
+                  <th scope="col" className="px-6 py-3 ">
+                    <span className=" flex  items-center gap-2"> titre de la these</span>
+                  </th>
+                  <th scope="col" className="px-6 py-3 ">
+                    <span className=" flex justify-center items-center gap-2"> axes</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {etablissmentInfo?.doctorants?.map((ele, index) => (
+                    <tr key={index} className="bg-white border-t dark:bg-[#1c1f24] dark:border-gray-700 w-full">
+                      <td scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{ele.nom}</td>
+                      <td scope="row" className="px-6 py-4    whitespace-normal  ">{ele.titre_these}</td>
+                      <td scope="row" className="px-6 py-4 text-center  whitespace-nowrap">{ele.axe}</td>
 
-                  <span className="text-2xl font-semibold flex lg:flex-row flex-col items-center gap-4">
-                    <span className="text-[#ff9825] font-bold  capitalize flex items-center gap-2">
-                      <Mail size={30} /> email :{" "}
-                    </span>
-                    <a
-                      className="hover:text-[#4FAAFF] duration-500"
-                      href={`mailto:${etablissmentInfo[0]?.responsables[0]?.email}`}
-                    >
-                      {etablissmentInfo[0]?.responsables[0]?.email}
-                    </a>
-                  </span>
-                </div>
-              </>
-            ) : (
-              <>
-              <div className=" flex flex-col lg:flex-row items-center justify-center text-center  gap-2  uppercase text-2xl font-bold">
-                <XOctagon size={50} className="text-red-500 animate-pulse"/> Aucune donnée de ce laboratoire
-              </div>
-              </>
-            )}
-          </>
-        ) : (
-          <div className=" flex flex-col lg:flex-row items-center justify-center text-center  gap-2   capitalize text-2xl font-bold">
-            <AlertTriangle className="text-red-500 animate-pulse" size={50} /> Nous ne disposons actuellement pas du LABORATOIRE <span className="text-red-500 uppercase">&apos; {etablissment}&apos; </span>chez <span className=" capitalize">Innov<span className="text-[#ff9825]">TECH</span></span>
+                    </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-        )}
-      </div>
+           </div>
+           </>
+} 
+    </div> 
     </>
   );
+            
 }

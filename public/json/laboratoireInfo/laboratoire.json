@@ -2,20 +2,117 @@
   {
     "name": "LSEEET",
     "responsables": [
-      {
-        "id": 1,
-        "directeur": "Mr.Driss BELKHAYAT",
-        "email": "driss.belkhayat@uca.ma"
-      }
-    ],
-    "doctorants": []
+      {"id":1,"name":"Mr.Driss BELKHAYAT","email":"driss.belkhayat@uca.ma"},
+      {"id": 2, "name": "ELWARRAKI El Mostafa", "email": "m.elwarraki@uca.ma"},
+      {"id": 3, "name": "CHENNANI Mohammed", "email": "m.chennani@uca.ma"},
+      {"id": 4, "name": "EL KARI Abdeljalil", "email": "a.elkari@uca.ma"},
+      {"id": 5, "name": "AYAD Hassan", "email": "h.ayad@uca.ma"},
+      {"id": 6, "name": "GHAMMAZ Abdelilah", "email": "a.ghammaz@uca.ma"},
+      {"id": 7, "name": "ELIDRISSI Abdelaziz", "email": "a.elidrissi@ucam.ac.ma"},
+      {"id": 8, "name": "CHITNALAH Ahmed", "email": "a.chitnalah@uca.ma"},
+      {"id": 9, "name": "AOUZAL Noureddine", "email": "n.aouzale@uca.ma"},
+      {"id": 10, "name": "BOUMAAZ Najib", "email": "n.boumaaz@uca.ma"},
+      {"id": 11, "name": "SEMLALI Hayat", "email": "h.semlali@uca.ma"},
+      {"id": 12, "name": "BELAHRACH Hassan", "email": "h.belahrach@gmail.com"},
+      {"id": 13, "name": "SOULMANI Abdellah", "email": "a.soulmani@uca.ma"},
+      {"id": 14, "name": "ZIDANI Youssef", "email": "y.zidani@uca.ma"},
+      {"id": 15, "name": "DOUIRI My Rachid", "email": "r.douiri@uca.ma"},
+      {"id": 16, "name": "MELHAOUI Mustapha", "email": "m.melhaoui@uca.ma"},
+      {"id": 17, "name": "OUKILI Mohamed", "email": "m.oukili@uca.ma"},
+      {"id": 18, "name": "CHAKIR EL ALAOUI Elhoussein", "email": "e.chakirelalaoui@uca.ma"},
+      {"id": 19, "name": "ELANDALOUSSI Chafiq", "email": "c.andaloussi@uca.ma"},
+      {"id": 20, "name": "MJAHED Mostafa", "email": "mjahed.mostafa@gmail.com"},
+      {"id": 21, "name": "SATAR Mouloud", "email": "satarm2002@yahoo.fr"},
+      {"id": 22, "name": "MESKANI Asma", "email": "a.meskani@uca.ma"}],
+      "doctorants":
+        [
+          {
+            "nom": "AIT AYAD Imane",
+            "titre_these": "Tolérance aux défauts et continuité de service des convertisseurs multiniveaux dans les générateurs à énergie renouvelable",
+            "axe": "EMJE"
+          },
+          {
+            "nom": "AZEGMOUT Mohamed",
+            "titre_these": "Exploration de nouvelles approches intelligentes pour la commande et la poursuite de trajectoires, cas d'un drone birotor coaxial.",
+            "axe": "IARCS"
+          },
+          {
+            "nom": "BAGHDADI Mohamed",
+            "titre_these": "Caractérisation, modélisation et identification des paramètres des composants discrets à semi-conducteurs pour la simulation des convertisseurs d'énergie",
+            "axe": "EMSE"
+          },
+          {
+            "nom": "BELKHADIR Ahmed",
+            "titre_these": "Commande adaptative pour la réduction active des effets dus aux défauts des machines électriques et leurs diagnostics : Applications aux machines rapides pour les véhicules électriques",
+            "axe": "EMBE"
+          },
+          {
+            "nom": "BOUMAAZ Hana",
+            "titre_these": "Méthodes de détection et de diagnostic des pannes électriques basées sur l'intelligence artificielle pour les systèmes énergétiques de bâtiments et réseaux intelligents",
+            "axe": "EMJE"
+          },
+          {
+            "nom": "BOUZIDI Zahra",
+            "titre_these": "Modélisation des faisceaux de câbles multiconducteurs en se basant sur la résolution des équations des lignes de transmission à pertes variables dans le domaine temporel.",
+            "axe": "TIM"
+          },
+          {
+            "nom": "EZ-ZAKI Fatima",
+            "titre_these": "Modélisation, conception, simulation et réalisation des antennes fractales miniatures pour les communications sans fil V2X",
+            "axe": "TIM"
+          },
+          {
+            "nom": "FAYTI Majid",
+            "titre_these": "Conception d'un mini drone à voiture fixe : modélisation, stabilisation et commande intelligente",
+            "axe": "IARCS"
+          },
+          {
+            "nom": "KHALFI Jourd",
+            "titre_these": "Contribution à la réalisation d'un système de gestion de la batterie en temps réel (DMS) destiné à l'utilisation dans les véhicules électriques",
+            "axe": "TIM"
+          },
+          {
+            "nom": "OULTILIGH Ahmed",
+            "titre_these": "Conception d'un système de contrôle intelligent capable de résoudre la planification de trajectoire d'un robot mobile",
+            "axe": "IARCS"
+          },
+          {
+            "nom": "TAHRI Imane",
+            "titre_these": "Étude et simulation d'un parloir auto réparable et auto configurable avec le déploiement des techniques de l'intelligence artificielle",
+            "axe": "EMSE"
+          },
+          {
+            "nom": "SERGHINI Omar",
+            "titre_these": "Développement et implémentation d'algorithmes de l'intelligence artificielle pour la radio cognitive",
+            "axe": "TIM"
+          },
+          {
+            "nom": "AIT DAHMAD Hayat",
+            "titre_these": "Conception et mise en œuvre de nouvelles méthodes intelligentes pour le diagnostic et la planification de la trajectoire pour les robots agricoles",
+            "axe": "IARCS"
+          },  {
+            "nom": "ABBAOUI Hind",
+            "titre_these": "Conception et réalisation d'antennes miniatures et de systèmes antennaires pour des applications de la 5G, en particulier pour les communications sans fil V2X",
+            "axe": "TIM"
+          },
+          {
+            "nom": "EZZARA Abderrahim",
+            "titre_these": "Commande tolérante aux défauts pour un véhicule autonome",
+            "axe": "IARCS"
+          },
+          {
+            "nom": "BOULKHOUKH Oumaima",
+            "titre_these": "Contribution à la modélisation, à l'analyse et à la commande d'un système hospitalier en utilisant les RDP et l'Algèbre des dioïdes.",
+            "axe": "IARCS"
+          }
+        ]
   },
   {
     "name": "L2IS",
     "responsables": [
       {
         "id": 1,
-        "directeur": "Said Rakrak",
+        "name": "Said Rakrak",
         "email": "s.rakrak@uca.ma"
       }
     ],
@@ -26,7 +123,7 @@
     "responsables": [
       {
         "id": 1,
-        "directeur": "Mr.Abdelilah Hakim",
+        "name": "Mr.Abdelilah Hakim",
         "email": "a.hakim@uca.ma"
       }
     ],
@@ -37,7 +134,7 @@
     "responsables": [
       {
         "id": 1,
-        "directeur": "Mr.Moha Taourirte",
+        "name": "Mr.Moha Taourirte",
         "email": "m.taourirte@uca.ma"
       }
     ],
@@ -53,7 +150,7 @@
     "responsables": [
       {
         "id": 1,
-        "directeur": "Mr.Hassan Chehouani",
+        "name": "Mr.Hassan Chehouani",
         "email": "h.chehouani@uca.ma"
       }
     ],
@@ -74,7 +171,7 @@
     "responsables": [
       {
         "id": 1,
-        "directeur": "Mr.Walid BOUARIFI",
+        "name": "Mr.Walid BOUARIFI",
         "email": "w.bouarifi@uca.ma"
       }
     ],
@@ -100,7 +197,7 @@
     "responsables": [
       {
         "id": 1,
-        "directeur": "Mr.Driss Meskine",
+        "name": "Mr.Driss Meskine",
         "email": "dr.meskine@uca.ac.ma"
       }
     ],
@@ -121,7 +218,7 @@
     "responsables": [
       {
         "id": 1,
-        "directeur": "Mr.Abdelkrim ABOURRICHE",
+        "name": "Mr.Abdelkrim ABOURRICHE",
         "email": "a.abourriche@uca.ma"
       }
     ],
@@ -137,7 +234,7 @@
     "responsables": [
       {
         "id": 1,
-        "directeur": "Mr.Abdellah ZYANE",
+        "name": "Mr.Abdellah ZYANE",
         "email": "a.zyane@uca.ma"
       }
     ],
@@ -148,7 +245,7 @@
     "responsables": [
       {
         "id": 1,
-        "directeur": "Mr.MOHSINE HACHKAR",
+        "name": "Mr.MOHSINE HACHKAR",
         "email": "m.hachkar@uca.ma"
       }
     ],
