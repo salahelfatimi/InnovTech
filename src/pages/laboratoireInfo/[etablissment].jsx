@@ -31,10 +31,12 @@ export default function LaboratoireInfo() {
         {etablissmentInfo && etablissmentInfo.name ? (
           <>
           
-            <div className="flex flex-col items-center">
-              <span className="lg:text-4xl text-xl font-bold bg-gray-200 dark:bg-gray-700 text-[#ff9825] text-center py-4 px-10 rounded-md uppercase">
+            <div className="flex flex-row justify-center items-center bg-gray-200 rounded-md dark:bg-gray-700">
+            
+              <span className="lg:text-4xl text-xl font-bold  text-[#ff9825] text-center py-4 px-10  uppercase">
                 laboratoire {etablissmentInfo?.name}
               </span>
+             
             </div>
 
             {etablissmentInfo?.responsables?.length > 0 ? (
@@ -73,8 +75,9 @@ export default function LaboratoireInfo() {
               </div>
             ):( 
               <div className="flex flex-col lg:flex-row items-center justify-center text-center gap-2 uppercase text-2xl font-bold">
-              <div>Aucune donnée de ce laboratoire</div>
                 <XOctagon size={50} className="text-red-500 animate-pulse" />
+                <div>Aucune donnée de ce laboratoire</div>
+               
               </div>
             )}
 
