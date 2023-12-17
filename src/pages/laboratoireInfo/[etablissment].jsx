@@ -38,7 +38,7 @@ export default function LaboratoireInfo() {
             </div>
 
             {etablissmentInfo?.responsables?.length > 0 ? (
-              <div className="relative overflow-x-auto shadow-md sm:rounded-xl">
+              <div className="relative overflow-x-auto shadow-md rounded-xl">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   {/* Table content for responsables */}
                   <thead className="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400 rounded-xl">
@@ -79,7 +79,7 @@ export default function LaboratoireInfo() {
             )}
 
             {etablissmentInfo?.doctorants?.length > 0 && (
-              <div className="relative overflow-x-auto shadow-md sm:rounded-xl">
+              <div className="relative overflow-x-auto shadow-md rounded-xl">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   {/* Table content for doctorants */}
                   <thead className="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400 rounded-xl">
