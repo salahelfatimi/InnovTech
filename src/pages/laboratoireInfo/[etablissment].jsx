@@ -122,7 +122,7 @@ export default function LaboratoireInfo() {
             <AlertTriangle className="text-red-500 animate-pulse" size={50} />
             <div>
               Nous ne disposons actuellement pas du LABORATOIRE{' '}
-              <span className="text-red-500 uppercase">' {etablissment} '</span>chez{' '}
+              <span className="text-red-500 uppercase">&apos; {etablissment} '</span>chez{' '}
               <span className="capitalize">
                 Innov<span className="text-[#ff9825]">TECH</span>
               </span>
