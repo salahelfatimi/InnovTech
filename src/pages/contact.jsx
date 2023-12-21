@@ -70,11 +70,9 @@ export default function Contact() {
       <div className="container">
         <div className="dark:bg-[#1c1f24] rounded-2xl drop-shadow-2xl  lg:rounded-xl shadow-xl relative z-10 border-8  border-white  dark:border-[#1c1f24]  bg-white   ">
           <div className=" flex flex-col lg:flex-row w-full  gap-4 items-center">
-            <div className="w-full lg:w-1/2 ">
-              <iframe
-                className=" rounded-t-lg lg:rounded-xl l  w-full h-[20rem] lg:h-[40rem] "
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d568.7895780896672!2d-8.019320767251982!3d31.642312460088707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafeff360f00771%3A0x7163612040e32812!2sLa%20cit%C3%A9%20d&#39;innovation!5e1!3m2!1sen!2sma!4v1699610451787!5m2!1sen!2sma"
-              ></iframe>
+            <div className="w-full lg:w-1/2 flex items-center justify-center">
+              <img  className="  " src="image/icon/contact.svg" alt="" />
+              
             </div>
             <div className="lg:w-1/2 w-full p-8">
               <form className="flex-col flex gap-6 " onSubmit={sendEmail}>

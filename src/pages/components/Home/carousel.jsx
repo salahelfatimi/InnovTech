@@ -21,7 +21,7 @@ export default function Carousel(){
 
     // make photo change auto
     useEffect(()=>{
-        const slideInterval=setInterval(next,3000)
+        const slideInterval=setInterval(next,10000)
         return ()=>clearInterval(slideInterval)
     },[curr])
     return(
