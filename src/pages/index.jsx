@@ -1,7 +1,7 @@
 import Carousel from "./components/Home/carousel";
 import DescriptionInnovtech from "./components/Home/descriptionInnovtech";
 import Grid from "./components/Home/grid";
-import infoPresdent from "./components/Home/infoPresdent";
+import InfoPresdent from "./components/Home/infoPresdent";
 import Map from "./components/Home/map";
 import Loading from "./components/loading";
 
@@ -25,7 +25,7 @@ export default function Home() {
           <Map />
         </div>
         <div>
-          <infoPresdent />
+          <InfoPresdent />
         </div>
       </div>
     </>
