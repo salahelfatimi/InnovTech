@@ -14,7 +14,7 @@ export default function InfoPresdent() {
             Pr. Blaïd BOUGADIR
           </span>
           <span className=" text-lg  font-medium dark:text-[#DFE0DF]">
-            Président de l'Université Cadi Ayyad
+            Président de l&apos;Université Cadi Ayyad
           </span>
           <span className=" text-sm  dark:text-[#DFE0DF] line-clamp-3">
             Après seulement 45 ans d&apos;existence, l&apos;Université Cadi Ayyad est le
