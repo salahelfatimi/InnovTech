@@ -6,7 +6,7 @@ export default function InfoPresdent() {
     <>
       <div className=" container flex flex-col md:flex-row items-center justify-center gap-8 ">
         <img
-          className=" w-full  md:w-1/4 rounded-xl    "
+          className=" w-2/3   md:w-1/3 rounded-xl    "
           src="/image/home/PRÉSIDENT.png"
           alt=""
         />
