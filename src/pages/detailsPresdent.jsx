@@ -22,10 +22,10 @@ export default function DetailsPresdent() {
           
             <div className=" lg:w-1/2 text-sm  whitespace-normal flex flex-col gap-4  dark:text-gray-400 leading-loose text-justify">
              <span>
-             Après seulement 45 ans d&apos;existence, l'Université Cadi Ayyad est le cœur battant d&apos;un territoire en marche. Avec quinze établissements abritant plus de 120 000 étudiants et dispensant une variété de disciplines dans tous les champs du savoir, l&apos;UCA est profondément ancrée dans son écosystème. Elle constitue à la fois un fleuron et une locomotive des quatre villes emblématiques de la Région Marrakech-Safi, qui l&apos;enrichissent de leur histoire exceptionnelle et rehaussent sa situation géographique et stratégique: Marrakech, El Kelaa des Sarghna, Safi et Essaouira. Grâce à l&apos;abnégation de ses enseignant.es chercheur.es et au dévouement de ses corps administratif et technique, notre université est l'une des universités les plus prestigieuses du Royaume.
+             Après seulement 45 ans d&apos;existence, l&apos;Université Cadi Ayyad est le cœur battant d&apos;un territoire en marche. Avec quinze établissements abritant plus de 120 000 étudiants et dispensant une variété de disciplines dans tous les champs du savoir, l&apos;UCA est profondément ancrée dans son écosystème. Elle constitue à la fois un fleuron et une locomotive des quatre villes emblématiques de la Région Marrakech-Safi, qui l&apos;enrichissent de leur histoire exceptionnelle et rehaussent sa situation géographique et stratégique: Marrakech, El Kelaa des Sarghna, Safi et Essaouira. Grâce à l&apos;abnégation de ses enseignant.es chercheur.es et au dévouement de ses corps administratif et technique, notre université est l&apos;une des universités les plus prestigieuses du Royaume.
              </span>
              <span>
-             L&apos;année universitaire 2023-2024 est marquée par une avancée décisive et porteuse d&apos;espoirs: l&apos;introduction d&apos;une réforme majeure dans le cadre du Pacte ESRI, à travers laquelle nous sommes déterminés à créer un environnement propice à la formation et à la recherche-innovation qui stimule la créativité et garantie aux idées nouvelles toutes les opportunités d&apos;épanouissement. En travaillant ensemble, nous pouvons façonner l'avenir de l'enseignement supérieur au Maroc et agir en acteur de la transformation sociétale.
+             L&apos;année universitaire 2023-2024 est marquée par une avancée décisive et porteuse d&apos;espoirs: l&apos;introduction d&apos;une réforme majeure dans le cadre du Pacte ESRI, à travers laquelle nous sommes déterminés à créer un environnement propice à la formation et à la recherche-innovation qui stimule la créativité et garantie aux idées nouvelles toutes les opportunités d&apos;épanouissement. En travaillant ensemble, nous pouvons façonner l&apos;avenir de l&apos;enseignement supérieur au Maroc et agir en acteur de la transformation sociétale.
              </span>
              <span>
              Nous nous engageons à développer un enseignement inclusif et de qualité, à promouvoir une recherche-action en adéquation avec les priorités nationales, notamment dans les secteurs répondant aux impératifs de souveraineté et de durabilité, et à enrichir les interactions avec nos partenaires nationaux et internationaux.
@@ -40,7 +40,7 @@ export default function DetailsPresdent() {
             Nous vous invitons à vous joindre à nous dans cette quête passionnante. Ensemble, nous accomplirons des réalisations remarquables : nous doterons nos étudiant.es des moyens pour réussir dans un monde en constante évolution, nous produirons de la connaissance utile pour nos concitoyen.es et agirons sur le développement de notre pays.
             </span>
             <span>
-            Bienvenue à l'Université Cadi Ayyad !
+            Bienvenue à l&apos;Université Cadi Ayyad !
             </span>
             <span>
             Notre credo: la qualité de la formation, l&apos;excellence de la recherche, la vitalité de l&apos;engagement…pour transformer des vies et façonner un avenir meilleur.

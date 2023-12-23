@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export default function InfoPresdent() {
@@ -22,7 +23,7 @@ export default function InfoPresdent() {
             abritant plus de 120 000 étudiants et dispensant une variété de
             disciplines dans tous les champs du savoir ... 
           </span>
-          <a className="underline underline-offset-2 text-blue-500 " href="/detailsPresdent">Voir plus</a>
+          <Link className="underline underline-offset-2 text-blue-500 " href="/detailsPresdent">Voir plus</Link>
         </div>
       </div>
     </>
