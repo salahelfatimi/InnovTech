@@ -3,13 +3,13 @@
 export default function InfoPresdent() {
   return (
     <>
-      <div className=" container w-full flex flex-col lg:flex-row items-center justify-center gap-8 ">
+      <div className=" container flex flex-col md:flex-row items-center justify-center gap-8 ">
         <img
-          className="  rounded-xl md:w-[50%] lg:w-[30%]   "
+          className=" w-full  md:w-1/4 rounded-xl    "
           src="/image/home/PRÉSIDENT.png"
           alt=""
         />
-        <div className="flex flex-col w-1/2 lg:items-start items-center text-center lg:text-start gap-4">
+        <div className="flex flex-col md:items-start items-center text-center lg:text-start gap-4">
           <span className=" text-2xl lg:text-3xl font-bold text-[#ff9825] ">
             Pr. Blaïd BOUGADIR
           </span>
@@ -22,7 +22,7 @@ export default function InfoPresdent() {
             abritant plus de 120 000 étudiants et dispensant une variété de
             disciplines dans tous les champs du savoir ... 
           </span>
-          <a className="underline underline-offset-2 text-blue-500 " href="#">Voir plus</a>
+          <a className="underline underline-offset-2 text-blue-500 " href="/detailsPresdent">Voir plus</a>
         </div>
       </div>
     </>
