@@ -24,9 +24,7 @@ export default function Home() {
         <div>
           <Map />
         </div>
-        <div>
-          <InfoPresdent />
-        </div>
+        
       </div>
     </>
   );
