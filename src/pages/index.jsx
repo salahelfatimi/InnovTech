@@ -6,6 +6,7 @@ import Map from "./components/Home/map";
 import Loading from "./components/loading";
 
 import ButtonUp from "./components/buttonUp";
+import InfoGridAdmin from "./components/Home/infoGridAdmin";
 export default function Home() {
   return (
     <>
@@ -21,10 +22,13 @@ export default function Home() {
         <div className=" container">
           <Grid />
         </div>
+
         <div>
           <Map />
         </div>
-        
+        <div>
+          <InfoGridAdmin />
+        </div>
       </div>
     </>
   );
