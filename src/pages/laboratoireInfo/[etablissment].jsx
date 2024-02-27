@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import LoadingPage  from  "../components/loading" ;
 import { useEffect, useState } from "react";
 import { User, Mail, XOctagon, AlertTriangle } from "react-feather";
+import ButtonBack from "../components/buttonBack";
 
 export default function LaboratoireInfo() {
   const router = useRouter();
@@ -26,19 +27,21 @@ export default function LaboratoireInfo() {
 
   return (
     <>
+    
       <div className="container flex flex-col gap-8 mt-16 py-8 relative z-10 ">
+        
         <LoadingPage/>
         {etablissmentInfo && etablissmentInfo.name ? (
           <>
-          
-            <div className="flex flex-row justify-center items-center bg-gray-200 rounded-md dark:bg-gray-700">
-            
-              <span className="lg:text-4xl text-xl font-bold  text-[#ff9825] text-center py-4 px-10  uppercase">
+          <div className="flex w-full justify-between gap-4 items-center">
+            <ButtonBack  className=" w-1/4"/>
+            <div className="w-3/4 flex flex-row justify-center items-center bg-gray-200 rounded-md dark:bg-gray-700">
+              <span className="lg:text-2xl md:text-xl font-bold  text-[#ff9825] text-center py-4 px-4  uppercase">
                 laboratoire {etablissmentInfo?.name}
               </span>
              
             </div>
-
+          </div>
             {etablissmentInfo?.responsables?.length > 0 ? (
               <div className="relative overflow-x-auto shadow-md rounded-xl">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
