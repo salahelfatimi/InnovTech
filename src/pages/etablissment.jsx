@@ -38,7 +38,7 @@ export default function Etablissment() {
                     </span>
                   </span>
                   <span className="text-[#9DA4B2] lg:text-base text-sm font-semibold">
-                    Number d&apos;laboratoire impliqués :{" "}
+                    Number de laboratoires  impliqués :{" "}
                     <span className="text-[#ff9825] font-bold">
                       {ele["Number of laboratoire impliques "]}
                     </span>{" "}

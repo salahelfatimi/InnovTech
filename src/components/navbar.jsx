@@ -12,7 +12,7 @@ export default function Navbar(){
     const itemsNav=[
         {title:"Accueil",href:"/"},
         // {title:"laboratoire",href:"/laboratoire"},
-        {title:"Etablissments",href:"/etablissment"},
+        {title:"Etablissements",href:"/etablissment"},
         {title:"Contact",href:"/contact"},
         {title:"à propos",href:"/aboute"}
     ]
