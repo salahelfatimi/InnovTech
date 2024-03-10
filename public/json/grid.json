@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "icon":"🎓",
+      "title": "Aperçu du Programme Doctoral InnovTech",
+      "description": "Répondre aux défis sociétaux tels que les énergies renouvelables, les nouveaux matériaux, les structures innovantes, la transformation numérique et l'intelligence artificielle. Composition comprenant 14 laboratoires, 5 équipes de recherche de 6 institutions de l'UCA dans 3 villes."
+    },
+    {
+      "id": 2,
+      "icon":"📚",
+      "title": "Aspects Clés de la Formation pour les Doctorants",
+      "description": "Axée sur l'amélioration du doctorat national grâce à une formation en communication, entrepreneuriat, management et innovation. Objectifs incluant de solides compétences en communication (anglais, français), aptitude à l'entrepreneuriat et au management, et excellence scientifique et technique en recherche."
+    },
+    {
+      "id": 3,
+      "icon": "🏫",
+      "title": "Structure de la Formation Doctorale",
+      "description": "Formation composée de différents cours doctoraux complémentaires. Comprend des approfondissements scientifiques ou techniques liés au projet de recherche et des formations transversales pour le développement professionnel : connaissances économiques, communication, anglais, gestion d'équipe et intégration professionnelle."
+    },
+    {
+      "id": 4,
+      "icon": "🏛️",
+      "title": "Institutions de l'UCA Impliquées dans InnovTech",
+      "description": "Les institutions de l'UCA impliquées dans le programme InnovTech comprennent FSTG-Marrakech, ENSA-Marrakech, ENS-Marrakech, ENSA-Safi, EST-Safi et EST-Essaouira. Les laboratoires et équipes de ces institutions contribuent à l'effort de recherche collaboratif."
+    },
+    {
+        "id": 5,
+        "icon": "🏢",
+        "title": "Établissements UCA Impliqués",
+        "description": "Impliquant 6 établissements de l'UCA dans InnovTech : FSTG-Marrakech, ENSA-Marrakech, ENS-Marrakech, ENSA-Safi, EST-Safi, EST-Essaouira. Labs et équipes contribuent à la recherche collaborative dans divers domaines tels que l'électrique, l'énergie, l'ingénierie des systèmes, les matériaux, et les sciences appliquées à l'environnement."
+    },
+      
+    {
+      "id": 6,
+      "icon": "🌐",
+      "title": "Objectif Global d'InnovTech",
+      "description": "Le projet InnovTech vise à regrouper et collaborer les laboratoires de l'UCA pour répondre à ses orientations stratégiques. Cette mutualisation crée une synergie entre chercheurs, indépendamment de leur affiliation. Cette approche met en avant des axes de recherche grâce à des équipes de taille compétitive nationale et internationale. InnovTech réunit 14 laboratoires et 5 équipes de recherche de 5 établissements de l'UCA, répartis dans 3 villes (Marrakech, Safi, Essaouira). Leur complémentarité vise à établir un pôle de référence en innovation technologique, à l'échelle nationale et internationale."
+    }
+  ]
+  

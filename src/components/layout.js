@@ -1,21 +1,28 @@
+import Navbar from "./navbar";
 import Footer from "./footer";
-import Nav from "./nav";
 import Head from "next/head";
+import { Loader } from "react-feather";
+import { useEffect, useState } from "react";
 
-const Layout = ({ children }) => {
+export default function Layout({ children }) {
+  
+
   return (
-    <div>
-      <Head>
-        <title>Foode</title>
-       
-      </Head>
-      <div className=" flex flex-col h-screen justify-between ">
-        <Nav />
-        <main className="bg-[#ffffff] ">{children}</main>
-        <Footer />
+    <>
+      <div className="bg-[#F4F7FC] dark:bg-[#272B34] flex flex-col h-screen justify-between">
+        
+        <Head>
+          <title>InnovTECH</title>
+        </Head>
+        <div></div>
+        <Navbar />
+        <main className="py-14 mb-auto bg-[#F4F7FC] dark:bg-[#272B34]   ">
+          {children}
+        </main>
+        <div className=" bg-[#F4F7FC]  dark:bg-[#272B34]">
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
-};
-
-export default Layout;
+}

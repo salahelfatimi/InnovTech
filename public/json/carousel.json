@@ -1,0 +1,45 @@
+{
+    "slider":[
+        {
+            "id":1,
+            "src":"FST-MARRAKECH.png",
+            "title":"FST-MARRAKECH",
+            "city":"Marrakech"
+           
+        },
+        {
+            "id":2,
+            "src":"ENS-MARRAKECH.png",
+            "title":"ENS-MARRAKECH",
+            "city":"Marrakech"
+            
+        },
+        {
+            "id":3,
+            "src":"ENSA-MARRAKECH.png",
+            "title":"ENSA-MARRAKECH",
+            "city":"Marrakech"
+           
+        },
+        {
+            "id":4,
+            "src":"ENSA-SAFI.png",
+            "title":"ENSA-SAFI",
+            "city":"Safi"
+        },
+        {
+            "id":5,
+            "src":"EST-SAFI.png",
+            "title":"EST-SAFI",
+            "city":"Safi"
+        },
+        {
+            "id":6,
+            "src":"EST-ESSAOUIRA.png",
+            "title":"EST-ESSAOUIRA",
+            "city":"Essaouira"
+        }
+    ]
+}
+
+

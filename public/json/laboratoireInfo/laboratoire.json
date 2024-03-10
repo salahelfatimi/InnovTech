@@ -1,0 +1,384 @@
+
+  [
+    {
+      "name": "LSEEET",
+       "responsables": [
+        {"id": 1, "firstname": "Driss", "lastname": "BELKHAYAT", "email": "d.bekhayat@uca.ac.ma"},
+        {"id": 2, "firstname": "El Mostafa", "lastname": "ELWARRAKI", "email": "m.elwarraki@uca.ma"},
+        {"id": 3, "firstname": "Mohammed", "lastname": "CHENNANI", "email": "m.chennani@uca.ma"},
+        {"id": 4, "firstname": "Abdeljalil", "lastname": "EL KARI", "email": "a.elkari@uca.ma"},
+        {"id": 5, "firstname": "Hassan", "lastname": "AYAD", "email": "h.ayad@uca.ma"},
+        {"id": 6, "firstname": "Abdelilah", "lastname": "GHAMMAZ", "email": "a.ghammaz@uca.ma"},
+        {"id": 7, "firstname": "Abdelaziz", "lastname": "ELIDRISSI", "email": "a.elidrissi@ucam.ac.ma"},
+        {"id": 8, "firstname": "Ahmed", "lastname": "CHITNALAH", "email": "a.chitnalah@uca.ma"},
+        {"id": 9, "firstname": "Noureddine", "lastname": "AOUZAL", "email": "n.aouzale@uca.ma"},
+        {"id": 10, "firstname": "Najib", "lastname": "BOUMAAZ", "email": "n.boumaaz@uca.ma"},
+        {"id": 11, "firstname": "Hayat", "lastname": "SEMLALI", "email": "h.semlali@uca.ma"},
+        {"id": 12, "firstname": "Hassan", "lastname": "BELAHRACH", "email": "h.belahrach@gmail.com"},
+        {"id": 13, "firstname": "Abdellah", "lastname": "SOULMANI", "email": "a.soulmani@uca.ma"},
+        {"id": 14, "firstname": "Youssef", "lastname": "ZIDANI", "email": "y.zidani@uca.ma"},
+        {"id": 15, "firstname": "My Rachid", "lastname": "DOUIRI", "email": "r.douiri@uca.ma"},
+        {"id": 16, "firstname": "Mustapha", "lastname": "MELHAOUI", "email": "m.melhaoui@uca.ma"},
+        {"id": 17, "firstname": "Mohamed", "lastname": "OUKILI", "email": "m.oukili@uca.ma"},
+        {"id": 18, "firstname": "Elhoussein", "lastname": "CHAKIR EL ALAOUI", "email": "e.chakirelalaoui@uca.ma"},
+        {"id": 19, "firstname": "Chafiq", "lastname": "ELANDALOUSSI", "email": "c.andaloussi@uca.ma"},
+        {"id": 20, "firstname": "Mostafa", "lastname": "MJAHED", "email": "mjahed.mostafa@gmail.com"},
+        {"id": 21, "firstname": "Mouloud", "lastname": "SATAR", "email": "satarm2002@yahoo.fr"},
+        {"id": 22, "firstname": "Asma", "lastname": "MESKANI", "email": "a.meskani@uca.ma"}
+      ],
+      "doctorants": [
+        {"nom": "Imane AIT AYAD", "titre_these": "Tolérance aux défauts et continuité de service des convertisseurs multiniveaux dans les générateurs à énergie renouvelable", "axe": "EMJE"},
+        {"nom": "Mohamed AZEGMOUT", "titre_these": "Exploration de nouvelles approches intelligentes pour la commande et la poursuite de trajectoires, cas d'un drone birotor coaxial.", "axe": "IARCS"},
+        {"nom": "Mohamed BAGHDADI", "titre_these": "Caractérisation, modélisation et identification des paramètres des composants discrets à semi-conducteurs pour la simulation des convertisseurs d'énergie", "axe": "EMSE"},
+        {"nom": "Ahmed BELKHADIR", "titre_these": "Commande adaptative pour la réduction active des effets dus aux défauts des machines électriques et leurs diagnostics : Applications aux machines rapides pour les véhicules électriques", "axe": "EMBE"},
+        {"nom": "Hana BOUMAAZ", "titre_these": "Méthodes de détection et de diagnostic des pannes électriques basées sur l'intelligence artificielle pour les systèmes énergétiques de bâtiments et réseaux intelligents", "axe": "EMJE"},
+        {"nom": "Zahra BOUZIDI", "titre_these": "Modélisation des faisceaux de câbles multiconducteurs en se basant sur la résolution des équations des lignes de transmission à pertes variables dans le domaine temporel.", "axe": "TIM"},
+        {"nom": "Fatima EZ-ZAKI", "titre_these": "Modélisation, conception, simulation et réalisation des antennes fractales miniatures pour les communications sans fil V2X", "axe": "TIM"},
+        {"nom": "Majid FAYTI", "titre_these": "Conception d'un mini drone à voiture fixe : modélisation, stabilisation et commande intelligente", "axe": "IARCS"},
+        {"nom": "Jourd KHALFI", "titre_these": "Contribution à la réalisation d'un système de gestion de la batterie en temps réel (DMS) destiné à l'utilisation dans les véhicules électriques", "axe": "TIM"},
+        {"nom": "Ahmed OULTILIGH", "titre_these": "Conception d'un système de contrôle intelligent capable de résoudre la planification de trajectoire d'un robot mobile", "axe": "IARCS"},
+        {"nom": "Imane TAHRI", "titre_these": "Étude et simulation d'un parloir auto réparable et auto configurable avec le déploiement des techniques de l'intelligence artificielle", "axe": "EMSE"},
+        {"nom": "Omar SERGHINI", "titre_these": "Développement et implémentation d'algorithmes de l'intelligence artificielle pour la radio cognitive", "axe": "TIM"},
+        {"nom": "Hayat AIT DAHMAD", "titre_these": "Conception et mise en œuvre de nouvelles méthodes intelligentes pour le diagnostic et la planification de la trajectoire pour les robots agricoles", "axe": "IARCS"},
+        {"nom": "Hind ABBAOUI", "titre_these": "Conception et réalisation d'antennes miniatures et de systèmes antennaires pour des applications de la 5G, en particulier pour les communications sans fil V2X", "axe": "TIM"},
+        {"nom": "Abderrahim EZZARA", "titre_these": "Commande tolérante aux défauts pour un véhicule autonome", "axe": "IARCS"},
+        {"nom": "Oumaima BOULKHOUKH", "titre_these": "Contribution à la modélisation, à l'analyse et à la commande d'un système hospitalier en utilisant les RDP et l'Algèbre des dioïdes.", "axe": "IARCS"}
+      ]
+    },
+    {
+      "name": "L2IS",
+      "responsables":[
+        {"firstname": "Mohammed", "lastname": "AIRAJ", "id": 1, "email": "m.airaj@uca.ac.ma"},
+        {"firstname": "Miloud", "lastname": "AIT HEMAD", "id": 2, "email": "m.aithemad@uca.ac.ma"},
+        {"firstname": "Laila", "lastname": "Amir", "id": 3, "email": "l.amir@uca.ac.ma"},
+        {"firstname": "Najib", "lastname": "ELKHAYAT ZOUKKARI", "id": 4, "email": "n.elkhayat.zoukkari@uca.ac.ma"},
+        {"firstname": "Omar", "lastname": "Bencharef", "id": 5, "email": "o.bencharef@uca.ac.ma"},
+        {"firstname": "Meriem", "lastname": "Benhaddi", "id": 6, "email": "m.benhaddi@uca.ac.ma"},
+        {"firstname": "Nawal", "lastname": "Bourquia", "id": 7, "email": "n.bourquia@uca.ac.ma"},
+        {"firstname": "Khadija", "lastname": "Bouzaachane", "id": 8, "email": "k.bouzaachane@uca.ac.ma"},
+        {"firstname": "Aziz", "lastname": "DAROUICHI", "id": 9, "email": "a.darouichi@uca.ac.ma"},
+        {"firstname": "Hassan", "lastname": "EL BAHI", "id": 10, "email": "h.elbahi@uca.ac.ma"},
+        {"firstname": "El Mahdi", "lastname": "EL GUARMAH", "id": 11, "email": "e.elguarmah@uca.ac.ma"},
+        {"firstname": "Salah", "lastname": "EL HADAJ", "id": 12, "email": "s.elhadaj@uca.ac.ma"},
+        {"firstname": "Soulaimane", "lastname": "Kaloun", "id": 13, "email": "s.kaloun@uca.ac.ma"},
+        {"firstname": "My Driss", "lastname": "LAANAOUI", "id": 14, "email": "m.laanaoui@uca.ac.ma"},
+        {"firstname": "Aziz", "lastname": "OUAARAB", "id": 15, "email": "a.ouaarab@uca.ac.ma"},
+        {"firstname": "Said", "lastname": "RAKRAK", "id": 16, "email": "s.rakrak@uca.ac.ma"},
+        {"firstname": "Noureddine", "lastname": "ZAHID", "id": 17, "email": "n.zahid@uca.ac.ma"}
+      ]
+      ,
+      "doctorants": []
+    }
+,    
+{
+  "name": "LMAI",
+  "responsables": [
+    {"firstname": "Mostafa", "lastname": "ABOUNOUH", "id": 1, "email": "m.abounouh@uca.ac.ma"},
+    {"firstname": "Noureddine", "lastname": "ALAA", "id": 2, "email": "n.alaa@uca.ac.ma"},
+    {"firstname": "Hassan", "lastname": "AL-MOATASSIME", "id": 3, "email": "h.almoatassime@uca.ac.ma"},
+    {"firstname": "Tijani", "lastname": "AMAHROQ", "id": 4, "email": "t.amahroq@uca.ac.ma"},
+    {"firstname": "Chahid", "lastname": "AYOUCH", "id": 5, "email": "c.ayouch@uca.ac.ma"},
+    {"firstname": "Abdeslem Hafid", "lastname": "BENTBIB", "id": 6, "email": "a.bentbib@uca.ac.ma"},
+    {"firstname": "Boubker", "lastname": "DAAFI", "id": 7, "email": "b.daafi@uca.ac.ma"},
+    {"firstname": "Youssef", "lastname": "El Boukfaoui", "id": 8, "email": "y.elboukfaoui@uca.ac.ma"},
+    {"firstname": "Abdellatif", "lastname": "ELLABIB", "id": 9, "email": "a.ellabib@uca.ac.ma"},
+    {"firstname": "Brahim", "lastname": "ESSEBBAR", "id": 10, "email": "b.essebbar@uca.ac.ma"},
+    {"firstname": "Abdelilah", "lastname": "HAKIM", "id": 11, "email": "a.hakim@uca.ac.ma"},
+    {"firstname": "Rachid", "lastname": "KHIRI", "id": 12, "email": "r.khiri@uca.ac.ma"},
+    {"firstname": "Karim", "lastname": "KREIT", "id": 13, "email": "k.kreit@uca.ac.ma"},
+    {"firstname": "Mustapha", "lastname": "KZAZ", "id": 14, "email": "m.kzaz@uca.ac.ma"},
+    {"firstname": "Said", "lastname": "RAGHAY", "id": 15, "email": "s.raghay@uca.ac.ma"},
+    {"firstname": "Aicha", "lastname": "SYAM", "id": 16, "email": "a.syam@uca.ac.ma"},
+    {"firstname": "Mehdi", "lastname": "ZAHID", "id": 17, "email": "m.zahid@uca.ac.ma"}
+  ]
+  ,
+  "doctorants": []
+}
+,
+{
+  "name": "LRDDS",
+  "responsables": [
+    {"firstname": "Hakima", "lastname": "Amraoui", "id": 1, "email": "h.amraoui@uca.ac.ma"},
+    {"firstname": "Touria", "lastname": "Ba m’hamed", "id": 2, "email": "t.bamhamed@uca.ac.ma"},
+    {"firstname": "Ahmed", "lastname": "Belfkira", "id": 3, "email": "a.belfkira@uca.ac.ma"},
+    {"firstname": "Imane", "lastname": "Belkyal", "id": 4, "email": "i.belkyal@uca.ac.ma"},
+    {"firstname": "Fatiha", "lastname": "Benkhalti", "id": 5, "email": "f.benkhalti@uca.ac.ma"},
+    {"firstname": "Samira", "lastname": "Bouallam", "id": 6, "email": "s.bouallam@uca.ac.ma"},
+    {"firstname": "Hafida", "lastname": "Bouamama", "id": 7, "email": "h.bouamama@uca.ac.ma"},
+    {"firstname": "Said", "lastname": "Eddarir", "id": 8, "email": "s.eddarir@uca.ac.ma"},
+    {"firstname": "Ilham", "lastname": "EL Aboudi", "id": 9, "email": "i.elaboudi@uca.ac.ma"},
+    {"firstname": "Mohamed", "lastname": "EL Azhari", "id": 10, "email": "m.elazhari@uca.ac.ma"},
+    {"firstname": "abderrazzak", "lastname": "Ghanima", "id": 11, "email": "a.ghanima@uca.ac.ma"},
+    {"firstname": "Bassou", "lastname": "Hamdaoui", "id": 12, "email": "b.hamdaoui@uca.ac.ma"},
+    {"firstname": "Rachid", "lastname": "Jalal", "id": 13, "email": "r.jalal@uca.ac.ma"},
+    {"firstname": "Khalid", "lastname": "Khatib", "id": 14, "email": "k.khatib@uca.ac.ma"},
+    {"firstname": "Bouchra", "lastname": "Maabad", "id": 15, "email": "b.maabad@uca.ac.ma"},
+    {"firstname": "Ahmed", "lastname": "Mdarhri", "id": 16, "email": "a.mdarhri@uca.ac.ma"},
+    {"firstname": "Nadia", "lastname": "Seddiqi", "id": 17, "email": "n.seddiqi@uca.ac.ma"},
+    {"firstname": "Moha", "lastname": "Taourirte", "id": 18, "email": "m.taourirte@uca.ac.ma"}
+  ]
+  ,
+  "doctorants": []
+}
+,
+{
+  "name": "IMED-LAB",
+  "responsables":[
+    {"firstname": "Karima", "lastname": "ABDELOUAHDI", "id": 1, "email": "k.abdelouahdi@uca.ac.ma"},
+    {"firstname": "Zahra", "lastname": "ABKHAR", "id": 2, "email": "z.abkhar@uca.ac.ma"},
+    {"firstname": "Abdelhadi", "lastname": "ABOUNADI", "id": 3, "email": "a.abounadi@uca.ac.ma"},
+    {"firstname": "Noureddine", "lastname": "ACHARGUI", "id": 4, "email": "n.achargui@uca.ac.ma"},
+    {"firstname": "Mohamed", "lastname": "AKLALOUCH", "id": 5, "email": "m.aklalouch@uca.ac.ma"},
+    {"firstname": "Abdelhadi", "lastname": "ALIMOUSSA", "id": 6, "email": "a.alimoussa@uca.ac.ma"},
+    {"firstname": "Abdelmajid", "lastname": "ALMAGGOUSSI", "id": 7, "email": "a.almaggoussi@uca.ac.ma"},
+    {"firstname": "M'Barek", "lastname": "AMJOUD", "id": 8, "email": "m.amjoud@uca.ac.ma"},
+    {"firstname": "Larbi", "lastname": "BELACHEMI", "id": 9, "email": "l.belachemi@uca.ac.ma"},
+    {"firstname": "Elhassan", "lastname": "CHOUKRI", "id": 10, "email": "e.choukri@uca.ac.ma"},
+    {"firstname": "Ahmed", "lastname": "EL HICHOU", "id": 11, "email": "a.elhichou@uca.ac.ma"},
+    {"firstname": "Abdellah", "lastname": "ERRAMLI", "id": 12, "email": "a.erramli@uca.ac.ma"},
+    {"firstname": "Lahcen", "lastname": "ESSALEH", "id": 13, "email": "l.essaleh@uca.ac.ma"},
+    {"firstname": "Lahoucine", "lastname": "HAJJI", "id": 14, "email": "l.hajji@uca.ac.ma"},
+    {"firstname": "Rachid", "lastname": "HAKKOU", "id": 15, "email": "r.hakkou@uca.ac.ma"},
+    {"firstname": "Hamid", "lastname": "KADDAMI", "id": 16, "email": "h.kaddami@uca.ac.ma"},
+    {"firstname": "Aziza", "lastname": "KHALIL", "id": 17, "email": "a.khalil@uca.ac.ma"},
+    {"firstname": "Mohammed", "lastname": "LAHCINI", "id": 18, "email": "m.lahcini@uca.ac.ma"},
+    {"firstname": "Mohammed", "lastname": "MANSORI", "id": 19, "email": "m.mansori@uca.ac.ma"},
+    {"firstname": "Daoud", "lastname": "MEZZANE", "id": 20, "email": "d.mezzane@uca.ac.ma"},
+    {"firstname": "Brahim", "lastname": "NACER", "id": 21, "email": "b.nacer@uca.ac.ma"},
+    {"firstname": "Youssef", "lastname": "NAJEB", "id": 22, "email": "y.najeb@uca.ac.ma"},
+    {"firstname": "Jamal", "lastname": "OUHABI", "id": 23, "email": "j.ouhabi@uca.ac.ma"},
+    {"firstname": "Mustapha", "lastname": "RAIHANE", "id": 24, "email": "m.raihane@uca.ac.ma"},
+    {"firstname": "Amal", "lastname": "RAJIRA", "id": 25, "email": "a.rajira@uca.ac.ma"},
+    {"firstname": "Benaissa", "lastname": "RHOUTA", "id": 26, "email": "b.rhouta@uca.ac.ma"},
+    {"firstname": "Latifa", "lastname": "SAADI", "id": 27, "email": "l.saadi@uca.ac.ma"},
+    {"firstname": "Ismael", "lastname": "SAADOUNE", "id": 28, "email": "i.saadoune@uca.ac.ma"},
+    {"firstname": "El Hassane", "lastname": "SOUMHI", "id": 29, "email": "e.soumhi@uca.ac.ma"},
+    {"firstname": "Mostafa", "lastname": "WAHBI", "id": 30, "email": "m.wahbi@uca.ac.ma"},
+    {"firstname": "Mohamed", "lastname": "WAQIF", "id": 31, "email": "m.waqif@uca.ac.ma"}
+  ]
+  ,
+  "doctorants": []
+}
+,
+{
+  "name": "PROCEDE",
+  "responsables": [
+    {"firstname": "M’hamed", "lastname": "BAKRIM", "id": 1, "email": "m.bakrim@uca.ac.ma"},
+    {"firstname": "Mohamed", "lastname": "BELAQZIZ", "id": 2, "email": "m.belaqziz@uca.ac.ma"},
+    {"firstname": "Brahim", "lastname": "BENHAMOU", "id": 3, "email": "b.benhamou@uca.ac.ma"},
+    {"firstname": "Abdellatif", "lastname": "BOURIAL", "id": 4, "email": "a.bourial@uca.ac.ma"},
+    {"firstname": "Abderrahim", "lastname": "BRAKEZ", "id": 5, "email": "a.brakez@uca.ac.ma"},
+    {"firstname": "Nadia", "lastname": "CHAIBI", "id": 6, "email": "n.chaibi@uca.ac.ma"},
+    {"firstname": "Hassan", "lastname": "CHEHOUANI", "id": 7, "email": "h.chehouani@uca.ac.ma"},
+    {"firstname": "Samira", "lastname": "DOUAMNA", "id": 8, "email": "s.douamna@uca.ac.ma"},
+    {"firstname": "Ahmed", "lastname": "ELMOTASSADEQ", "id": 9, "email": "a.elmotassadeq@uca.ac.ma"},
+    {"firstname": "Salah", "lastname": "ER-RAKI", "id": 10, "email": "s.erraki@uca.ac.ma"},
+    {"firstname": "Hassan", "lastname": "HAMDI", "id": 11, "email": "h.hamdi@uca.ac.ma"},
+    {"firstname": "Mohamed", "lastname": "IBANNAIN", "id": 12, "email": "m.ibannain@uca.ac.ma"},
+    {"firstname": "Ali", "lastname": "IDLIMAM", "id": 13, "email": "a.idlimam@uca.ac.ma"},
+    {"firstname": "Abdelkader", "lastname": "LAMHARRAR", "id": 14, "email": "a.lamharrar@uca.ac.ma"},
+    {"firstname": "Zineb", "lastname": "MIMOUNI", "id": 15, "email": "z.mimouni@uca.ac.ma"},
+    {"firstname": "Naima", "lastname": "NAFIRI", "id": 16, "email": "n.nafiri@uca.ac.ma"}
+  ]
+  
+,
+  "doctorants": []
+}
+,
+    {
+      "name": "CISIEV",
+      "responsables": [
+        {"firstname": "Abdelmounaim", "lastname": "ABDALI", "id": 1, "email": "a.abdali@uca.ac.ma"},
+        {"firstname": "Naji", "lastname": "ABDENOURI", "id": 2, "email": "n.abdenouri@uca.ac.ma"},
+        {"firstname": "Said", "lastname": "DOUBABI", "id": 3, "email": "s.doubabi@uca.ac.ma"},
+        {"firstname": "Said", "lastname": "EL BEID", "id": 4, "email": "s.elbeid@uca.ac.ma"},
+        {"firstname": "El Houssine", "lastname": "EL MAZOUDI", "id": 5, "email": "e.elmazoudi@uca.ac.ma"},
+        {"firstname": "Issam", "lastname": "SALHI", "id": 6, "email": "i.salhi@uca.ac.ma"}
+      ]
+      ,
+      "doctorants": []
+    },
+    {
+      "name": "LISA",
+      "responsables": [
+        {"firstname": "Ahmed", "lastname": "AAMOUCHE", "id": 1, "email": "a.aamouche@uca.ac.ma"},
+        {"firstname": "Khalid", "lastname": "AUHMANI", "id": 2, "email": "k.auhmani@uca.ac.ma"},
+        {"firstname": "Said", "lastname": "BELKOUCH", "id": 3, "email": "s.belkouch@uca.ac.ma"},
+        {"firstname": "Rachid", "lastname": "BENMOUSSA", "id": 4, "email": "r.benmoussa@uca.ac.ma"},
+        {"firstname": "Zakaria", "lastname": "BOULGHASSOUL", "id": 5, "email": "z.boulghassoul@uca.ac.ma"},
+        {"firstname": "Fatima", "lastname": "BOUYAHIA", "id": 6, "email": "f.bouyahia@uca.ac.ma"},
+        {"firstname": "Badr", "lastname": "DAKKAK", "id": 7, "email": "b.dakkak@uca.ac.ma"},
+        {"firstname": "Mustapha", "lastname": "EL ADNANI", "id": 8, "email": "m.eladnani@uca.ac.ma"},
+        {"firstname": "Lhoussain", "lastname": "EL BAHIR", "id": 9, "email": "l.elbahir@uca.ac.ma"},
+        {"firstname": "Abdelhadi", "lastname": "ELBACHA", "id": 10, "email": "a.elbacha@uca.ac.ma"},
+        {"firstname": "Abdelkrim", "lastname": "HAMZAOUI", "id": 11, "email": "a.hamzaoui@uca.ac.ma"},
+        {"firstname": "Touria", "lastname": "Hassboun", "id": 12, "email": "t.hassboun@uca.ac.ma"},
+        {"firstname": "Elhassan", "lastname": "IRHIRANE", "id": 13, "email": "e.irhirane@uca.ac.ma"},
+        {"firstname": "Khalid", "lastname": "Lyakidi", "id": 14, "email": "k.lyakidi@uca.ac.ma"},
+        {"firstname": "Lahbib", "lastname": "NIBOU", "id": 15, "email": "l.nibou@uca.ac.ma"},
+        {"firstname": "Abdellah", "lastname": "OUKASSI", "id": 16, "email": "a.oukassi@uca.ac.ma"},
+        {"firstname": "Abdelouahed", "lastname": "TAJER", "id": 17, "email": "a.tajer@uca.ac.ma"}
+      ]
+      ,
+      "doctorants": []
+    },
+    {
+      "name": "LMSC",
+      "responsables":[
+        {"firstname": "Abdelmalek", "lastname": "Aboussouror", "id": 1, "email": "a.aboussouror@uca.ac.ma"},
+        {"firstname": "Mustapha", "lastname": "Ameur", "id": 2, "email": "m.ameur@uca.ac.ma"},
+        {"firstname": "Zakia", "lastname": "Ankhili", "id": 3, "email": "z.ankhili@uca.ac.ma"},
+        {"firstname": "Abdelghafour", "lastname": "Atlas", "id": 4, "email": "a.atlas@uca.ac.ma"},
+        {"firstname": "Abderrahman", "lastname": "Ayadi", "id": 5, "email": "a.ayadi@uca.ac.ma"},
+        {"firstname": "Aissam", "lastname": "Bekkari", "id": 6, "email": "a.bekkari@uca.ac.ma"},
+        {"firstname": "Nourddine", "lastname": "Berrahou", "id": 7, "email": "n.berrahou@uca.ac.ma"},
+        {"firstname": "Sara", "lastname": "Bouzid", "id": 8, "email": "s.bouzid@uca.ac.ma"},
+        {"firstname": "Lahcen", "lastname": "Douge", "id": 9, "email": "l.douge@uca.ac.ma"},
+        {"firstname": "Younes", "lastname": "Jabrane", "id": 10, "email": "y.jabrane@uca.ac.ma"},
+        {"firstname": "Khadija", "lastname": "Madih", "id": 11, "email": "k.madih@uca.ac.ma"},
+        {"firstname": "Abdellah", "lastname": "Massaq", "id": 12, "email": "a.massaq@uca.ac.ma"},
+        {"firstname": "Abderrazzak", "lastname": "Nejeoui", "id": 13, "email": "a.nejeoui@uca.ac.ma"},
+        {"firstname": "Idir", "lastname": "Ouassou", "id": 14, "email": "i.ouassou@uca.ac.ma"},
+        {"firstname": "Mohamed", "lastname": "Oumoun", "id": 15, "email": "m.oumoun@uca.ac.ma"},
+        {"firstname": "Mohamed Aziz", "lastname": "Taoudi", "id": 16, "email": "m.aziz.taoudi@uca.ac.ma"}
+      ]
+      ,
+      "doctorants": []
+    },
+    {
+      "name": "SSA",
+      "responsables": [],
+      "doctorants": []
+    },
+    {
+      "name": "GTA",
+      "responsables": [],
+      "doctorants": []
+    },
+    {
+      "name": "LIRBEM",
+      "responsables": [
+        {"firstname": "Mohamed", "lastname": "Ait Tahar", "id": 1, "email": "m.aittahar@uca.ac.ma"},
+        {"firstname": "Imad", "lastname": "Belboukhari", "id": 2, "email": "i.belboukhari@uca.ac.ma"},
+        {"firstname": "Abdallah", "lastname": "Belhamra", "id": 3, "email": "a.belhamra@uca.ac.ma"},
+        {"firstname": "Lhaj", "lastname": "Benaziz", "id": 4, "email": "l.benaziz@uca.ac.ma"},
+        {"firstname": "Fatima", "lastname": "Berrekhis", "id": 5, "email": "f.berrekhis@uca.ac.ma"},
+        {"firstname": "Mohamed", "lastname": "Boulanouar", "id": 6, "email": "m.boulanouar@uca.ac.ma"},
+        {"firstname": "Mohamed", "lastname": "Cheggour", "id": 7, "email": "m.cheggour@uca.ac.ma"},
+        {"firstname": "Mustafa", "lastname": "Cherkaoui", "id": 8, "email": "m.cherkaoui@uca.ac.ma"},
+        {"firstname": "Said", "lastname": "El-Jallal", "id": 9, "email": "s.eljallal@uca.ac.ma"},
+        {"firstname": "Mohamed", "lastname": "Jakani", "id": 10, "email": "m.jakani@uca.ac.ma"},
+        {"firstname": "Abdelkarim", "lastname": "Jamali", "id": 11, "email": "a.jamali@uca.ac.ma"},
+        {"firstname": "Abdelmoula", "lastname": "Jarrad", "id": 12, "email": "a.jarrad@uca.ac.ma"},
+        {"firstname": "Mohammed", "lastname": "Kouhila", "id": 13, "email": "m.kouhila@uca.ac.ma"},
+        {"firstname": "My Abdelaziz", "lastname": "Koumina", "id": 14, "email": "my.koumina@uca.ac.ma"},
+        {"firstname": "Mohamed", "lastname": "Lakraimi", "id": 15, "email": "m.lakraimi@uca.ac.ma"},
+        {"firstname": "Hassan", "lastname": "Ouanaimi", "id": 16, "email": "h.ouanaimi@uca.ac.ma"},
+        {"firstname": "Mohammed", "lastname": "Rhazi", "id": 17, "email": "m.rhazi@uca.ac.ma"},
+        {"firstname": "Mohamed Faouzi", "lastname": "Sebban", "id": 18, "email": "m.sebban@uca.ac.ma"},
+        {"firstname": "Abdelouahad", "lastname": "Tolaimate", "id": 19, "email": "a.tolaimate@uca.ac.ma"},
+        {"firstname": "Mohamed", "lastname": "Zoukal", "id": 20, "email": "m.zoukal@uca.ac.ma"}
+      ]
+      ,
+      "doctorants": []
+    },
+    {
+      "name": "LMIMSC",
+      "responsables": [
+        {"firstname": "AIT LMAATI", "lastname": "ALMUSTAPHA", "id": 1, "email": "ait.lmaati@uca.ac.ma"},
+        {"firstname": "FATIMA EZZAHRA", "lastname": "AMATOUL", "id": 2, "email": "fatima.ezzahra.amatoul@uca.ac.ma"},
+        {"firstname": "ZAHRA", "lastname": "ASEBRIY", "id": 3, "email": "z.asebriy@uca.ac.ma"},
+        {"firstname": "YASSIR", "lastname": "BARKOUCH", "id": 4, "email": "y.barkouch@uca.ac.ma"},
+        {"firstname": "SAID", "lastname": "BENKIRANE", "id": 5, "email": "s.benkirane@uca.ac.ma"},
+        {"firstname": "IDRISS", "lastname": "El MOURABIT", "id": 6, "email": "idriss.elmourabit@uca.ac.ma"},
+        {"firstname": "SAID", "lastname": "GOUNANE", "id": 7, "email": "s.gounane@uca.ac.ma"},
+        {"firstname": "AZIDINE", "lastname": "GUEZZAZ", "id": 8, "email": "azidine.guezzaz@uca.ac.ma"},
+        {"firstname": "FAHD", "lastname": "KARAMI", "id": 9, "email": "f.karami@uca.ac.ma"},
+        {"firstname": "KHALID", "lastname": "LEKOUCH", "id": 10, "email": "k.lekouch@uca.ac.ma"},
+        {"firstname": "DRISS", "lastname": "MESKINE", "id": 11, "email": "driss.meskine@uca.ac.ma"},
+        {"firstname": "LAMIA", "lastname": "ZIAD", "id": 12, "email": "lamia.ziad@uca.ac.ma"}
+      ]
+      ,
+      "doctorants": []
+    },
+    {
+      "name": "SAEDD",
+      "responsables": [],
+      "doctorants": []
+    },
+    {
+      "name": "LSAEDD",
+      "responsables": [
+        {"firstname": "Ali", "lastname": "Bokhirss", "id": 1, "email": "ali.bokhirss@uca.ac.ma"},
+        {"firstname": "Khalid", "lastname": "Elkalay", "id": 2, "email": "khalid.elkalay@uca.ac.ma"},
+        {"firstname": "Karima", "lastname": "Khalil", "id": 3, "email": "karima.khalil@uca.ac.ma"}
+      ]
+      ,
+      "doctorants": []
+    },
+    {
+      "name": "LMPEQ",
+      "responsables": [
+        {"firstname": "Younes", "lastname": "ABOULIATIM", "id": 1, "email": "y.abouliatim@uca.ac.ma"},
+        {"firstname": "Abdelkrim", "lastname": "Abourriche", "id": 2, "email": "abdelkrim.abourriche@uca.ac.ma"},
+        {"firstname": "Jamal", "lastname": "ARBAOUI", "id": 3, "email": "jamal.arbaoui@uca.ac.ma"},
+        {"firstname": "Abdelaziz", "lastname": "Benhammou", "id": 4, "email": "abdelaziz.benhammou@uca.ac.ma"},
+        {"firstname": "Mustapha", "lastname": "BIDEQ", "id": 5, "email": "mustapha.bideq@uca.ac.ma"},
+        {"firstname": "Lahcen", "lastname": "BOUKHATTEM", "id": 6, "email": "lahcen.boukhattem@uca.ac.ma"},
+        {"firstname": "Hamza", "lastname": "BOUSSETA", "id": 7, "email": "hamza.bousseta@uca.ac.ma"},
+        {"firstname": "Abderrahim", "lastname": "El-Abidi", "id": 8, "email": "abderrahim.elabidi@uca.ac.ma"},
+        {"firstname": "Elhoussin", "lastname": "Gebrati", "id": 9, "email": "elhoussin.gebrati@uca.ac.ma"},
+        {"firstname": "Mounir", "lastname": "KRIRAA", "id": 10, "email": "mounir.kriraa@uca.ac.ma"},
+        {"firstname": "Rachid", "lastname": "Masrour", "id": 11, "email": "rachid.masrour@uca.ac.ma"},
+        {"firstname": "Brahim", "lastname": "MESSNAOUI", "id": 12, "email": "brahim.messnaoui@uca.ac.ma"},
+        {"firstname": "Lahbib", "lastname": "NIBOU", "id": 13, "email": "lahbib.nibou@uca.ac.ma"},
+        {"firstname": "Hassani Faha", "lastname": "OUDRHIRI-HASSANI Fahd", "id": 14, "email": "hassani.faha.oudrhiri@uca.ac.ma"},
+        {"firstname": "Abdelmoneaim", "lastname": "TLIDI", "id": 15, "email": "abdelmoneaim.tlidi@uca.ac.ma"},
+        {"firstname": "Fatima Ezahra", "lastname": "TOURIKI", "id": 16, "email": "fatima.ezahra.touriki@uca.ac.ma"},
+        {"firstname": "Said", "lastname": "Yadir", "id": 17, "email": "said.yadir@uca.ac.ma"}
+      ]
+      ,
+      "doctorants": []
+    },
+    {
+      "name": "LMISCOM",
+      "responsables": [],
+      "doctorants": []
+    },
+    {
+      "name": "SARS",
+      "responsables": [
+        {"id": 1, "firstname": "Abdellah", "lastname": "ZYANE", "email": "a.zyane@uca.ma"}
+      ],
+      "doctorants": []
+    },
+  {
+    "name": "LAPSSII",
+    "responsables": [
+      {"firstname": "Jamal", "lastname": "Bakkas", "id": 1, "email": "jamal.bakkas@uca.ac.ma"},
+      {"firstname": "Abdelouahad", "lastname": "Bayar", "id": 2, "email": "abdelouahad.bayar@uca.ac.ma"},
+      {"firstname": "Khalid", "lastname": "Benhida", "id": 3, "email": "khalid.benhida@uca.ac.ma"},
+      {"firstname": "Ahmed", "lastname": "Boulahoual", "id": 4, "email": "ahmed.boulahoual@uca.ac.ma"},
+      {"firstname": "Abdelghani", "lastname": "Boussaoud", "id": 5, "email": "abdelghani.boussaoud@uca.ac.ma"},
+      {"firstname": "Abderrahman", "lastname": "Chekry", "id": 6, "email": "abderrahman.chekry@uca.ac.ma"},
+      {"firstname": "Smail", "lastname": "Dribi Alaoui", "id": 7, "email": "smail.dribialaoui@uca.ac.ma"},
+      {"firstname": "Said", "lastname": "El Abdellaoui", "id": 8, "email": "said.elabdellaoui@uca.ac.ma"},
+      {"firstname": "Laila", "lastname": "El Aimani", "id": 9, "email": "laila.elaimani@uca.ac.ma"},
+      {"firstname": "Fatima Zohra", "lastname": "El Amrani", "id": 10, "email": "fatima.zohra.elamrani@uca.ac.ma"},
+      {"firstname": "Said", "lastname": "El Fezazi", "id": 11, "email": "said.elfezazi@uca.ac.ma"},
+      {"firstname": "Ahmed", "lastname": "El Hachadi", "id": 12, "email": "ahmed.elhachadi@uca.ac.ma"},
+      {"firstname": "Mohammed", "lastname": "El Makhfouk", "id": 13, "email": "mohammed.elmakhfouk@uca.ac.ma"},
+      {"firstname": "Laila", "lastname": "El Mazouzi", "id": 14, "email": "laila.elmazouzi@uca.ac.ma"},
+      {"firstname": "Mohamed", "lastname": "Essalih", "id": 15, "email": "mohamed.essalih@uca.ac.ma"},
+      {"firstname": "Othmane", "lastname": "Fdili Alaoui", "id": 16, "email": "othmane.fdilialaoui@uca.ac.ma"},
+      {"firstname": "Mohsine", "lastname": "Hachkar", "id": 17, "email": "mohsine.hachkar@uca.ac.ma"},
+      {"firstname": "Mohammed", "lastname": "Khayar", "id": 18, "email": "mohammed.khayar@uca.ac.ma"},
+      {"firstname": "Ahmed", "lastname": "Mokhlis", "id": 19, "email": "ahmed.mokhlis@uca.ac.ma"},
+      {"firstname": "Badia", "lastname": "Mounir", "id": 20, "email": "badia.mounir@uca.ac.ma"},
+      {"firstname": "Ilham", "lastname": "Mounir", "id": 21, "email": "ilham.mounir@uca.ac.ma"},
+      {"firstname": "Abdellatif", "lastname": "Zouana", "id": 22, "email": "abdellatif.zouana@uca.ac.ma"}
+    ]
+    ,
+    "doctorants": []
+  }
+]
